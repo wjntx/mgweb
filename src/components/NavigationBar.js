@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import { HashRouter as Router } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -18,6 +19,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
     <Styles>
+        <Router>
         <Navbar expand="lg">
             <Navbar.Brand href="/">MicroGate</Navbar.Brand>
             <Navbar.Toggle area-controls="basic-navbar-nav"/>
@@ -30,5 +32,6 @@ export const NavigationBar = () => (
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        </Router>
     </Styles>
 )
