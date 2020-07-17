@@ -19,7 +19,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
     <Styles>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/mgweb/#/">
         <Navbar expand="lg">
             <Navbar.Brand href="/">MicroGate</Navbar.Brand>
             <Navbar.Toggle area-controls="basic-navbar-nav"/>
