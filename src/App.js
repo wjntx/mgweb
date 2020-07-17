@@ -13,7 +13,7 @@ function App() {
     <React.Fragment>
       <NavigationBar />
       <Layout>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/sales" component={Sales} />
