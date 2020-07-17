@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mgweb/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/mgweb/static/js/main.477de66a.chunk.js",
+    "main.js.map": "/mgweb/static/js/main.477de66a.chunk.js.map",
+    "runtime-main.js": "/mgweb/static/js/runtime-main.47e4843a.js",
+    "runtime-main.js.map": "/mgweb/static/js/runtime-main.47e4843a.js.map",
+    "static/js/2.36423a72.chunk.js": "/mgweb/static/js/2.36423a72.chunk.js",
+    "static/js/2.36423a72.chunk.js.map": "/mgweb/static/js/2.36423a72.chunk.js.map",
+    "index.html": "/mgweb/index.html",
+    "precache-manifest.22895c8a4d1cad0720406030f91720a0.js": "/mgweb/precache-manifest.22895c8a4d1cad0720406030f91720a0.js",
+    "service-worker.js": "/mgweb/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/mgweb/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.36423a72.chunk.js.LICENSE.txt": "/mgweb/static/js/2.36423a72.chunk.js.LICENSE.txt",
+    "static/media/submarine.jpg": "/mgweb/static/media/submarine.ee87f75c.jpg",
+    "static/media/train.jpg": "/mgweb/static/media/train.a3d905d5.jpg",
+    "static/media/williams.jpg": "/mgweb/static/media/williams.d585ecb3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47e4843a.js",
+    "static/js/2.36423a72.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.477de66a.chunk.js"
+  ]
+}
