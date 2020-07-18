@@ -3,6 +3,9 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
+
+import MGLogo from '../assets/MGLogo.jpg'
 
 const Styles = styled.div`
     .navbar {
@@ -43,7 +46,7 @@ export const NavigationBar = () => (
             <Col md={{ span: 12, offset: 0 }}>
             <Styles>
                     <Navbar expand="lg">
-                        <Navbar.Brand href="/">MicroGate</Navbar.Brand>
+                        <Navbar.Brand href="/"><Image src={MGLogo} rounded /></Navbar.Brand>
                         <Navbar.Toggle area-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
