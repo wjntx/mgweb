@@ -36,6 +36,12 @@ h3 {
     font-size: 1.75rem;
 	font-style: italic;
 }
+
+h4 {
+    color: #72192d;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 container: {
     flexDirection: 'column';
     justifyContent: 'center';
@@ -58,27 +64,29 @@ export const Home = () => (
             </div>
             <Container>
                 <Row>
-                    <Col >
+                    <Col className="col-lg-3">
                     <Image src={col1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/> <br />
-                    SyncLink® USB
+                    <h4>SyncLink® USB</h4>
                     Based upon MicroGate's proven FPGA serial controller, the SyncLink USB supports synchronous line speeds to 10Mbps and interfaces with systems using USB 2.0 hi-speed (480Mbps) ports and is compatible with USB 3.0 ports.
                     </Col>
-                    <Col>
+                    <Col className="col-lg-3">
                     <Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/> <br />
-                    Developer/OEM Support
+                    <h4>Developer/OEM Support</h4>
                     MicroGate offers developers a unique support structure not found with other suppliers – support direct from the manufacturer. Leveraging the decades of technical design and software support found behind the SyncLink products, customers ensure their solutions are delivered on-time and without interruption.</Col>
-                    <Col>
+                    <Col className="col-lg-3">
                     <Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/> <br />
-                    Windows and Linux API
+                    <h4>Windows and Linux API</h4>
                     The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
                     </Col>
-                    <Col>
+                    <Col className="col-lg-3">
                     <Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/> <br />
-                    SyncLink® Adapters
+                    <h4>SyncLink® Adapters</h4>
                     The SyncLink family of adapters are synchronous/asynchronous, full duplex, serial communications cards supporting SDLC, HDLC, WAN, SNA, and BSC communications. SyncLink cards are available in PCI, PCI Express, and USB form factors.
                     </Col>
                 </Row>
             </Container>
+            <br />
+            <br />
         </Styles>
     </React.Fragment>
 )
