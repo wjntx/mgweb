@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { Sales } from './Sales';
 import { About } from './About';
@@ -11,18 +11,18 @@ import { NavigationBar } from './components/NavigationBar';
 function App() {
   return (
     <React.Fragment>
-      <NavigationBar />
-      <Layout>
         <Router>
+        <NavigationBar />
+        <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/sales" component={Sales} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/sales/" component={Sales} />
+            <Route exact path="/about/" component={About} />
+            <Route exact path="/contact/" component={Contact} />
             <Route component={NoMatch} />
           </Switch>
+          </Layout>
         </Router>
-      </Layout>
     </React.Fragment>
   );
 }
