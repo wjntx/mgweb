@@ -7,14 +7,11 @@ import slide02 from '../assets/train.jpg';
 import slide03 from '../assets/submarine.jpg';
 
 const Styles = styled.div`
-    .right.carousel-control, .left.carousel-control {
-        display: none;
-    }
 `;
 
 export const HomeCarousel = () => (
     <Styles>
-        <Carousel fluid className="mb-5 mt-5" controls={false} indicators={false} interval={4000} fade>
+        <Carousel fluid className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" controls={false} indicators={false} interval={4000} fade>
             <CarouselItem>
                 <img className="d-block w-100" src={slide01} alt="Slide 1: williams" />
             </CarouselItem>

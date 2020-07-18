@@ -11,8 +11,8 @@ import { NavigationBar } from './components/NavigationBar';
 function App() {
   return (
     <React.Fragment>
-        <Router>
-        <NavigationBar />
+      <Router>
+      <NavigationBar />
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -21,8 +21,8 @@ function App() {
             <Route exact path="/contact/" component={Contact} />
             <Route component={NoMatch} />
           </Switch>
-          </Layout>
-        </Router>
+        </Layout>
+      </Router>
     </React.Fragment>
   );
 }
