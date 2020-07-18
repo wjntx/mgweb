@@ -50,10 +50,6 @@ container {
     alignItems: 'center';
     height: '100%';
   }
-
-button {
-    padding: 5px;
-  }
 `;
 
 export const Home = () => ( 
