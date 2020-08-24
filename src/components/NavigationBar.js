@@ -54,7 +54,7 @@ export const NavigationBar = () => (
                                 <Nav.Item><NavLink to="/sales/"className="navlink px-2"> Sales </NavLink></Nav.Item>
                                 <Nav.Item><NavLink to="/about/"className="navlink px-2"> About </NavLink></Nav.Item>
                                 <Nav.Item><NavLink to="/contact/"className="navlink px-2"> Contact </NavLink></Nav.Item>
-                         </Nav>
+                            </Nav>
                         </Navbar.Collapse>
                     </Navbar>
                 </Styles>   

@@ -42,6 +42,7 @@ h4 {
     color: #72192d;
     font-size: 1.25rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 container {
@@ -50,11 +51,18 @@ container {
     alignItems: 'center';
     height: '100%';
   }
+
+.page {
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+  }
 `;
 
 export const Home = () => ( 
     <React.Fragment>
         <Styles>
+            <div className="page">
             <div className="slogan">
                 <HomeCarousel />
                 <p>We are MicroGate®, designing and manufacturing specialized serial communications solutions since 1982.</p>
@@ -97,6 +105,7 @@ export const Home = () => (
                 </Row>
             </Container>
             <br />
+            </div>
         </Styles>
     </React.Fragment>
 )
