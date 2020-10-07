@@ -1,12 +1,13 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
+import { SyncLink } from './SyncLink'
 import { Sales } from './Sales';
 import { About } from './About';
 import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
-import { NavigationBar } from './components/NavigationBar';
+import  NavigationBar  from './components/NavigationBar';
 import { Footer } from './components/Footer.js'
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/synclink/" component={SyncLink} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />
             <Route exact path="/contact/" component={Contact} />
