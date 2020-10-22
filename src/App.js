@@ -1,7 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
-import { SyncLink } from './SyncLink'
+import { SyncLink } from './SyncLink';
+import USBAdapter from './USBAdapter';
 import { Sales } from './Sales';
 import { About } from './About';
 import { Contact } from './Contact';
@@ -18,6 +19,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/synclink/" component={SyncLink} />
+            <Route exact path="/USBAdapter/" component={USBAdapter} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />
             <Route exact path="/contact/" component={Contact} />

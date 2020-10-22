@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 
 import image1  from './assets/USB.jpg';
+import image2  from './assets/PCIeAdapter.jpg';
 import image3 from './assets/GT4e.jpg';
 
 const Styles = styled.div`
@@ -18,6 +19,10 @@ h4 {
     font-weight: 600;
     white-space: nowrap;
 }
+.displayImage{
+    height:290px;
+    width:300px;
+   }
 `;
 
 export const SyncLink = () => (
@@ -27,13 +32,13 @@ export const SyncLink = () => (
         <Container>
             <Row>
                 <Col>
-                <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                 </Col>
                 <Col>
                 <br /><h4>SyncLink® USB Adapter</h4><br />
                 High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.<br /><br />
                 The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution.
-                <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
+                <div align="center"><NavLink to="/USBAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
             </Row>
             <br />
@@ -45,13 +50,13 @@ export const SyncLink = () => (
                 <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-                <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                 </Col>
             </Row>
             <br />
             <Row>
                 <Col>
-                <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                 </Col>
                 <Col>
                 <br /><h4> SyncLink® GT4e Adapter </h4><br />
