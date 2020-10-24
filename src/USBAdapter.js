@@ -17,6 +17,14 @@ h1 {
     font-size: 2rem;
 }
 
+h3 {
+    color: #72192d;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 h4 {
     color: #72192d;
     font-size: 2rem;
@@ -30,8 +38,9 @@ h5 {
     font-style: italic;
 }
 
-ul {
+.ulFormat {
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .toggleLink {
@@ -41,6 +50,20 @@ ul {
         color: black;
         font-weight: 500;
     }
+}
+
+.subhead {
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.subhead2 {
+    color: dark grey;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 `;
 
@@ -82,8 +105,8 @@ function USBAdapter() {
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                 <Card.Body>
-                                Other features include:<br />
-                                <ul>
+                                <b>Other features include:</b><br />
+                                <ul className="ulFormat">
                                     <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
                                     <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
                                     <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
@@ -101,18 +124,17 @@ function USBAdapter() {
                                     <li>Optional rails for use when permanent mounting required.</li>
                                 </ul>
 
-                                    Always Up-To-Date.
+                                    <div className="subhead">Always Up-To-Date.</div>
                                     Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
-
-                                    Powerful API Engine.
+                                    <br /><br />
+                                    <div className="subhead">Powerful API Engine.</div>
                                     Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
-
-                                    LINUX VERSION COMPATIBILITY
-
+                                    <br /><br />
+                                    <div className="subhead2">LINUX VERSION COMPATIBILITY</div>
                                     The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x and 7.x. SyncLink USB is not supported on kernel versions before 2.6.28
-
+                                    <br /><br />
                                     Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
-
+                                    <br /><br />
                                     Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
                                 </Card.Body>
                                 </Accordion.Collapse>
@@ -125,18 +147,21 @@ function USBAdapter() {
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
                                 <Card.Body>
-                                    SyncLink USB Adapter Specifications
+                                    <div className="subhead2">SyncLink USB Adapter Specifications</div>
                                     A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the adapter for a specific application.
-                                    SyncLink USB
-                                    MicroGate FPGA serial controller (one port)
-                                    USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports
-                                    USB Type B Receptacle to DB25 Male
-                                    Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft
-                                    Mechanical: 3.6” length, 2.6” width, 1.9” height
-                                    Power usage: Bus Powered, 5V, 500mA max (300mA typical)
-                                    Regulatory: FCC Class A, CE, ANSI C63.4, EN55022 Class A, EN55024, RoHS
-                                    Connector: DB‐25 (male)
-                                    Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)
+                                    <br /><br />
+                                    <h3>SyncLink USB</h3>
+                                    <ul>
+                                        <li>MicroGate FPGA serial controller (one port)</li>
+                                        <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
+                                        <li>USB Type B Receptacle to DB25 Male</li>
+                                        <li>Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                                        <li>Mechanical: 3.6” length, 2.6” width, 1.9” height</li>
+                                        <li>Power usage: Bus Powered, 5V, 500mA max (300mA typical)</li>
+                                        <li>Regulatory: FCC Class A, CE, ANSI C63.4, EN55022 Class A, EN55024, RoHS</li>
+                                        <li>Connector: DB‐25 (male)</li>
+                                        <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
+                                    </ul>
                                 </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
