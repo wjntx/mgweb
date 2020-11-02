@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
-import image1  from './assets/USB.jpg';
+import image1  from './assets/PCIeAdapter.jpg';
 import image2 from './assets/USB1back.jpg';
 import image3 from './assets/SLUSBPCB1.jpg';
 import NavigationBar from './components/NavigationBar';
@@ -83,13 +83,9 @@ hr {
     font-size: .85rem;
     font-style: italic;
 }
-
-.titleFix {
-
-}
 `;
 
-function USBAdapter() {
+function PCIeAdapter() {
     return (
         <React.Fragment>
         <Styles>
@@ -98,21 +94,18 @@ function USBAdapter() {
             <Container>
                 <Row>
                     <Col>
-                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     </Col>
                     <Col>
-                    <br /><h4>SyncLink® USB Adapter</h4> <br /> <h5>The Ultimate Solution.</h5><br />
-                    The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution. Supporting a full-duplex 10Mbps connection, the SyncLink USB is perfect for field operations requiring satellite and RF radio communications or connecting to specialized synchronous/asynchronous devices. It does not matter what type of system slots are available when using the SyncLink USB, simply connect the SyncLink USB to any free USB port or attached hub.
+                    <br /><h4>SyncLink® PCIe Adapter</h4> <br /> <h5>The Newest PCIe Adapter.</h5><br />
+                    The SyncLink PCIe Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on both ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     </Col>
                 </Row>
                 <br />
                 <Row>
                 <Col>
-                Users can tackle any project with confidence using a laptop, desktop computer, server, ruggedized portable or industrial controller to directly connect to serial devices using any one of the SyncLink's supported RS-232, V.35, RS-422(485/530/530A) interfaces. Three LED lights indicate with precision various connection and interface states, as well as, transmit/receive activity and diagnostic information.
+                The SyncLink family of synchronous adapters utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                 <br /><br />
-                The SyncLink USB utilizes the industry proven MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
-                <br /><br />
-                Customers may also purchase the SyncLink USB PCB on its own, with any combination of DB25 and USB connectors or LEDs installed or left unpopulated. Using the four mounting holes on the SyncLink USB PCB, solution providers can further customize the adapter to fit their particular packaging and operating requirements. Contact MicroGate for further details.
                 </Col>
                 </Row>
                 <br />
@@ -127,11 +120,11 @@ function USBAdapter() {
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                 <Card.Body>
-                                <div className="subhead">Other features include:</div>
+                                <b>Other features include:</b><br />
                                 <ul className="ulFormat">
+                                    <li>Two Ports - individually configurable. Selectable by software or hardware switches.</li>
                                     <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
                                     <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
-                                    <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
                                     <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
                                     <li>DPLL clock recovery (x8 and x16 sampling)</li>
                                     <li>Separate, selectable transmit and receive data clock inputs</li>
@@ -143,21 +136,19 @@ function USBAdapter() {
                                     <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
                                     <li>General Purpose I/O (GPIO) signal access</li>
                                     <li>Loopback mode for diagnostics</li>
-                                    <li>Optional rails for use when permanent mounting required.</li>
                                 </ul>
 
                                     <div className="subhead">Always Up-To-Date.</div>
                                     Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
                                     <br /><br />
-                                    <div className="subhead">Powerful API Engine.</div>
-                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
+                                    <div className="subhead">Full-Featured Software Development Kit.</div>
+                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
                                     <br /><br />
-                                    <div className="subhead2">LINUX VERSION COMPATIBILITY</div>
-                                    The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x and 7.x. SyncLink USB is not supported on kernel versions before 2.6.28
-                                    <br /><br />
-                                    Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
-                                    <br /><br />
+                                    <div className="subhead">Additional Support.</div>
+                                    The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
+                                    <br />
                                     Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                                    <br /><br />
                                 </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -173,7 +164,6 @@ function USBAdapter() {
                                     A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the adapter for a specific application.
                                     <br /><br />
                                     <h3>SyncLink USB</h3>
-                                    <hr />
                                     <ul>
                                         <li>MicroGate FPGA serial controller (one port)</li>
                                         <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
@@ -191,62 +181,10 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="2">
-                                    <div align="left" >Documentation and Software Downloads <i class="fas fa-caret-down"></i></div>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="2">
-                                <Card.Body>
-                                    <Container>
-                                            <Row>
-                                                <Col>
-                                                    <h3>Documentation</h3>
-                                                    <hr />
-                                                    Hardware Guides
-                                                    <ul>
-                                                        <li>SyncLink USB Hardware Guide</li>
-                                                    </ul>
-                                                    Serial Interface Information
-                                                    <ul>
-                                                        <li>Serial Interface/Cable Pinouts</li>
-                                                        <li>Null Modem Details</li>
-                                                        <li>Loopback Adapter Details</li>
-                                                    </ul>
-                                                    Hardware Diagrams
-                                                    <ul>
-                                                        <li>SyncLink USB PCB Drawing</li>
-                                                    </ul>
-                                                </Col>
-                                                <Col>
-                                                    <h3>Software Downloads</h3>
-                                                    <hr />
-                                                    Hardware Drivers
-                                                    <ul>
-                                                        <li>SyncLink USB Drivers for Windows</li>
-                                                        <li>SyncLink USB Drivers for Linux</li>
-                                                    </ul>
-                                                    Microgate Serial API
-                                                    <ul>
-                                                        <li>MicroGate Serial API for Windows</li>
-                                                        <li>MicroGate Serial API for Linux</li>
-                                                    </ul>
-                                                    Additional Software Solutions
-                                                    <ul>
-                                                        <li>SyncLink WAN Adapter Software for Linux</li>
-                                                        <li>Legacy Drivers</li>
-                                                    </ul>
-                                                </Col>
-                                            </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
                                     Part Numbers <i class="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="3">
+                                <Accordion.Collapse eventKey="2">
                                 <Card.Body>
                                     <div className="subhead2">Product and Ordering Information</div>
                                     Use the part numbers below for ordering SyncLink hardware and MicroGate software.<br />
@@ -390,4 +328,4 @@ function USBAdapter() {
     );
 }
 
-export default USBAdapter;
+export default PCIeAdapter;

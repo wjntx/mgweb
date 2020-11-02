@@ -20,7 +20,7 @@ h4 {
     white-space: nowrap;
 }
 .displayImage{
-    height:290px;
+    height:270px;
     width:300px;
    }
 `;
@@ -41,18 +41,20 @@ export const SyncLink = () => (
                 <div align="center"><NavLink to="/USBAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
             </Row>
+            <hr />
             <br />
             <Row>
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
                 <br /><h4>SyncLink® PCIe Adapter</h4><br />
                 High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.<br /><br />
                 The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution.
-                <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
+                <div align="center"><NavLink to="/PCIeAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
                 <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                 </Col>
             </Row>
+            <hr />
             <br />
             <Row>
                 <Col>

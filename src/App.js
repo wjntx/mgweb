@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { SyncLink } from './SyncLink';
 import USBAdapter from './USBAdapter';
+import PCIeAdapter from './PCIeAdapter';
 import { Sales } from './Sales';
 import { About } from './About';
 import { Contact } from './Contact';
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/synclink/" component={SyncLink} />
             <Route exact path="/USBAdapter/" component={USBAdapter} />
+            <Route exact path="/PCIeAdapter/" component={PCIeAdapter} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />
             <Route exact path="/contact/" component={Contact} />
