@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
@@ -8,9 +7,6 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 import image1  from './assets/PCIeAdapter.jpg';
-import image2 from './assets/USB1back.jpg';
-import image3 from './assets/SLUSBPCB1.jpg';
-import NavigationBar from './components/NavigationBar';
 
 const Styles = styled.div`
 h1 {

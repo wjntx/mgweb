@@ -4,7 +4,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import MGLogo from '../assets/MGLogo.jpg'
 

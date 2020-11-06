@@ -8,9 +8,9 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 import image1  from './assets/USB.jpg';
-import image2 from './assets/USB1back.jpg';
-import image3 from './assets/SLUSBPCB1.jpg';
-import NavigationBar from './components/NavigationBar';
+
+import usermanual from './PDF/slusb-users-manual.pdf';
+import drawing from './PDF/SLUSBPCB.pdf';
 
 const Styles = styled.div`
 h1 {
@@ -83,13 +83,10 @@ hr {
     font-size: .85rem;
     font-style: italic;
 }
-
-.titleFix {
-
-}
 `;
 
 function USBAdapter() {
+    window.scrollTo(0,0);
     return (
         <React.Fragment>
         <Styles>
@@ -122,7 +119,7 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} className="toggleLink" variant="link" eventKey="0">
-                                    Overview <div class="fas fa-caret-down"></div>
+                                    Overview <div className="fas fa-caret-down"></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
@@ -164,7 +161,7 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="1">
-                                    Technical Details <i class="fas fa-caret-down"></i>
+                                    Technical Details <i className="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
@@ -191,7 +188,7 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="2">
-                                    <div align="left" >Documentation and Software Downloads <i class="fas fa-caret-down"></i></div>
+                                    <div align="left" >Documentation and Software Downloads <i className="fas fa-caret-down"></i></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="2">
@@ -203,17 +200,17 @@ function USBAdapter() {
                                                     <hr />
                                                     Hardware Guides
                                                     <ul>
-                                                        <li>SyncLink USB Hardware Guide</li>
+                                                        <li><a href={usermanual} target="_blank">SyncLink USB Hardware Guide</a></li>
                                                     </ul>
                                                     Serial Interface Information
                                                     <ul>
-                                                        <li>Serial Interface/Cable Pinouts</li>
+                                                        <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
                                                         <li>Null Modem Details</li>
                                                         <li>Loopback Adapter Details</li>
                                                     </ul>
                                                     Hardware Diagrams
                                                     <ul>
-                                                        <li>SyncLink USB PCB Drawing</li>
+                                                        <li><a href={drawing} target="_blank">SyncLink USB PCB Drawing</a></li>
                                                     </ul>
                                                 </Col>
                                                 <Col>
@@ -243,7 +240,7 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
-                                    Part Numbers <i class="fas fa-caret-down"></i>
+                                    Part Numbers <i className="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="3">
