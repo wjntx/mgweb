@@ -150,7 +150,7 @@ function USBAdapter() {
                                     Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
                                     <br /><br />
                                     <div className="subhead2">LINUX VERSION COMPATIBILITY</div>
-                                    The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x and 7.x. SyncLink USB is not supported on kernel versions before 2.6.28
+                                    The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
                                     <br /><br />
                                     Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
                                     <br /><br />
