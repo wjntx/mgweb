@@ -70,9 +70,8 @@ export const Footer = () => (
                         </ul>
                             <ul>
                                 <li><NavLink to="/sales/"className="navlink">SyncLink® USB</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">SyncLink® GT4e PCI Express Adapter</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">SyncLink® GT4 PCI Adapters</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
+                                <li><NavLink to="/sales/"className="navlink">SyncLink® GT4e</NavLink></li>
+                               <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
                                 <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Linux</NavLink></li>
                             </ul>
                         </Col>
