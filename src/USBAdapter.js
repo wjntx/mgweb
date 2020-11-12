@@ -8,6 +8,13 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 import image1  from './assets/USB.jpg';
+import image2  from './assets/USB1back.jpg';
+import image3  from './assets/SLUSBPCB1.jpg';
+import image4  from './assets/USBRails.jpg';
+import image5  from './assets/rs232.jpg';
+import image6  from './assets/v35.jpg';
+import image7  from './assets/rs449.jpg';
+import image8  from './assets/x21.jpg';
 
 import usermanual from './PDF/slusb-users-manual.pdf';
 import drawing from './PDF/SLUSBPCB.pdf';
@@ -83,6 +90,11 @@ hr {
     font-size: .85rem;
     font-style: italic;
 }
+
+.displayImage{
+    height:270px;
+    width:300px;
+   }
 `;
 
 function USBAdapter() {
@@ -205,8 +217,8 @@ function USBAdapter() {
                                                     Serial Interface Information
                                                     <ul>
                                                         <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
-                                                        <li>Null Modem Details</li>
-                                                        <li>Loopback Adapter Details</li>
+                                                        <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
+                                                        <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
                                                     </ul>
                                                     Hardware Diagrams
                                                     <ul>
@@ -297,7 +309,7 @@ function USBAdapter() {
                                             MicroGate Serial API for Windows w/ SyncLink USB Adapter<br /><br />
                                             </Col>
                                             <Col>
-                                            1U3173
+                                            DOWNLOAD
                                             </Col>
                                             <hr />
                                         </Row>
@@ -307,17 +319,7 @@ function USBAdapter() {
                                             MicroGate Serial API for Linux w/ SyncLink USB Adapter<br /><br />
                                             </Col>
                                             <Col>
-                                            1U3193
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div className="subNote">Linux (32-bit/64-bit)</div>
-                                            SyncLink USB WAN Adapter for Linux RS-232, V.35, RS422(485/530/530A)<br /><br />
-                                            </Col>
-                                            <Col>
-                                            1U3193
+                                            DOWNLOAD
                                             </Col>
                                             <hr />
                                         </Row>
@@ -366,12 +368,57 @@ function USBAdapter() {
                                         </Row>
                                         <Row>
                                             <Col>
-                                            RS-449 Cable (DB25F-DB37M) 6-feet<br /><br />
+                                            X.21 Cable (DB25F-DB15M) 6-feet<br /><br />
                                             </Col>
                                             <Col>
-                                            2537FM
+                                            2515FM
                                             </Col>
                                             <hr />
+                                        </Row>
+                                    </Container>
+                                </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
+                                    Product Photos <i className="fas fa-caret-down"></i>
+                                </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="4">
+                                <Card.Body>
+                                    <Container>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image6} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image7} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image8} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
                                         </Row>
                                     </Container>
                                 </Card.Body>

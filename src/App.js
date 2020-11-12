@@ -10,8 +10,11 @@ import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import  NavigationBar  from './components/NavigationBar';
-import { Footer } from './components/Footer.js'
+import { Footer } from './components/Footer.js';
 import Serialpinouts from './Serialpinouts';
+import NullModem from './NullModem';
+import { Loopback } from './Loopback';
+
 function App() {
   return (
     <React.Fragment>
@@ -24,6 +27,8 @@ function App() {
             <Route exact path="/USBAdapter/" component={USBAdapter} />
             <Route exact path="/PCIeAdapter/" component={PCIeAdapter} />
             <Route exact path="/Serialpinouts/" component={Serialpinouts} />
+            <Route exact path="/NullModem/" component={NullModem} />
+            <Route exact path="/Loopback/" component={Loopback} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />
             <Route exact path="/contact/" component={Contact} />
