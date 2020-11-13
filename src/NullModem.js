@@ -1,6 +1,4 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 
 import { NullModemtable } from './components/NullModemtable.js';

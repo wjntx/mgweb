@@ -18,6 +18,9 @@ import image8  from './assets/x21.jpg';
 
 import usermanual from './PDF/slusb-users-manual.pdf';
 import drawing from './PDF/SLUSBPCB.pdf';
+import USBDriverWindows from './Drivers/hdlcrtk.exe';
+import USBDriverLinux from './Drivers/linuxwan.tar.xz';
+import SerialAPIWindows from './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 h1 {
@@ -212,7 +215,7 @@ function USBAdapter() {
                                                     <hr />
                                                     Hardware Guides
                                                     <ul>
-                                                        <li><a href={usermanual} target="_blank">SyncLink USB Hardware Guide</a></li>
+                                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
                                                     </ul>
                                                     Serial Interface Information
                                                     <ul>
@@ -222,7 +225,7 @@ function USBAdapter() {
                                                     </ul>
                                                     Hardware Diagrams
                                                     <ul>
-                                                        <li><a href={drawing} target="_blank">SyncLink USB PCB Drawing</a></li>
+                                                        <li><a href={drawing} target="_blank" rel="noopener noreferrer">SyncLink USB PCB Drawing</a></li>
                                                     </ul>
                                                 </Col>
                                                 <Col>
@@ -230,17 +233,17 @@ function USBAdapter() {
                                                     <hr />
                                                     Hardware Drivers
                                                     <ul>
-                                                        <li>SyncLink USB Drivers for Windows</li>
-                                                        <li>SyncLink USB Drivers for Linux</li>
+                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Windows</a></li>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Linux</a></li>
                                                     </ul>
                                                     Microgate Serial API
                                                     <ul>
-                                                        <li>MicroGate Serial API for Windows</li>
-                                                        <li>MicroGate Serial API for Linux</li>
+                                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
                                                     </ul>
                                                     Additional Software Solutions
                                                     <ul>
-                                                        <li>SyncLink WAN Adapter Software for Linux</li>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
                                                         <li>Legacy Drivers</li>
                                                     </ul>
                                                 </Col>
