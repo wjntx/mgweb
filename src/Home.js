@@ -7,9 +7,9 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 
 import col1 from './assets/SLUSB.jpg';
-import col2 from './assets/blocksa.jpg';
-import col3 from './assets/images-1a.jpg';
-import col4 from './assets/PCIePC104b.jpg';
+import col2 from './assets/SLPCIe(SMALL).jpg';
+import col3 from './assets/SLGT4e(SMALL).jpg';
+import col4 from './assets/images-1a.jpg';
 
 const Styles = styled.div`
 hr {
@@ -83,22 +83,21 @@ export const Home = () => (
                     </Col>
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
-                    <h4>Developer/OEM Support</h4>
-                    MicroGate offers developers a unique support structure not found with other suppliers – support direct from the manufacturer. Leveraging the decades of technical design and software support found behind the SyncLink products, customers ensure their solutions are delivered on-time and without interruption.
-                    <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
+                    <h4>SyncLink® PCIe</h4>
+                    The newest PCI Express (PCIe) offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS422, V.35, RS232/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported by the SyncLink PCIe.<div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br /><br /><br />
                     </Col>
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
-                    <h4>Windows and Linux API</h4>
+                    <h4>SyncLink® GT4e</h4>
                     The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
                     <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br /><br /><br />
                     </Col>
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
-                    <h4>SyncLink® Adapters</h4>
-                    The SyncLink family of adapters are synchronous/asynchronous, full duplex, serial communications cards supporting SDLC, HDLC, WAN, SNA, and BSC communications. SyncLink cards are available in PCI, PCI Express, and USB form factors.
+                    <h4>Windows and Linux API</h4>
+                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
                     <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br /><br /><br />
                     </Col>
