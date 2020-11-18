@@ -13,7 +13,6 @@ h1 {
 }
 
 h3 {
-    color: #72192d;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 600;
@@ -96,6 +95,8 @@ function LegacyDrivers() {
                 <li><a href={LegacyLinux} target='_blank' rel="noopener noreferrer" download>Linux API (kernel versions prior to 2.4)</a></li>
                 <li><a href={Mgwnet} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Windows (32-bit only)</a></li>
             </ul>
+            <br />
+            <h3>"Customer Driven, by Design"</h3>
             <br /><br />
            </Styles>
         </React.Fragment>
