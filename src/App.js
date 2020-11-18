@@ -14,6 +14,7 @@ import { Footer } from './components/Footer.js';
 import Serialpinouts from './Serialpinouts';
 import NullModem from './NullModem';
 import { Loopback } from './Loopback';
+import LegacyDrivers from './LegacyDrivers';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/PCIeAdapter/" component={PCIeAdapter} />
             <Route exact path="/Serialpinouts/" component={Serialpinouts} />
             <Route exact path="/NullModem/" component={NullModem} />
+            <Route exact path="/LegacyDrivers/" component={LegacyDrivers} />
             <Route exact path="/Loopback/" component={Loopback} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />

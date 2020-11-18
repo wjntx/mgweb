@@ -244,7 +244,7 @@ function USBAdapter() {
                                                     Additional Software Solutions
                                                     <ul>
                                                         <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
-                                                        <li>Legacy Drivers</li>
+                                                        <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
                                                     </ul>
                                                 </Col>
                                             </Row>
