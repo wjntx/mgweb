@@ -107,13 +107,14 @@ function Serialpinouts() {
                         <br /><br /><br />
                     </Col>
                 </Row>
-                <br />
                 <Row>
                     <Col>
                     <Rs232table />
                     </Col>
                 </Row>
             </Container>
+            <br />
+            <hr />
             <Container>
                 <Row>
                     <Col>
