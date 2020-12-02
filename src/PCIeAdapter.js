@@ -79,6 +79,11 @@ hr {
     font-size: .85rem;
     font-style: italic;
 }
+
+.displayImage{
+    height:270px;
+    width:300px;
+   }
 `;
 
 function PCIeAdapter() {
@@ -142,7 +147,7 @@ function PCIeAdapter() {
                                     <br /><br />
                                     <div className="subhead">Additional Support.</div>
                                     The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
-                                    <br />
+                                    <br /><br />
                                     Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
                                     <br /><br />
                                 </Card.Body>

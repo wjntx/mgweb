@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import Table from 'react-bootstrap/Table';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -52,416 +52,176 @@ p {
         color: #0000EE;
     }
 }
+
+h2 {
+    padding-bottom: 5px;
+}
 `;
 
 export const V35table = () => (
     <React.Fragment>
         <Styles>
-        <Container>
-            <h2>V.35 Male DTE</h2>
-            <hr />
-                <Row>
-                    <Col>
-                        <b>Product Description</b>
-                    </Col>
-                    <Col>
-                        <b>Electrical Description</b>
-                    </Col>
-                    <Col>
-                        <b>DB25 Pin #</b>
-                    </Col>
-                    <Col>
-                        <b>V.35 Block Pin #</b>
-                    </Col>
-                    <Col>
-                        <b>Direction</b>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                    <hr />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col> 
-                        Earth/Shield Ground<br />
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                    <Col>
-                        1
-                    </Col>
-                    <Col>
-                        A
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        TxD (-/A), Transmit Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        2
-                    </Col>
-                    <Col>
-                        P
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RxD (-/A), Receive Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        3
-                    </Col>
-                    <Col>
-                        R
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RTS, Request To Send<br />
-                    </Col>
-                    <Col>
-                        RS-232/V28
-                    </Col>
-                    <Col>
-                        4
-                    </Col>
-                    <Col>
-                        C
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        CTS, Clear To Send<br />
-                    </Col>
-                    <Col>
-                        RS-232/V28
-                    </Col>
-                    <Col>
-                        5
-                    </Col>
-                    <Col>
-                        D
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        DSR, Data Carrier Detect<br />
-                    </Col>
-                    <Col>
-                        RS-232/V28
-                    </Col>
-                    <Col>
-                        6
-                    </Col>
-                    <Col>
-                        E
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        Signal Ground<br />
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                    <Col>
-                        7
-                    </Col>
-                    <Col>
-                        B
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        DCD, Data Carrier Detect<br />
-                    </Col>
-                    <Col>
-                        RS-232/V28
-                    </Col>
-                    <Col>
-                        8
-                    </Col>
-                    <Col>
-                        F
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RxC (+/B), Receive Clock<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        9
-                    </Col>
-                    <Col>
-                        X
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        AuxClk, DTE Clock Output<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        24
-                    </Col>
-                    <Col>
-                        24
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        AuxClk (+/B), DTE Clock Output<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        11
-                    </Col>
-                    <Col>
-                        W
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        TxC (+/B) Transmit Clock<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        12
-                    </Col>
-                    <Col>
-                        AA
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        TxD (+/B), Transmit Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        14
-                    </Col>
-                    <Col>
-                        S
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        TxC (-/A), Transmit Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        15
-                    </Col>
-                    <Col>
-                        Y
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RxD (+/B), Receive Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        16
-                    </Col>
-                    <Col>
-                        T
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RxC (-/A), Receive Clock<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        17
-                    </Col>
-                    <Col>
-                        V
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        LL, Local Loopback Control<br />
-                    </Col>
-                    <Col>
-                        RS-232/V28
-                    </Col>
-                    <Col>
-                        18
-                    </Col>
-                    <Col>
-                        NC
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        DTR, Data Terminal Ready<br />
-                    </Col>
-                    <Col>
-                        RS-232/V.28
-                    </Col>
-                    <Col>
-                        20
-                    </Col>
-                    <Col>
-                        H
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RL, Local Loopback Control<br />
-                    </Col>
-                    <Col>
-                        RS-232/V.28
-                    </Col>
-                    <Col>
-                        21
-                    </Col>
-                    <Col>
-                        NC
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        RI, Ring Indicator<br />
-                    </Col>
-                    <Col>
-                        RS-232/V.28
-                    </Col>
-                    <Col>
-                        22
-                    </Col>
-                    <Col>
-                        NC
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        AuxClk (-/A), DTE Clock Output<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        24
-                    </Col>
-                    <Col>
-                        24
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <br /><br />
-            </Container>
+        <h2 style={{textAlign: "center"}, {color: "black"}}>V.35 Male DTE</h2>
+            <Table striped bordered hover size="sm">
+                <thead>
+                    <tr>
+                        <th>Signal Name</th>
+                        <th>Electrical Description</th>
+                        <th>DB 25 Pin #</th>
+                        <th>V.35 Block Pin #</th>
+                        <th>Direction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Earth/Shield Ground</td>
+                        <td>--</td>
+                        <td>1</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>TxD (-/A), Transmit Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>2</td>
+                        <td>P</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>RxD (-/A), Receive Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>3</td>
+                        <td>R</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>RTS, Request To Send</td>
+                        <td>RS-232/V28</td>
+                        <td>4</td>
+                        <td>C</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>CTS, Clear To Send</td>
+                        <td>V</td>
+                        <td>5</td>
+                        <td>D</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>DSR, Data Set Ready</td>
+                        <td>RS-232/V28</td>
+                        <td>6</td>
+                        <td>E</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>Signal Ground</td>
+                        <td>--</td>
+                        <td>7</td>
+                        <td>B</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>DCD, Data Carrier Detect</td>
+                        <td>RS-232/V28</td>
+                        <td>8</td>
+                        <td>F</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>RxC (+/B), Receive Clock</td>
+                        <td>RS-422/V.11</td>
+                        <td>9</td>
+                        <td>X</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>AuxClk, DTE Clock Output</td>
+                        <td>RS-422/V.11</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>AuxClk (+/B), DTE Clock Output</td>
+                        <td>RS-422/V.11</td>
+                        <td>11</td>
+                        <td>W</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>TxC (+/B) Transmit Clock</td>
+                        <td>RS-422/V.11</td>
+                        <td>12</td>
+                        <td>AA</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>TxD (+/B), Transmit Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>14</td>
+                        <td>S</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>TxC (-/A), Transmit Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>15</td>
+                        <td>Y</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>RxD (+/B), Receive Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>16</td>
+                        <td>T</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>RxC (-/A), Receive Clock</td>
+                        <td>RS-422/V.11</td>
+                        <td>17</td>
+                        <td>V</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>LL, Local Loopback Control</td>
+                        <td>RS-232/V28</td>
+                        <td>18</td>
+                        <td>NC</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>DTR, Data Terminal Ready</td>
+                        <td>RS-232/V.28</td>
+                        <td>20</td>
+                        <td>H</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>RL, Local Loopback Control</td>
+                        <td>RS-232/V.28</td>
+                        <td>21</td>
+                        <td>NC</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>RI, Ring Indicator</td>
+                        <td>RS-232/V.28</td>
+                        <td>22</td>
+                        <td>NC</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>AuxClk (-/A), DTE Clock Output</td>
+                        <td>RS-422/V.11</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>Output</td>
+                    </tr>
+                </tbody>
+            </Table>
         </Styles>
     </React.Fragment>
 )

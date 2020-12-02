@@ -114,7 +114,9 @@ function Serialpinouts() {
                 </Row>
             </Container>
             <br />
+            <br />
             <hr />
+            <br />
             <Container>
                 <Row>
                     <Col>
@@ -135,6 +137,10 @@ function Serialpinouts() {
                     </Col>
                 </Row>
             </Container>
+            <br />
+            <br />
+            <hr />
+            <br />
             <Container>
                 <Row>
                     <Col>
@@ -162,6 +168,10 @@ function Serialpinouts() {
                     </Col>
                 </Row>
             </Container>
+            <br />
+            <br />
+            <hr />
+            <br />
             <Container>
                 <Row>
                     <Col>
@@ -186,6 +196,9 @@ function Serialpinouts() {
                     </Col>
                 </Row>
             </Container>
+            <br />
+            <br />
+            <br />
         </Styles>
         </React.Fragment>
     );

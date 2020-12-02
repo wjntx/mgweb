@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -57,285 +57,118 @@ p {
 export const X21table = () => (
     <React.Fragment>
         <Styles>
-        <Container>
-            <h2>X.21 Male DTE</h2>
-            <hr />
-                <Row>
-                    <Col>
-                        <b>Signal Name</b>
-                    </Col>
-                    <Col>
-                        <b>Electrical Description</b>
-                    </Col>
-                    <Col>
-                        <b>DB25 Pin #</b>
-                    </Col>
-                    <Col>
-                        <b>DB15 Pin#</b>
-                    </Col>
-                    <Col>
-                        <b>Direction</b>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                    <hr />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col> 
-                        Earth/Shield Ground<br />
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                    <Col>
-                        1
-                    </Col>
-                    <Col>
-                        1
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        T(-/A), Transmit Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        2
-                    </Col>
-                    <Col>
-                        2
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        R(-/A), Receive Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        3
-                    </Col>
-                    <Col>
-                        4
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        I(-/A), Indicator (DSR/DCD)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        6,8
-                    </Col>
-                    <Col>
-                        5
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        Signal Ground<br />
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                    <Col>
-                        7
-                    </Col>
-                    <Col>
-                        8
-                    </Col>
-                    <Col>
-                        --
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        S(+/B), Clock Input (TxC, RxC)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        9,12
-                    </Col>
-                    <Col>
-                        13
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        I(+/B), Indicator (DSR/DCD)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        10,22
-                    </Col>
-                    <Col>
-                        12
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        X(+/B), Clock Output (AuxClk)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        11
-                    </Col>
-                    <Col>
-                        14
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        T(+/B), Transmit Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        14
-                    </Col>
-                    <Col>
-                        9
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        S(-/A), Clock Input (TxC, RxC)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        15,17
-                    </Col>
-                    <Col>
-                        6
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        R(+/B), Receive Data<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        16
-                    </Col>
-                    <Col>
-                        11
-                    </Col>
-                    <Col>
-                        Input
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        C(-/A), Control (DTR)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        20
-                    </Col>
-                    <Col>
-                        3
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        C(+/B), Control (DTR)<br />
-                    </Col>
-                    <Col>
-                        RS-422/V.11
-                    </Col>
-                    <Col>
-                        23
-                    </Col>
-                    <Col>
-                        10
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col> 
-                        X(-/A), Clock Output (AuxClk)<br />
-                    </Col>
-                    <Col>
-                        RS-x21/V.11
-                    </Col>
-                    <Col>
-                        24
-                    </Col>
-                    <Col>
-                        7
-                    </Col>
-                    <Col>
-                        Output
-                    </Col>
-                </Row>
-                <hr />
-                <br /><br />
-            </Container>
+        <h2 style={{textAlign: "center"}, {color: "black"}}>X.21 Male DTE</h2>
+            <Table striped bordered hover size="sm">
+                <thead>
+                    <tr>
+                        <th>Signal Name</th>
+                        <th>Electrical Description</th>
+                        <th>DB25 Pin #</th>
+                        <th>DB15 Pin #</th>
+                        <th>Direction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Earth/Shield Ground</td>
+                        <td>--</td>
+                        <td>1</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>T(-/A), Transmit Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>R(-/A), Receive Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>I(-/A), Indicator (DSR/DCD)</td>
+                        <td>RS-422/V.11</td>
+                        <td>6,8</td>
+                        <td>5</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>Signal Ground</td>
+                        <td>--</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>S(+/B), Clock Input (TxC, RxC)</td>
+                        <td>RS-422/V.11</td>
+                        <td>9,12</td>
+                        <td>13</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>I(+/B), Indicator (DSR/DCD)</td>
+                        <td>RS-422/V.11</td>
+                        <td>10</td>
+                        <td>22</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>X(+/B), Clock Output (AuxClk)</td>
+                        <td>RS-422/V.11</td>
+                        <td>11</td>
+                        <td>14</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>T(+/B), Transmit Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>S(-/A), Clock Input (TxC, RxC)</td>
+                        <td>RS-422/V.11</td>
+                        <td>15,17</td>
+                        <td>6</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>R(+/B), Receive Data</td>
+                        <td>RS-422/V.11</td>
+                        <td>16</td>
+                        <td>11</td>
+                        <td>Input</td>
+                    </tr>
+                    <tr>
+                        <td>C(-/A), Control (DTR)</td>
+                        <td>RS-422/V.11</td>
+                        <td>20</td>
+                        <td>3</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>C(+/B), Control (DTR)</td>
+                        <td>RS-422/V.11</td>
+                        <td>23</td>
+                        <td>10</td>
+                        <td>Output</td>
+                    </tr>
+                    <tr>
+                        <td>X(-/A), Clock Output (AuxClk)</td>
+                        <td>RS-x21/V.11247Output</td>
+                        <td>24</td>
+                        <td>7</td>
+                        <td>Output</td>
+                    </tr>
+                </tbody>
+            </Table>
         </Styles>
     </React.Fragment>
 )

@@ -57,11 +57,16 @@ p {
 .bgcolor {
     background-color: grey;
 }
+
+h2 {
+    padding-bottom: 5px;
+}
 `;
 
 export const Rs232table = () => (
     <React.Fragment>
         <Styles>
+            <h2 style={{textAlign: "center"}, {color: "black"}}>RS-232 DB-25 Male DTE</h2>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
