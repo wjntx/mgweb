@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import image1  from './assets/PCIeAdapter.jpg';
 
@@ -213,7 +214,7 @@ function PCIeAdapter() {
                                             <div className="subNote">NOTE: Use this part number when ordering additional adapters for use with an existing application.</div>
                                             </Col>
                                             <Col>
-                                            1U3170
+                                            2E0170
                                             </Col>
                                             <hr />
                                         </Row>
@@ -239,7 +240,7 @@ function PCIeAdapter() {
                                             MicroGate Serial API for Windows w/ SyncLink USB Adapter<br /><br />
                                             </Col>
                                             <Col>
-                                            1U3173
+                                            DOWNLOAD
                                             </Col>
                                             <hr />
                                         </Row>
@@ -249,17 +250,7 @@ function PCIeAdapter() {
                                             MicroGate Serial API for Linux w/ SyncLink USB Adapter<br /><br />
                                             </Col>
                                             <Col>
-                                            1U3193
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div className="subNote">Linux (32-bit/64-bit)</div>
-                                            SyncLink USB WAN Adapter for Linux RS-232, V.35, RS422(485/530/530A)<br /><br />
-                                            </Col>
-                                            <Col>
-                                            1U3193
+                                            DOWNLOAD
                                             </Col>
                                             <hr />
                                         </Row>
@@ -308,13 +299,42 @@ function PCIeAdapter() {
                                         </Row>
                                         <Row>
                                             <Col>
-                                            RS-449 Cable (DB25F-DB37M) 6-feet<br /><br />
+                                            X.21 Cable (DB25F-DB15M) 6-feet<br /><br />
                                             </Col>
                                             <Col>
-                                            2537FM
+                                            2515FM
                                             </Col>
                                             <hr />
                                         </Row>
+                                    </Container>
+                                </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
+                                    <div align="left" >Related Products <i className="fas fa-caret-down"></i></div>
+                                </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="3">
+                                <Card.Body>
+                                    <Container>
+                                            <Row>
+                                                <Col>
+                                                    <div className="subhead2"><NavLink to="/USBAdapter/">SyncLink USB</NavLink></div>
+                                                    High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.
+                                                    <br /><hr />
+                                                    <div className="subhead2">SyncLink GT4e</div>
+                                                    4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
+                                                    <br /><hr />
+                                                    <div className="subhead2">MicroGate Serial API for Windows (Download FREE)</div>
+                                                    Serial Communications Software Development Kit for Windows (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
+                                                    <br /><hr />
+                                                    <div className="subhead2">MicroGate Serial API for Linux (Download FREE)</div>
+                                                    Serial Communications Software Development Kit for Linux (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
+                                                    <br /><hr />
+                                                </Col>
+                                            </Row>
                                     </Container>
                                 </Card.Body>
                                 </Accordion.Collapse>

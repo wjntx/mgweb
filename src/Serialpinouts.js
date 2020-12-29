@@ -45,7 +45,6 @@ h4 {
 h5 {
     font-size: 1.5rem;
     white-space: nowrap;
-    font-style: italic;
 }
 
 .ulFormat {
@@ -81,9 +80,8 @@ hr {
 }
 
 .subNote {
-    font-weight: 300;
+    font-weight: 400;
     font-size: .85rem;
-    font-style: italic;
 }
 `;
 
@@ -98,7 +96,9 @@ function Serialpinouts() {
                 <Row>
                     <Col>
                     <br /><br />
-                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> 
+                    <div className="subNote text-center">Synchronous RS-232 Cable (PN:CMF000)</div>
+                    <br />
                     </Col>
                     <Col>
                     <br />
@@ -121,7 +121,9 @@ function Serialpinouts() {
                 <Row>
                     <Col>
                     <br /><br />
-                    <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> 
+                    <div className="subNote text-center">V.35 Cable (PN:2534GT)</div>
+                    <br />
                     </Col>
                     <Col>
                     <br />
@@ -145,8 +147,12 @@ function Serialpinouts() {
                 <Row>
                     <Col>
                     <br /><br />
-                    <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
-                    <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> 
+                    <div className="subNote text-center">RS-530 Cable (PN:CMF000)</div>
+                    <br />
+                    <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> 
+                    <div className="subNote text-center">RS-449 Cable (PN:2537FM)</div>
+                    <br />
                     </Col>
                     <Col>
                     <br />
@@ -176,7 +182,9 @@ function Serialpinouts() {
                 <Row>
                     <Col>
                     <br /><br />
-                    <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> 
+                    <div className="subNote text-center">X.21 Cable (PN:2515FM)</div>
+                    <br />
                     </Col>
                     <Col>
                     <br />

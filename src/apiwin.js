@@ -15,12 +15,14 @@ import image5  from './assets/rs232.jpg';
 import image6  from './assets/v35.jpg';
 import image7  from './assets/rs449.jpg';
 import image8  from './assets/x21.jpg';
+import image9 from './assets/gt4cables1.jpg'
 
 import usermanual from './PDF/slusb-users-manual.pdf';
 import drawing from './PDF/SLUSBPCB.pdf';
 import USBDriverWindows from './Drivers/hdlcrtk.exe';
 import USBDriverLinux from './Drivers/linuxwan.tar.xz';
 import SerialAPIWindows from './Drivers/hdlcsdk.exe';
+import serialapiwindows from './PDF/serial-api-windows.pdf';
 
 const Styles = styled.div`
 h1 {
@@ -53,7 +55,6 @@ h4 {
 h5 {
     font-size: 1.5rem;
     white-space: nowrap;
-    font-style: italic;
 }
 
 .ulFormat {
@@ -101,38 +102,32 @@ hr {
 
 a {
     color: #72192d;
+    font-weight: 500;
     &:hover{
         text-decoration: none;
     }
 }
 `;
 
-function USBAdapter() {
+function apiwin() {
     window.scrollTo(0,0);
     return (
         <React.Fragment>
         <Styles>
-            <h1>SyncLink® Hardware</h1>
+            <h1>MicroGate® Serial API</h1>
             <hr />
             <Container>
                 <Row>
                     <Col>
-                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                        <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                        <div align="center"><Image src={image9} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
                     </Col>
                     <Col>
-                    <br /><h4>SyncLink® USB Adapter</h4> <br /> <h5>The Ultimate Solution.</h5><br />
-                    The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution. Supporting a full-duplex 10Mbps connection, the SyncLink USB is perfect for field operations requiring satellite and RF radio communications or connecting to specialized synchronous/asynchronous devices. It does not matter what type of system slots are available when using the SyncLink USB, simply connect the SyncLink USB to any free USB port or attached hub.
+                    <br /><h4>MicroGate® Serial API for Windows</h4> <br /> <h5>Full-Featured Software Development Kit for Windows.</h5><br />
+                    The MicroGate Serial API provides a serial communications Application Program Interface for Microsoft Windows using the SyncLink family of adapters (USB, PCI, PCI Express, PC/104+). The API supports multiple serial protocols including SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNCHRONOUS and RAW bit-synchronous. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications. The API allows direct control of the serial hardware. <br /><br />
+                    The MicroGate Serial API is FREE and may be <a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>downloaded</a> at any time from the MicroGate website. <br/><br/>
+                    Download the Guide to MicroGate Serial Communications for Windows for complete details regarding the use of SyncLink hardware, driver and software-development-kit options, and Windows.<br/><br/>      
                     </Col>
-                </Row>
-                <br />
-                <Row>
-                <Col>
-                Users can tackle any project with confidence using a laptop, desktop computer, server, ruggedized portable or industrial controller to directly connect to serial devices using any one of the SyncLink's supported RS-232, V.35, RS-422(485/530/530A) interfaces. Three LED lights indicate with precision various connection and interface states, as well as, transmit/receive activity and diagnostic information.
-                <br /><br />
-                The SyncLink USB utilizes the industry proven MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
-                <br /><br />
-                Customers may also purchase the SyncLink USB PCB on its own, with any combination of DB25 and USB connectors or LEDs installed or left unpopulated. Using the four mounting holes on the SyncLink USB PCB, solution providers can further customize the adapter to fit their particular packaging and operating requirements. Contact MicroGate for further details.
-                </Col>
                 </Row>
                 <br />
                 <Row>
@@ -146,37 +141,72 @@ function USBAdapter() {
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                 <Card.Body>
-                                <div className="subhead">Other features include:</div>
+                                <div className="subhead">Supported Windows Versions</div>
                                 <ul className="ulFormat">
-                                    <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
+                                    <li>Windows XP (Server 2003/2003R2)</li>
+                                    <li>Windows Vista (Server 2008)</li>
+                                    <li>Windows 7 (Server 2008R2)</li>
+                                    <li>Windows 8 (Server 2012)</li>
+                                    <li>Windows 8.1 (Server 2012R2)</li>
+                                    <li>Windows 10 (Server 2016/2019)</li>
+                                </ul>
+                                
+                                The API is accessed through a standard Windows DLL, and can be used by any programming language that allows calling functions in a standard Windows DLL. Sample programs with source are supplied for the C/C++, C# and Python 3 languages.
+                                <br /><br />
+
+                                <div className="subhead">Supported Development Tools</div>
+                                The MicroGate Serial API for Windows is supported by Microsoft Visual Studio, with sample projects included.
+                                <br /><br />
+                                An application uses the base API to send and receive data where the application controls the exact contents and timing of data transfer.
+                                <br /><br />
+                                An application uses the extended API to send and receive data where the API implements the details of a higher level protocol such as LAPB. The extended API handles frame sequencing, retries, and timeouts. A sample C application is included demonstrating LAPB communications.
+                                <br /><br />
+
+                                <div className="subhead2">Hardware Supported</div>
+                                The MicroGate Serial API supports all the SyncLink hardware MicroGate manufactures. Once you develop an application using the SDK, you can be confident any platform your users require will have a ready-to-go solution.
+                                <br /><br />
+                                
+                                <div className="subhead">Base API Options</div>
+                                <ul className="ulFormat">
                                     <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
-                                    <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
                                     <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
-                                    <li>DPLL clock recovery (x8 and x16 sampling)</li>
+                                    <li>DPLL clock recovery</li>
                                     <li>Separate, selectable transmit and receive data clock inputs</li>
                                     <li>Baud Rate Generator for sourcing data clocks</li>
                                     <li>Variety of transmit preamble and idle patterns</li>
                                     <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
-                                    <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
-                                    <li>Selectable interface for RS‐232, V.35, RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
                                     <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
-                                    <li>General Purpose I/O (GPIO) signal access</li>
+                                    <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
                                     <li>Loopback mode for diagnostics</li>
-                                    <li>Optional rails for use when permanent mounting required.</li>
                                 </ul>
+                                The MicroGate Serial API is packaged as a Software Development Kit (SDK) and a Run Time Kit (RTK).<br/><br/>
 
-                                    <div className="subhead">Always Up-To-Date.</div>
-                                    Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
-                                    <br /><br />
-                                    <div className="subhead">Powerful API Engine.</div>
-                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
-                                    <br /><br />
-                                    <div className="subhead2">LINUX VERSION COMPATIBILITY</div>
-                                    The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
-                                    <br /><br />
-                                    Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
-                                    <br /><br />
-                                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                                <div className="subhead2">Software Development Kit</div>
+                                The MicroGate Serial SDK contains documentation, development support files, sample C/C++, C# and Python 3 applications, and the Run Time Kit.
+                                <br /><br />
+
+                                <div className="subhead2">Run Time Kit</div>
+                                The MicroGate Serial RTK contains the redistributable software components necessary to support deployment of a serial application.
+                                <br /><br />
+
+                                <div className="subhead2">Optional General Purpose I/O Signals</div>
+                                The SyncLink family of serial adapters can be ordered with an optional header that provides general purpose digital (TTL) input/output signals. These signals can be configured (direction), controlled, and monitored through the serial API. Contact our sales department for ordering details.
+                                <br /><br />
+
+                                <div className="subhead2">Hardware Branding</div>
+                                The MicroGate Serial API SDK offers developers seamless application integration. With individually assigned PCI/PCIe/USB hardware IDs, the SyncLink adapters may be recognized and installed as distinctive cards, carrying your own company name or model classification.
+                                <br /><br />
+
+                                <div className="subhead2">Documentation</div>
+                                <ul className="ulFormat">
+                                    <li>Guide to MicroGate Serial Communications for Windows</li>
+                                    <li>Guide to MicroGate Serial Communications Run-Time-Kit for Windows</li>
+                                </ul>
+                                <div className="subhead2">Serial API Downloads</div>
+                                <ul className="ulFormat">
+                                    <li>HDLCSDK.EXE</li>
+                                    <li>HDLCRTK.EXE</li>
+                                </ul>
                                 </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -476,4 +506,4 @@ function USBAdapter() {
     );
 }
 
-export default USBAdapter;
+export default apiwin;

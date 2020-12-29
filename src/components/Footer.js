@@ -19,7 +19,7 @@ const Styles = styled.div`
 bot {
     color: #777;
     &:hover {
-        color: #0000EE;
+        text-decoration: none;
     }
 }
 
@@ -34,7 +34,9 @@ h5 {
 }
 
 li {
-    padding: .5em;
+    padding: 1em;
+    padding-top: 0em;
+    padding-left: 0;
 }
 
 ul {
@@ -42,6 +44,8 @@ ul {
     padding-left: 0;
     list-style-position: inside;
     padding-bottom: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 p {
@@ -49,10 +53,10 @@ p {
 }
 
 .navlink {
-    color: black;
+    color: #72192d;
     font-weight: 500;
-    &:hover {
-        color: #0000EE;
+    &:hover{
+        text-decoration: none;
     }
 }
 `;
@@ -66,15 +70,15 @@ export const Footer = () => (
                         <Col className="col-md-4 col-sm-12 col-12">
                         <br />
                         <ul>
-                            <li><h4>Products</h4></li>
+                        <li><h4>Products</h4></li>
                         </ul>
-                            <ul>
-                                <li><NavLink to="/sales/"className="navlink">SyncLink® USB</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">SyncLink® PCIe</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">SyncLink® GT4e</NavLink></li>
-                               <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
-                                <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Linux</NavLink></li>
-                            </ul>
+                        <ul>
+                            <li><NavLink to="/sales/"className="navlink">SyncLink® USB</NavLink></li>
+                            <li><NavLink to="/sales/"className="navlink">SyncLink® PCIe</NavLink></li>
+                            <li><NavLink to="/sales/"className="navlink">SyncLink® GT4e</NavLink></li>
+                            <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
+                            <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Linux</NavLink></li>
+                        </ul>
                         </Col>
                         <Col className="col-md-4 col-sm-12 col-12">
                         <br />

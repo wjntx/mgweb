@@ -15,6 +15,7 @@ import Serialpinouts from './Serialpinouts';
 import NullModem from './NullModem';
 import { Loopback } from './Loopback';
 import LegacyDrivers from './LegacyDrivers';
+import apiwin from './apiwin';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/Serialpinouts/" component={Serialpinouts} />
             <Route exact path="/NullModem/" component={NullModem} />
             <Route exact path="/LegacyDrivers/" component={LegacyDrivers} />
+            <Route exact path="/apiwin/" component={apiwin} />
             <Route exact path="/Loopback/" component={Loopback} />
             <Route exact path="/sales/" component={Sales} />
             <Route exact path="/about/" component={About} />
