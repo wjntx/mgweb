@@ -7,7 +7,16 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
-import image1  from './assets/PCIeAdapter.jpg';
+import image1  from './assets/gt4cables1.jpg';
+import image2  from './assets/ProductDetailsPCIe.jpg';
+import image3  from './assets/PCIePC104.jpg';
+import image5  from './assets/rs232.jpg';
+import image6  from './assets/v35.jpg';
+import image7  from './assets/rs449.jpg';
+import image8  from './assets/x21.jpg';
+
+import USBDriverLinux from './Drivers/linuxwan.tar.xz';
+import SerialAPIWindows from './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 h1 {
@@ -32,14 +41,12 @@ h2 {
 
 h4 {
     color: #72192d;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 h5 {
-    font-size: 1.5rem;
-    white-space: nowrap;
+    font-size: 1.25rem;
     font-style: italic;
 }
 
@@ -85,9 +92,29 @@ hr {
     height:270px;
     width:300px;
    }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.displayImage2{
+    height:117px;
+    width:210px;
+   }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
 `;
 
 function PCIeAdapter() {
+    window.scrollTo(0,0);
     return (
         <React.Fragment>
         <Styles>
@@ -162,19 +189,19 @@ function PCIeAdapter() {
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
                                 <Card.Body>
-                                    <div className="subhead2">SyncLink USB Adapter Specifications</div>
-                                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the adapter for a specific application.
+                                    <div className="subhead2">SyncLink GT4e Adapter Specifications</div>
+                                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
                                     <br /><br />
-                                    <h3>SyncLink USB</h3>
+                                    <h3>SyncLink GT4e Adapter</h3>
                                     <ul>
-                                        <li>MicroGate FPGA serial controller (one port)</li>
-                                        <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
-                                        <li>USB Type B Receptacle to DB25 Male</li>
-                                        <li>Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
-                                        <li>Mechanical: 3.6” length, 2.6” width, 1.9” height</li>
-                                        <li>Power usage: Bus Powered, 5V, 500mA max (300mA typical)</li>
-                                        <li>Regulatory: FCC Class A, CE, ANSI C63.4, EN55022 Class A, EN55024, RoHS</li>
-                                        <li>Connector: DB‐25 (male)</li>
+                                        <li>MicroGate FPGA serial controller (4 ports)</li>
+                                        <li>PCI Express (1x)</li>
+                                        <li>Bus Master DMA data transfer</li>
+                                        <li>Environmental: Temperature 0C to 60C standard, ‐40C to +85C optional; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                                        <li>Mechanical: Standard PCI Express short card; length 6.6", height 4.2", Weight 4.4 Oz</li>
+                                        <li>Power usage: 1A 3.3V</li>
+                                        <li>Regulatory: FCC Class B, CE, ANSI C63.4 Class B, VCCI Class B, EN55022 Class B, EN55024, RoHS</li>
+                                        <li>Connectors: DB‐25 (male)</li>
                                         <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
                                     </ul>
                                 </Card.Body>
@@ -210,11 +237,10 @@ function PCIeAdapter() {
                                         </Row>
                                         <Row>
                                             <Col>
-                                            SyncLink USB Adapter RS-232, V.35, RS422(485/530/530A)<br />
-                                            <div className="subNote">NOTE: Use this part number when ordering additional adapters for use with an existing application.</div>
+                                            SyncLink GT4e Adapter/PCIe/4-ports RS-232, V.35, RS422(530/530A/485)<br />
                                             </Col>
                                             <Col>
-                                            2E0170
+                                            403170
                                             </Col>
                                             <hr />
                                         </Row>
@@ -240,14 +266,14 @@ function PCIeAdapter() {
                                             MicroGate Serial API for Windows w/ SyncLink USB Adapter<br /><br />
                                             </Col>
                                             <Col>
-                                            DOWNLOAD
+                                            <a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a>
                                             </Col>
                                             <hr />
                                         </Row>
                                         <Row>
                                             <Col>
                                             <div className="subNote">Linux (32-bit/64-bit)</div>
-                                            MicroGate Serial API for Linux w/ SyncLink USB Adapter<br /><br />
+                                            <a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux w/ SyncLink USB Adapter</a><br /><br />
                                             </Col>
                                             <Col>
                                             DOWNLOAD
@@ -312,6 +338,48 @@ function PCIeAdapter() {
                             </Card>
                             <Card>
                                 <Card.Header>
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
+                                    Product Photos <i className="fas fa-caret-down"></i>
+                                </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="4">
+                                <Card.Body>
+                                    <Container>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage2" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image6} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                            <Col>
+                                            <div align="center"><Image src={image7} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image8} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
                                     <div align="left" >Related Products <i className="fas fa-caret-down"></i></div>
                                 </Accordion.Toggle>
@@ -327,10 +395,10 @@ function PCIeAdapter() {
                                                     <div className="subhead2">SyncLink GT4e</div>
                                                     4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
                                                     <br /><hr />
-                                                    <div className="subhead2">MicroGate Serial API for Windows (Download FREE)</div>
+                                                    <div className="subhead2"><NavLink to="/apiwin/">MicroGate Serial API for Windows (Download FREE)</NavLink></div>
                                                     Serial Communications Software Development Kit for Windows (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
                                                     <br /><hr />
-                                                    <div className="subhead2">MicroGate Serial API for Linux (Download FREE)</div>
+                                                    <div className="subhead2"><NavLink to="/apilin/">MicroGate Serial API for Linux (Download FREE)</NavLink></div>
                                                     Serial Communications Software Development Kit for Linux (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
                                                     <br /><hr />
                                                 </Col>

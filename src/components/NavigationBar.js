@@ -6,15 +6,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import { useState } from "react";
 
-import MGLogo from '../assets/MGLogo.jpg'
+import MGLogo from '../assets/MGLogo.png'
 
 const Styles = styled.div`
     .navbar {
-        background-color: white;
+        backgroundColor: rgba(211,211,211, 0.2);
     }
 
     .navbar-brand{
         font-size: 2.5rem;
+        padding-left: 0px;
     }
 
     .navlink {
@@ -71,6 +72,7 @@ const Styles = styled.div`
 function NavigationBar() {
     const [expanded, setExpanded] = useState(false);
     return(
+        <div style={{backgroundColor: "rgba(211,211,211, 0.2)"}}>
         <React.Fragment>
         <Container>
             <Row>
@@ -99,6 +101,7 @@ function NavigationBar() {
         </Container>
         <hr />
         </React.Fragment>
+        </div>
     );
 }
 

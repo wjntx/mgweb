@@ -77,6 +77,13 @@ hr {
     font-size: .85rem;
     font-style: italic;
 }
+
+a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
 `;
 
 function LegacyDrivers() {

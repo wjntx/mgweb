@@ -45,14 +45,12 @@ h2 {
 
 h4 {
     color: #72192d;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 h5 {
-    font-size: 1.5rem;
-    white-space: nowrap;
+    font-size: 1.25rem;
     font-style: italic;
 }
 
@@ -175,8 +173,7 @@ function USBAdapter() {
                                     The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
                                     <br /><br />
                                     Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
-                                    <br /><br />
-                                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                                    <br />
                                 </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -320,7 +317,7 @@ function USBAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> </div>
-                                            DOWNLOAD
+                                            <a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a>
                                             </Col>
                                             <hr />
                                         </Row>
@@ -332,7 +329,7 @@ function USBAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> </div>
-                                            DOWNLOAD
+                                            <a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a>
                                             </Col>
                                             <hr />
                                         </Row>
@@ -454,10 +451,10 @@ function USBAdapter() {
                                                     <div className="subhead2">SyncLink GT4e</div>
                                                     4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
                                                     <br /><hr />
-                                                    <div className="subhead2">MicroGate Serial API for Windows (Download FREE)</div>
+                                                    <div className="subhead2"><NavLink to="/apiwin/">MicroGate Serial API for Windows (Download FREE)</NavLink></div>
                                                     Serial Communications Software Development Kit for Windows (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
                                                     <br /><hr />
-                                                    <div className="subhead2">MicroGate Serial API for Linux (Download FREE)</div>
+                                                    <div className="subhead2"><NavLink to="/apilin/">MicroGate Serial API for Linux (Download FREE)</NavLink></div>
                                                     Serial Communications Software Development Kit for Linux (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
                                                     <br /><hr />
                                                 </Col>

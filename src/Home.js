@@ -59,6 +59,11 @@ container {
     padding-bottom: 100px;
   }
 
+  .displayImage{
+    height:130px;
+    width:220px;
+   }
+
 `;
 
 export const Home = () => ( 
@@ -70,36 +75,36 @@ export const Home = () => (
                 <p>We are MicroGate®, designing and manufacturing specialized serial communications solutions since 1982.</p>
                 <h2>Direct support from experienced hardware and software engineers - <br /></h2>
                     <h3>"Customer Driven, by Design"</h3>
-                    <br />
+                    <br /><br />
             </div>
             <Container>
                 <Row>
                     <Col className="col-lg-3">
-                    <div align="center"><Image src={col1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={col1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     <h4>SyncLink® USB</h4>
                     Based upon MicroGate's proven FPGA serial controller, the SyncLink USB supports synchronous line speeds to 10Mbps and interfaces with systems using USB 2.0 hi-speed (480Mbps) ports and is compatible with USB 3.0 ports.
                     <div align="center"><NavLink to="/USBAdapter/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
-                    <br /><br /><br /><br />
+                    <br /><br />
                     </Col>
                     <Col className="col-lg-3">
-                    <div align="center"><Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
+                    <div align="center"><Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <h4>SyncLink® PCIe</h4>
                     The newest PCI Express (PCIe) offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS422, V.35, RS232/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported by the SyncLink PCIe.<div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
-                    <br /><br /><br /><br />
+                    <br /><br />
                     </Col>
                     <Col className="col-lg-3">
-                    <div align="center"><Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
+                    <div align="center"><Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <h4>SyncLink® GT4e</h4>
                     The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
                     <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
-                    <br /><br /><br /><br />
+                    <br /><br />
                     </Col>
                     <Col className="col-lg-3">
-                    <div align="center"><Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded"/></div> <br />
+                    <div align="center"><Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <h4>Windows and Linux API</h4>
                     The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
                     <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
-                    <br /><br /><br /><br />
+                    <br /><br />
                     </Col>
                 </Row>
             </Container>
