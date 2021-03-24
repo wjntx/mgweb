@@ -4,7 +4,8 @@ import { Home } from './Home';
 import { SyncLink } from './SyncLink';
 import USBAdapter from './USBAdapter';
 import PCIeAdapter from './PCIeAdapter';
-import { Sales } from './Sales';
+import GT4e from './GT4e';
+import Sales from './Sales';
 import { About } from './About';
 import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/synclink/" component={SyncLink} />
             <Route exact path="/USBAdapter/" component={USBAdapter} />
             <Route exact path="/PCIeAdapter/" component={PCIeAdapter} />
+            <Route exact path="/GT4e/" component={GT4e} />
             <Route exact path="/Serialpinouts/" component={Serialpinouts} />
             <Route exact path="/NullModem/" component={NullModem} />
             <Route exact path="/LegacyDrivers/" component={LegacyDrivers} />

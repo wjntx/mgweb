@@ -327,11 +327,11 @@ function apilin() {
                                                     <div className="subhead2"><NavLink to="/USBAdapter/">SyncLink USB</NavLink></div>
                                                     High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.
                                                     <br /><hr />
-                                                    <div className="subhead2">SyncLink GT4e</div>
-                                                    4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
-                                                    <br /><hr />
                                                     <div className="subhead2"><NavLink to="/PCIeAdapter/">SyncLink PCIe</NavLink></div>
                                                     2-port PCI Express (PCIe) adapter supporting RS-232, V.35 and RS-422 (485/530) connections, as well as, a wide range of synchronous/asynchronous protocols.
+                                                    <br /><hr />
+                                                    <div className="subhead2"><NavLink to="/GT4e/">SyncLink GT4e</NavLink></div>
+                                                    4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
                                                     <br /><hr />
                                                 </Col>
                                             </Row>

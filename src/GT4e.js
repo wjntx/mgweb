@@ -1,24 +1,20 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
-import image1  from './assets/USB.jpg';
-import image2  from './assets/USB1back.jpg';
-import image3  from './assets/SLUSBPCB1.jpg';
-import image4  from './assets/USBRails.jpg';
-import image5  from './assets/rs232.jpg';
-import image6  from './assets/v35.jpg';
-import image7  from './assets/rs449.jpg';
-import image8  from './assets/x21.jpg';
+import image1  from './assets/ProductDetailsPCIeNEW.jpg';
+import image2  from './assets/gt4cables1.jpg';
+import image3  from './assets/PCIePC104.jpg';
+import image4  from './assets/rs232.jpg';
+import image5  from './assets/v35.jpg';
+import image6  from './assets/rs449.jpg';
+import image7  from './assets/x21.jpg';
 
-import usermanual from './PDF/slusb-users-manual.pdf';
-import drawing from './PDF/SLUSBPCB.pdf';
-import USBDriverWindows from './Drivers/hdlcrtk.exe';
 import USBDriverLinux from './Drivers/linuxwan.tar.xz';
 import SerialAPIWindows from './Drivers/hdlcsdk.exe';
 
@@ -86,10 +82,10 @@ hr {
     padding: 0;
 }
 
-.subNote2 {
-    font-weight: 600;
-    font-size: 1rem;
-    padding-bottom: 5px;
+.subNote {
+    font-weight: 300;
+    font-size: .85rem;
+    font-style: italic;
 }
 
 .displayImage{
@@ -97,15 +93,69 @@ hr {
     width:300px;
    }
 
-a {
+   a {
     color: #72192d;
     &:hover{
         text-decoration: none;
     }
 }
+
+.displayImage3{
+    height:236px;
+    width:315px;
+   }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.displayImage4{
+    height:375px;
+    width:300px;
+   }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.displayImage5{
+    height:250px;
+    width:260px;
+   }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.displayImage6{
+    height:217px;
+    width:310px;
+   }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.subNote2 {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
 `;
 
-function USBAdapter() {
+function GT4e() {
     window.scrollTo(0,0);
     return (
         <React.Fragment>
@@ -115,21 +165,18 @@ function USBAdapter() {
             <Container>
                 <Row>
                     <Col>
-                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     </Col>
                     <Col>
-                    <br /><h4>SyncLink® USB Adapter</h4> <br /> <h5>The Ultimate Solution.</h5><br />
-                    The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution. Supporting a full-duplex 10Mbps connection, the SyncLink USB is perfect for field operations requiring satellite and RF radio communications or connecting to specialized synchronous/asynchronous devices. It does not matter what type of system slots are available when using the SyncLink USB, simply connect the SyncLink USB to any free USB port or attached hub.
+                    <br /><h4>SyncLink® GT4e Adapter</h4> <br /> <h5>Multiport High-Speed PCIe Adapter.</h5><br />
+                    The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports supports and asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     </Col>
                 </Row>
                 <br />
                 <Row>
                 <Col>
-                Users can tackle any project with confidence using a laptop, desktop computer, server, ruggedized portable or industrial controller to directly connect to serial devices using any one of the SyncLink's supported RS-232, V.35, RS-422(485/530/530A) interfaces. Three LED lights indicate with precision various connection and interface states, as well as, transmit/receive activity and diagnostic information.
+                The SyncLink GT4e synchronous adapter utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                 <br /><br />
-                The SyncLink USB utilizes the industry proven MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
-                <br /><br />
-                Customers may also purchase the SyncLink USB PCB on its own, with any combination of DB25 and USB connectors or LEDs installed or left unpopulated. Using the four mounting holes on the SyncLink USB PCB, solution providers can further customize the adapter to fit their particular packaging and operating requirements. Contact MicroGate for further details.
                 </Col>
                 </Row>
                 <br />
@@ -139,66 +186,63 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} className="toggleLink" variant="link" eventKey="0">
-                                    Overview <div className="fas fa-caret-down"></div>
+                                    Overview <div class="fas fa-caret-down"></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                 <Card.Body>
-                                <div className="subhead">Other features include:</div>
+                                <b>Other features include:</b><br />
                                 <ul className="ulFormat">
-                                    <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
+                                    <li>Four Ports - individually configurable</li>
                                     <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
-                                    <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
                                     <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
-                                    <li>DPLL clock recovery (x8 and x16 sampling)</li>
+                                    <li>DPLL clock recovery (8x/16x)</li>
                                     <li>Separate, selectable transmit and receive data clock inputs</li>
                                     <li>Baud Rate Generator for sourcing data clocks</li>
                                     <li>Variety of transmit preamble and idle patterns</li>
                                     <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
                                     <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
-                                    <li>Selectable interface for RS‐232, V.35, RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
                                     <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
+                                    <li>Optional termination for differential inputs</li>
+                                    <li>Optional fail safe biasing for differential inputs</li>
                                     <li>General Purpose I/O (GPIO) signal access</li>
                                     <li>Loopback mode for diagnostics</li>
-                                    <li>Optional rails for use when permanent mounting required.</li>
                                 </ul>
 
-                                    <div className="subhead">Always Up-To-Date.</div>
-                                    Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
+                                    <div className="subhead">Full-Featured Software Development Kit.</div>
+                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
                                     <br /><br />
-                                    <div className="subhead">Powerful API Engine.</div>
-                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
+                                    <div className="subhead">Additional Support.</div>
+                                    The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
                                     <br /><br />
-                                    <div className="subhead2">LINUX VERSION COMPATIBILITY</div>
-                                    The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
+                                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
                                     <br /><br />
-                                    Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
-                                    <br />
                                 </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="1">
-                                    Technical Details <i className="fas fa-caret-down"></i>
+                                    Technical Details <i class="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
                                 <Card.Body>
-                                    <div className="subhead2">SyncLink USB Adapter Specifications</div>
-                                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the adapter for a specific application.
+                                    <div className="subhead2">SyncLink GT4e Adapter Specifications</div>
+                                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
                                     <br /><br />
-                                    <h3>SyncLink USB</h3>
+                                    <h3>SyncLink GT4e Adapter</h3>
+                                    Standard and Extended Temperature Range Adapters
                                     <hr />
                                     <ul>
-                                        <li>MicroGate FPGA serial controller (one port)</li>
-                                        <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
-                                        <li>USB Type B Receptacle to DB25 Male</li>
-                                        <li>Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
-                                        <li>Mechanical: 3.6” length, 2.6” width, 1.9” height</li>
-                                        <li>Power usage: Bus Powered, 5V, 500mA max (300mA typical)</li>
-                                        <li>Regulatory: FCC Class A, CE, ANSI C63.4, EN55022 Class A, EN55024, RoHS</li>
-                                        <li>Connector: DB‐25 (male)</li>
+                                        <li>MicroGate FPGA serial controller (4 ports)</li>
+                                        <li>PCI Express (1x)</li>
+                                        <li>Bus Master DMA data transfer</li>
+                                        <li>Environmental: Temperature 0C to 60C standard, ‐40C to +85C optional; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                                        <li>Mechanical: Standard PCI Express short card; length 6.6", height 4.2", Weight 4.4 Oz</li>
+                                        <li>Power usage: 1A 3.3V</li>
+                                        <li>Regulatory: FCC Class B, CE, ANSI C63.4 Class B, VCCI Class B, EN55022 Class B, EN55024, RoHS</li>
+                                        <li>Connectors: DB‐25 (male)</li>
                                         <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
                                     </ul>
                                 </Card.Body>
@@ -207,69 +251,17 @@ function USBAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="2">
-                                    <div align="left" >Documentation and Software Downloads <i className="fas fa-caret-down"></i></div>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="2">
-                                <Card.Body>
-                                    <Container>
-                                            <Row>
-                                                <Col>
-                                                    <h3>Documentation</h3>
-                                                    <hr />
-                                                    Hardware Guides
-                                                    <ul>
-                                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
-                                                    </ul>
-                                                    Serial Interface Information
-                                                    <ul>
-                                                        <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
-                                                        <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
-                                                        <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
-                                                    </ul>
-                                                    Hardware Diagrams
-                                                    <ul>
-                                                        <li><a href={drawing} target="_blank" rel="noopener noreferrer">SyncLink USB PCB Drawing</a></li>
-                                                    </ul>
-                                                </Col>
-                                                <Col>
-                                                    <h3>Software Downloads</h3>
-                                                    <hr />
-                                                    Hardware Drivers
-                                                    <ul>
-                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Windows</a></li>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Linux</a></li>
-                                                    </ul>
-                                                    Microgate Serial API
-                                                    <ul>
-                                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
-                                                    </ul>
-                                                    Additional Software Solutions
-                                                    <ul>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
-                                                        <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
-                                                    </ul>
-                                                </Col>
-                                            </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
                                     Part Numbers <i className="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="3">
+                                <Accordion.Collapse eventKey="2">
                                 <Card.Body>
                                     <div className="subhead2">Product and Ordering Information</div>
                                     Use the part numbers below for ordering SyncLink hardware and MicroGate software.<br />
                                     Additional product information can be found following the available links below.<br />
                                     <br /><br />
                                     <Container>
-                                    <h2>SyncLink USB Adapter</h2>
+                                    <h2>SyncLink GT4e Adapter</h2>
                                     <hr />
                                         <Row>
                                             <Col>
@@ -286,10 +278,10 @@ function USBAdapter() {
                                         </Row>
                                         <Row>
                                             <Col>
-                                            SyncLink USB Adapter RS-232, V.35, RS422(485/530/530A)<br />
+                                            SyncLink GT4e Adapter/PCIe/4-ports RS-232, V.35, RS422(530/530A/485)<br />
                                             </Col>
                                             <Col>
-                                            1U3170
+                                            403170
                                             </Col>
                                             <hr />
                                         </Row>
@@ -391,43 +383,40 @@ function USBAdapter() {
                             </Card>
                             <Card>
                                 <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
                                     Product Photos <i className="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="4">
+                                <Accordion.Collapse eventKey="3">
                                 <Card.Body>
                                     <Container>
                                         <Row>
                                             <Col>
-                                            <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                                             </Col>
                                             <Col>
-                                            <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
-                                            </Col>
-                                            <Col>
-                                            <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage5" /></div> <br />
                                             </Col>
                                         </Row>
                                         <Row>
                                             <Col>
-                                            <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage6" /></div> <br />
                                             </Col>
                                             <Col>
-                                            <div align="center"><Image src={image6} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage3" /></div> <br />
                                             </Col>
                                         </Row>
                                         <Row>
                                             <Col>
-                                            <div align="center"><Image src={image7} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                                             </Col>
                                             <Col>
-                                            <div align="center"><Image src={image8} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" /></div> <br />
+                                            <div align="center"><Image src={image6} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage3" /></div> <br />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                            <div align="center"><Image src={image7} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                                             </Col>
                                         </Row>
                                     </Container>
@@ -436,20 +425,20 @@ function USBAdapter() {
                             </Card>
                             <Card>
                                 <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="5">
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
                                     <div align="left" >Related Products <i className="fas fa-caret-down"></i></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="5">
+                                <Accordion.Collapse eventKey="4">
                                 <Card.Body>
                                     <Container>
                                             <Row>
                                                 <Col>
+                                                    <div className="subhead2"><NavLink to="/USBAdapter/">SyncLink USB</NavLink></div>
+                                                    High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.
+                                                    <br /><hr />
                                                     <div className="subhead2"><NavLink to="/PCIeAdapter/">SyncLink PCIe</NavLink></div>
                                                     2-port PCI Express (PCIe) adapter supporting RS-232, V.35 and RS-422 (485/530) connections, as well as, a wide range of synchronous/asynchronous protocols.
-                                                    <br /><hr />
-                                                    <div className="subhead2"><NavLink to="/GT4e/">SyncLink GT4e</NavLink></div>
-                                                    4-port Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.
                                                     <br /><hr />
                                                     <div className="subhead2"><NavLink to="/apiwin/">MicroGate Serial API for Windows (Download FREE)</NavLink></div>
                                                     Serial Communications Software Development Kit for Windows (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
@@ -473,4 +462,4 @@ function USBAdapter() {
     );
 }
 
-export default USBAdapter;
+export default GT4e;
