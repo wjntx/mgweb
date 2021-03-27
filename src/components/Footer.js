@@ -73,11 +73,11 @@ export const Footer = () => (
                         <li><h4>Products</h4></li>
                         </ul>
                         <ul>
-                            <li><NavLink to="/sales/"className="navlink">SyncLink® USB</NavLink></li>
-                            <li><NavLink to="/sales/"className="navlink">SyncLink® PCIe</NavLink></li>
-                            <li><NavLink to="/sales/"className="navlink">SyncLink® GT4e</NavLink></li>
-                            <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
-                            <li><NavLink to="/sales/"className="navlink">MicroGate® Serial API for Linux</NavLink></li>
+                            <li><NavLink to="/USBAdapter/"className="navlink">SyncLink® USB</NavLink></li>
+                            <li><NavLink to="/PCIeAdapter/"className="navlink">SyncLink® PCIe</NavLink></li>
+                            <li><NavLink to="/GT4e/"className="navlink">SyncLink® GT4e</NavLink></li>
+                            <li><NavLink to="/apiwin/"className="navlink">MicroGate® Serial API for Windows</NavLink></li>
+                            <li><NavLink to="/apilin/"className="navlink">MicroGate® Serial API for Linux</NavLink></li>
                         </ul>
                         </Col>
                         <Col className="col-md-4 col-sm-12 col-12">
@@ -107,11 +107,11 @@ export const Footer = () => (
                         </Col>
                         <Col className="col-md-6 col-sm-12 col-12">
                              <Nav className="ml-auto float-right">
-                             <NavLink to="/sales/"className="navlink"><bot>Contacts</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp;
-                             <NavLink to="/sales/"className="navlink"><bot>Terms</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp; 
-                             <NavLink to="/sales/"className="navlink"><bot>Privacy</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp; 
-                             <NavLink to="/sales/"className="navlink"><bot>FAQ</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp;
-                             <NavLink to="/sales/"className="navlink"><bot>Trademarks</bot></NavLink>
+                             <NavLink to="/Contact/"className="navlink"><bot>Contacts</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp;
+                             <NavLink to="/termsofuse/"className="navlink"><bot>Terms</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp; 
+                             <NavLink to="/privacy/"className="navlink"><bot>Privacy</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp; 
+                             <NavLink to="/faq/"className="navlink"><bot>FAQ</bot></NavLink>&nbsp;&nbsp;  <bot>|</bot>  &nbsp;&nbsp;
+                             <NavLink to="/trademarks/"className="navlink"><bot>Trademarks</bot></NavLink>
                              </Nav>
                         </Col>
                     </Row>

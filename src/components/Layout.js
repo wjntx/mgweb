@@ -12,7 +12,9 @@ export const Layout = (props) => (
     <Styles>
         <Container>
             <Row>
-            <Col md={{ span: 12, offset: 0 }}>{props.children} </Col>
+            <Col md={{ span: 12, offset: 0 }}>
+                    {props.children}
+            </Col>
             </Row>
         </Container>
     </Styles>

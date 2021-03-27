@@ -6,18 +6,28 @@ import USBAdapter from './USBAdapter';
 import PCIeAdapter from './PCIeAdapter';
 import GT4e from './GT4e';
 import Sales from './Sales';
-import { About } from './About';
-import { Contact } from './Contact';
+import Environmental from './Environmental';
+import DFARS from './DFARS';
+import oem from './oem';
+import design from './design';
+import About from './About';
+import Contact from './Contact';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import  NavigationBar  from './components/NavigationBar';
-import { Footer } from './components/Footer.js';
 import Serialpinouts from './Serialpinouts';
 import NullModem from './NullModem';
 import { Loopback } from './Loopback';
 import LegacyDrivers from './LegacyDrivers';
 import apiwin from './apiwin';
 import apilin from './apilin';
+import termsofuse from './termsofuse';
+import privacy from './privacy';
+import faq from './faq';
+import trademarks from './trademarks';
+import { Footer } from './components/Footer.js';
+import CookieConsent, { Cookies } from "react-cookie-consent";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 function App() {
   return (
@@ -38,12 +48,31 @@ function App() {
             <Route exact path="/apilin/" component={apilin} />
             <Route exact path="/Loopback/" component={Loopback} />
             <Route exact path="/sales/" component={Sales} />
-            <Route exact path="/about/" component={About} />
+            <Route exact path="/Environmental/" component={Environmental} />
+            <Route exact path="/DFARS/" component={DFARS} />
+            <Route exact path="/oem/" component={oem} />
+            <Route exact path="/design/" component={design} />
+            <Route exact path="/About/" component={About} />
             <Route exact path="/contact/" component={Contact} />
+            <Route exact path="/termsofuse/" component={termsofuse} />
+            <Route exact path="/privacy/" component={privacy} />
+            <Route exact path="/faq/" component={faq} />
+            <Route exact path="/trademarks/" component={trademarks} />
             <Route component={NoMatch} />
           </Switch>
         </Layout>
         <Footer />
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          cookieName="cookieConsent"
+          style={{ background: "#72192d" }}
+          buttonStyle={{background: "white", color: "#4e503b", fontSize: "13px" }}
+          expires={150}
+        >
+          This website uses cookies.{" "}
+          <span style={{ fontSize: "10px" }}>Please see <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for more details.</span>
+        </CookieConsent>
       </Router>
     </React.Fragment>
   );

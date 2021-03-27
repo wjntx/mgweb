@@ -107,8 +107,8 @@ function NavigationBar() {
                                         <NavDropdown.Item onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}><NavLink className={hovered2 ? "navlinkdrophover px-2" : 'navlinkdrop px-2'} to="/apilin" onClick={() => setExpanded(false)}> Linux Serial API </NavLink></NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title=" Services " id="nav-dropdown">
-                                        <NavDropdown.Item onMouseEnter={toggleHover0} onMouseLeave={toggleHover0}><NavLink className={hovered0 ? "navlinkdrophover px-2" : 'navlinkdrop px-2'} to="/synclink" onClick={() => setExpanded(false)}>Developers/OEMs</NavLink></NavDropdown.Item>
-                                        <NavDropdown.Item onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}><NavLink className={hovered1 ? "navlinkdrophover px-2" : 'navlinkdrop px-2'} to="/apiwin" onClick={() => setExpanded(false)}>Design Services</NavLink></NavDropdown.Item>
+                                        <NavDropdown.Item onMouseEnter={toggleHover0} onMouseLeave={toggleHover0}><NavLink className={hovered0 ? "navlinkdrophover px-2" : 'navlinkdrop px-2'} to="/oem" onClick={() => setExpanded(false)}>Developers/OEMs</NavLink></NavDropdown.Item>
+                                        <NavDropdown.Item onMouseEnter={toggleHover1} onMouseLeave={toggleHover1}><NavLink className={hovered1 ? "navlinkdrophover px-2" : 'navlinkdrop px-2'} to="/design" onClick={() => setExpanded(false)}>Design Services</NavLink></NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Item className="navitem"><NavLink to="/about/"  className="navlink px-2" onClick={() => setExpanded(false)}> About </NavLink></Nav.Item>
                                     <Nav.Item className="navitem"><NavLink to="/contact/" className="navlink px-2" onClick={() => setExpanded(false)}>Contact</NavLink></Nav.Item>

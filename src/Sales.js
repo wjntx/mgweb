@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import HDLCWindows from './Drivers/hdlcsdk.exe';
 import HDLCWindowsRTK from './Drivers/hdlcrtk.exe';
 import Mgsna from './Drivers/mgsna.exe';
 import LegacyLinux from './Drivers/legacy-linux.tar.gz';
 import Mgwnet from './Drivers/mgwnet-disk.exe';
+import { Link } from 'react-router-dom';
+import Linking from 'react';
 
 const Styles = styled.div`
 h1 {
@@ -83,13 +87,27 @@ a {
         text-decoration: none;
     }
 }
+
+.bread {
+    backgroundColor: rgba(211,211,211, 0.2);
+}
 `;
+
+const Mailto = ({ email, subject, body, children }) => {
+    return (
+      <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
+    );
+  };
 
 function Sales() {
     window.scrollTo(0,0);
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb className="bread">
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item active>Sales</Breadcrumb.Item>
+        </Breadcrumb>
             <h1>Sales</h1>
             <hr />
             <br /> <h5>Ordering Information</h5><br />
@@ -102,18 +120,18 @@ function Sales() {
                     512.345.7791 <br /><br />
                     <div className="subhead2">International Sales:</div>
                     +1.512.345.7791 <br /><br />
-                    <div className="subhead2"></div>Web: <br />
+                    <div className="subhead2">Web:</div>
                     microgate.com <br /><br />
-                    <div className="subhead2"></div>E-Mail: <br />
+                    <div className="subhead2">E-Mail:</div>
                     sales@microgate.com <br />
                     </Col>
                     <Col>
                     <div className="subhead2">Government Sales:</div>
                     512.345.7791<br /><br />
                     <div className="subhead2">CAGE Code:</div>
-                    67ZW9<br /><br />
-                    Environmental Information (click here).<br /><br />
-                    DFARS compliance information (click here).<br />
+                    <Mailto email="sales@microgate.com" subject="CAGE Code" body="">67ZW9</Mailto><br /><br />
+                    <NavLink to="/Environmental/">Environmental Information (click here).</NavLink><br /><br />
+                    <NavLink to="/DFARS/">DFARS compliance information (click here).</NavLink><br />
                     </Col>
                     <Col>
                     <div className="subhead2">Physical Address:</div>
