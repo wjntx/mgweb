@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
@@ -103,6 +104,10 @@ a {
         text-decoration: none;
     }
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function USBAdapter() {
@@ -110,6 +115,11 @@ function USBAdapter() {
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="#/synclink">SyncLink® Hardware</Breadcrumb.Item>
+                <Breadcrumb.Item active>USB Adapter</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>SyncLink® Hardware</h1>
             <hr />
             <Container>
@@ -317,7 +327,7 @@ function USBAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> 
-                                            <a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></div>
+                                            <NavLink to="/apiwin/">DOWNLOAD</NavLink></div>
                                             </Col>
                                             <hr />
                                         </Row>
@@ -329,7 +339,7 @@ function USBAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> 
-                                            <a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></div>
+                                            <NavLink to="/apilin/">DOWNLOAD</NavLink></div>
                                             </Col>
                                             <hr />
                                         </Row>

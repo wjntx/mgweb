@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import { Rs232table } from './components/Rs232table.js';
 import { V35table } from './components/V35table.js';
@@ -83,6 +84,17 @@ hr {
     font-weight: 400;
     font-size: .85rem;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
+
+a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
 `;
 
 function Serialpinouts() {
@@ -90,6 +102,11 @@ function Serialpinouts() {
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="#/synclink">SyncLink® Hardware</Breadcrumb.Item>
+                <Breadcrumb.Item active>Serial Pinouts</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>Serial Interface/Cable Pinouts</h1>
             <hr />
             <Container>

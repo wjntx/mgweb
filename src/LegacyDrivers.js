@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import HDLCWindows from './Drivers/hdlcsdk.exe';
 import HDLCWindowsRTK from './Drivers/hdlcrtk.exe';
@@ -84,6 +85,10 @@ a {
         text-decoration: none;
     }
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function LegacyDrivers() {
@@ -91,6 +96,11 @@ function LegacyDrivers() {
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item href="#/synclink">SyncLink® Hardware</Breadcrumb.Item>
+            <Breadcrumb.Item active>Legacy Drivers</Breadcrumb.Item>
+        </Breadcrumb>
             <h1>Legacy Drivers</h1>
             <hr />
             These legacy drivers and software packages are for older operating systems and adapters that are no longer updated as they have been replaced by newer hardware and/or software.

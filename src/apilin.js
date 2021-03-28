@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
@@ -119,6 +120,10 @@ a {
     font-weight: 400;
     font-size: .85rem;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function apilin() {
@@ -126,6 +131,10 @@ function apilin() {
     return (
         <React.Fragment>
         <Styles>
+            <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Serial API for Linux</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>MicroGate® Serial API</h1>
             <hr />
             <Container>

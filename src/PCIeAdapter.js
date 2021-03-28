@@ -6,12 +6,15 @@ import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/SLPCIe.jpg';
 import image2  from './assets/SLPCIeDB25Cables.jpg';
 import image3  from './assets/SLPCIePorts.jpg';
 
+import usermanual from './PDF/pcie-users-manual.pdf';
 import USBDriverLinux from './Drivers/linuxwan.tar.xz';
+import USBDriverWindows from './Drivers/hdlcrtk.exe';
 import SerialAPIWindows from './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
@@ -125,6 +128,10 @@ hr {
     font-size: 1rem;
     padding-bottom: 5px;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function PCIeAdapter() {
@@ -132,6 +139,11 @@ function PCIeAdapter() {
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="#/synclink">SyncLink® Hardware</Breadcrumb.Item>
+                <Breadcrumb.Item active>PCIe Adapter</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>SyncLink® Hardware</h1>
             <hr />
             <Container>
@@ -222,10 +234,58 @@ function PCIeAdapter() {
                             <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="2">
-                                    Part Numbers <i className="fas fa-caret-down"></i>
+                                    <div align="left" >Documentation and Software Downloads <i className="fas fa-caret-down"></i></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="2">
+                                <Card.Body>
+                                    <Container>
+                                            <Row>
+                                                <Col>
+                                                    <h3>Documentation</h3>
+                                                    <hr />
+                                                    Hardware Guides
+                                                    <ul>
+                                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
+                                                    </ul>
+                                                    Serial Interface Information
+                                                    <ul>
+                                                        <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
+                                                        <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
+                                                        <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
+                                                    </ul>
+                                                </Col>
+                                                <Col>
+                                                    <h3>Software Downloads</h3>
+                                                    <hr />
+                                                    Hardware Drivers
+                                                    <ul>
+                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Windows</a></li>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Linux</a></li>
+                                                    </ul>
+                                                    Microgate Serial API
+                                                    <ul>
+                                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
+                                                    </ul>
+                                                    Additional Software Solutions
+                                                    <ul>
+                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
+                                                        <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
+                                                    </ul>
+                                                </Col>
+                                            </Row>
+                                    </Container>
+                                </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
+                                    Part Numbers <i className="fas fa-caret-down"></i>
+                                </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="3">
                                 <Card.Body>
                                     <div className="subhead2">Product and Ordering Information</div>
                                     Use the part numbers below for ordering SyncLink hardware and MicroGate software.<br />
@@ -280,7 +340,7 @@ function PCIeAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> 
-                                            <a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></div>
+                                            <NavLink to="/apiwin/">DOWNLOAD</NavLink></div>
                                             </Col>
                                             <hr />
                                         </Row>
@@ -292,7 +352,7 @@ function PCIeAdapter() {
                                             <Col>
                                             <br />
                                             <div className="subNote2"> 
-                                            <a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></div>
+                                            <NavLink to="/apilin/">DOWNLOAD</NavLink></div>
                                             </Col>
                                             <hr />
                                         </Row>
@@ -354,11 +414,11 @@ function PCIeAdapter() {
                             </Card>
                             <Card>
                                 <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
                                     Product Photos <i className="fas fa-caret-down"></i>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="3">
+                                <Accordion.Collapse eventKey="4">
                                 <Card.Body>
                                     <Container>
                                         <Row>
@@ -380,11 +440,11 @@ function PCIeAdapter() {
                             </Card>
                             <Card>
                                 <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
+                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="5">
                                     <div align="left" >Related Products <i className="fas fa-caret-down"></i></div>
                                 </Accordion.Toggle>
                                 </Card.Header>
-                                <Accordion.Collapse eventKey="4">
+                                <Accordion.Collapse eventKey="5">
                                 <Card.Body>
                                     <Container>
                                             <Row>

@@ -88,8 +88,8 @@ a {
     }
 }
 
-.bread {
-    backgroundColor: rgba(211,211,211, 0.2);
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
 }
 `;
 
@@ -104,10 +104,10 @@ function Sales() {
     return (
         <React.Fragment>
         <Styles>
-        <Breadcrumb className="bread">
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active>Sales</Breadcrumb.Item>
-        </Breadcrumb>
+            <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Sales</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>Sales</h1>
             <hr />
             <br /> <h5>Ordering Information</h5><br />

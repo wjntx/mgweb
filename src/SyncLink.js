@@ -4,6 +4,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/USB.jpg';
 import image2  from './assets/PCIeAdapter.jpg';
@@ -23,10 +24,25 @@ h4 {
     height:270px;
     width:300px;
    }
+
+   a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 export const SyncLink = () => (
     <Styles>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>SyncLink® Hardware</Breadcrumb.Item>
+            </Breadcrumb>
         <h1>SyncLink® Hardware</h1>
         <hr />
         <Container>
@@ -64,7 +80,7 @@ export const SyncLink = () => (
                 <br /><h4> SyncLink® GT4e Adapter </h4><br />
                 Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.<br /><br />
                 The SyncLink PCI Express(PCIe) adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink GT4e supports asynchronous connections up to 8Mbps.
-                <div align="center"><NavLink to="/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
+                <div align="center"><NavLink to="/GT4e" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
             </Row>
             <br />

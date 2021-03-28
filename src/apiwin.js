@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
@@ -111,6 +112,10 @@ a {
 .text-link {
     font-weight: 500;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function apiwin() {
@@ -118,6 +123,10 @@ function apiwin() {
     return (
         <React.Fragment>
         <Styles>
+            <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Serial API for Windows</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>MicroGate® Serial API</h1>
             <hr />
             <Container>

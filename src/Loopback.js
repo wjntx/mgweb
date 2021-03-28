@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 const Styles = styled.div`
  hr {
@@ -60,11 +61,29 @@ p {
         color: #0000EE;
     }
 }
+
+a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 export const Loopback = () => (
     <React.Fragment>
         <Styles>
+        <Breadcrumb>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item href="#/synclink">SyncLink® Hardware</Breadcrumb.Item>
+            <Breadcrumb.Item active>Loopback Specifications</Breadcrumb.Item>
+        </Breadcrumb>
+        <h1>Loopback Connector Specifications</h1>
+        <hr />
         The following tables provide the wiring diagrams for the loopback test adapter that is supplied with SyncLink adapters. This loopback plug is used with the "External Diagnostics" that are part of the Windows Device Manager options and Linux driver.
         <br /><br />
             <Container>
