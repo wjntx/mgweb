@@ -306,7 +306,7 @@ function apilin() {
                                         <Row>
                                             <Col>
                                             <div className="subNote2">Linux (32-bit/64-bit)</div>
-                                            MicroGate Serial API for Linux w/ SyncLink USB Adapter<br /><br />
+                                            MicroGate Serial API for Linux<br /><br />
                                             </Col>
                                             <Col>
                                             <br />

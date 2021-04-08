@@ -59,7 +59,20 @@ p {
         text-decoration: none;
     }
 }
+
+a {
+    color: #72192d;
+    &:hover{
+        text-decoration: none;
+    }
+}
 `;
+
+const Mailto = ({ email, subject, body, children }) => {
+    return (
+      <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
+    );
+  };
 
 export const Footer = () => (
     <React.Fragment>
@@ -86,11 +99,12 @@ export const Footer = () => (
                         13284 Pond Springs Road, #102<br />
                         Austin, TX 78729<br />
                         USA<br /><br />
-                        Toll Free (in US): 800.444.1982<br />
-                        Direct/Int'l: +1.512.345.7791<br /><br />
+
+                        Sales: <Mailto email="sales@microgate.com" subject="" body="">sales@microgate.com</Mailto><br />
+                        Support: <Mailto email="support@microgate.com" subject="" body="">support@microgate.com</Mailto><br />
+                        Web: <a href="/">microgate.com</a><br /><br />
                         
-                        <lb>Email:</lb> info@microgate.com <br />
-                        Web: microgate.com
+                        Telephone Orders: <a href="tel:512-345-7791">+1.512.345.7791</a><br />
                         </Col>
                         <Col className="col-md-4 col-sm-12 col-12">
                         <br />

@@ -1,11 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
-import { Button } from 'react-bootstrap';
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
 
 import image1  from './assets/MGLocationMap.jpg';
 
@@ -117,7 +113,7 @@ function Contact() {
                     </Col>
                     <Col xs="12" lg="4">
                     <div className="subhead2">United States Sales:</div>
-                    512.345.7791 <br /><br />
+                    <a href="tel:512-345-7791">512.345.7791</a> <br /><br />
                     </Col>
                     <Col xs="12" lg="4">
                     <div className="subhead2">Physical Address:</div>
@@ -133,7 +129,7 @@ function Contact() {
                     </Col>
                     <Col  xs="12" lg="4">
                     <div className="subhead2">International Sales:</div>
-                    +1.512.345.7791 <br /><br />
+                    <a href="tel:512-345-7791">+1.512.345.7791</a> <br /><br />
                     </Col>
                     <Col  xs="12" lg="4">
                     <div className="subhead2">Remittance/Mailing Address:</div>

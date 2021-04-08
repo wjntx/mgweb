@@ -117,9 +117,9 @@ function Sales() {
                 <Row>
                     <Col>
                     <div className="subhead2">United States Sales:</div>
-                    512.345.7791 <br /><br />
+                    <a href="tel:512-345-7791">512.345.7791</a> <br /><br />
                     <div className="subhead2">International Sales:</div>
-                    +1.512.345.7791 <br /><br />
+                    <a href="tel:512-345-7791">+1.512.345.7791</a> <br /><br />
                     <div className="subhead2">Web:</div>
                     microgate.com <br /><br />
                     <div className="subhead2">E-Mail:</div>
@@ -127,7 +127,7 @@ function Sales() {
                     </Col>
                     <Col>
                     <div className="subhead2">Government Sales:</div>
-                    512.345.7791<br /><br />
+                    <a href="tel:512-345-7791">512.345.7791</a><br /><br />
                     <div className="subhead2">CAGE Code:</div>
                     <Mailto email="sales@microgate.com" subject="CAGE Code" body="">67ZW9</Mailto><br /><br />
                     <NavLink to="/Environmental/">Environmental Information (click here).</NavLink><br /><br />

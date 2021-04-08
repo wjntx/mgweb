@@ -28,6 +28,7 @@ import trademarks from './trademarks';
 import { Footer } from './components/Footer.js';
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import $ from 'jquery';
 
 function App() {
   return (

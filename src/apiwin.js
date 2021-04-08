@@ -258,7 +258,7 @@ function apiwin() {
                                                     <hr />
                                                     Hardware Drivers
                                                     <ul>
-                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Windows</a></li>
+                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink Drivers for Windows</a></li>
                                                     </ul>
                                                     Microgate Serial API
                                                     <ul>
@@ -302,7 +302,7 @@ function apiwin() {
                                         <Row>
                                             <Col>
                                             <div className="subNote2">Windows (32-bit/64-bit)</div>
-                                            MicroGate Serial API for Windows w/ SyncLink USB Adapter<br /><br />
+                                            MicroGate Serial API for Windows<br /><br />
                                             </Col>
                                             <Col>
                                             <br />

@@ -111,7 +111,7 @@ export const Home = () => (
                     <div align="center"><Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <h4>Windows and Linux API</h4>
                     The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
-                    <div align="center"><NavLink to="/apiwin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Windows</Button></NavLink><NavLink to="/apilin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Linux</Button></NavLink></div>
+                    <div align="center"><NavLink to="/apiwin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-0">Windows</Button></NavLink><NavLink to="/apilin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Linux</Button></NavLink></div>
                     <br /><br />
                     </Col>
                 </Row>

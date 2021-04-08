@@ -1,4 +1,5 @@
 set PUBLIC_URL=http://invadersracing.com&&npm run build
+i0xqamn694r1
 
 Pay Period 1:
 6/30: 	1
@@ -30,4 +31,6 @@ Pay Period 2:
 2/15:   2.5
 3/24:   4
 3/25:   .5
-3/26:   6
+3/26:   6.5
+3/27:   .5
+4/2:    5

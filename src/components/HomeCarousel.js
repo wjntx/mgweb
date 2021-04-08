@@ -17,11 +17,14 @@ import slide12 from '../assets/ship.jpg';
 import slide13 from '../assets/shipyard.jpg';
 
 const Styles = styled.div`
+.hc {
+    max-width: 65%;
+}
 `;
 
 export const HomeCarousel = () => (
     <Styles>
-        <Carousel fluid className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded" controls={false} indicators={false} interval={4000} fade>
+        <div align="center"><Carousel fluid className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded hc" controls={false} indicators={false} interval={4000} fade>
             <CarouselItem>
                 <img className="d-block w-100" src={slide01} alt="Slide 1: Williams Race Car" />
             </CarouselItem>
@@ -61,6 +64,6 @@ export const HomeCarousel = () => (
             <CarouselItem>
                 <img className="d-block w-100" src={slide13} alt="Slide 13: Shipyard" />
             </CarouselItem>
-        </Carousel>
+        </Carousel></div>
     </Styles>
 )
