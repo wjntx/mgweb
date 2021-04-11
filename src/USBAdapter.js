@@ -123,10 +123,6 @@ a {
     border-radius: 20px;
     padding: 10px;
 }
-
-.defaultText {
-    font-size: 15px;
-}
 `;
 
 function USBAdapter() {
@@ -143,20 +139,20 @@ function USBAdapter() {
             <hr />
                 <Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
                 <br /><h4>SyncLink® USB Adapter</h4> <br /> <h5>The Ultimate Solution.</h5>
-                <div className="defaultText"><br />
+                <br />
                 Users can tackle any project with confidence using a laptop, desktop computer, server, ruggedized portable or industrial controller to directly connect to serial devices using any one of the SyncLink's supported RS-232, V.35, RS-422(485/530/530A) interfaces. Three LED lights indicate with precision various connection and interface states, as well as, transmit/receive activity and diagnostic information.
                 <br /><br />
                 The SyncLink USB utilizes the industry proven MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                 <br /><br />
                 Customers may also purchase the SyncLink USB PCB on its own, with any combination of DB25 and USB connectors or LEDs installed or left unpopulated. Using the four mounting holes on the SyncLink USB PCB, solution providers can further customize the adapter to fit their particular packaging and operating requirements. Contact MicroGate for further details.
-                </div><br />
+                <br />
                 <Container>
                 <Row>
                     <Col>
                         <br />
                         <Image src={image2} rounded className="float-right mt-5 mr-3 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
                         <div className="subhead">Other features include:</div>
-                        <div className="defaultText"><ul className="ulFormat">
+                        <ul className="ulFormat">
                             <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
                             <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
                             <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
@@ -172,7 +168,7 @@ function USBAdapter() {
                             <li>General Purpose I/O (GPIO) signal access</li>
                             <li>Loopback mode for diagnostics</li>
                             <li>Optional rails for use when permanent mounting required.</li>
-                        </ul> </div>
+                        </ul>
                     </Col>
                 </Row>
                 <br />
@@ -181,11 +177,10 @@ function USBAdapter() {
                         <Image src={image3} rounded className="float-left mt-3 mr-5 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
                         
                         <div className="subhead">Always Up-To-Date.</div>
-                        <div className="defaultText">Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.</div>
+                        Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
                         <br /><br />
                         <div className="subhead">Powerful API Engine.</div>
-                        <div className="defaultText">Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
-                        </div>
+                        Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOSYNCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
                     </Col>
                 </Row>
                 <br />
@@ -194,9 +189,9 @@ function USBAdapter() {
                         <Image src={image4} rounded className="float-right mt-3 mr-3 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
                         <br />
                         <div className="subhead">Linux Version Capability</div>
-                        <div className="defaultText">The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
-                        </div><br />
-                        <div className="defaultText">Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.</div>
+                        The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
+                        <br />
+                        Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
                     </Col>
                 </Row>
                 <br /><br />
@@ -205,7 +200,6 @@ function USBAdapter() {
                         <hr />
                         <h2 >SyncLink USB Adapter Specifications</h2>
                         <hr />
-                        <div className="defaultText">
                         <ul>
                             <li>MicroGate FPGA serial controller (one port)</li>
                             <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
@@ -219,7 +213,6 @@ function USBAdapter() {
                             <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
                         </ul>
                         <i>A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the adapter for a specific application.</i>
-                        </div>
                     </Col>
                 </Row>
                 <br />
@@ -232,7 +225,6 @@ function USBAdapter() {
                                     <div className="htwoleft">Documentation</div>
                                     <hr />
                                     Hardware Guides
-                                    <div className="defaultText">
                                     <ul>
                                         <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
                                     </ul>
@@ -246,13 +238,11 @@ function USBAdapter() {
                                     <ul>
                                         <li><a href={drawing} target="_blank" rel="noopener noreferrer">SyncLink USB PCB Drawing</a></li>
                                     </ul>
-                                    </div>
                                 </Col>
                                 <Col>
                                     <hr />
                                     <div className="htwoleft">Software Downloads</div>
                                     <hr />
-                                    <div className="defaultText">
                                     Hardware Drivers
                                     <ul>
                                         <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Windows</a></li>
@@ -265,10 +255,8 @@ function USBAdapter() {
                                     </ul>
                                     Additional Software Solutions
                                     <ul>
-                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
                                         <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
                                     </ul>
-                                    </div>
                                 </Col>
                             </Row>
                     </Container>
@@ -280,7 +268,6 @@ function USBAdapter() {
                     <Col>
                         <hr />
                         <h2>Part Numbers</h2><hr />
-                        <div className="defaultText">
                         <div className="subhead2">Product and Ordering Information</div>
                         Use the part numbers below for ordering SyncLink hardware and MicroGate software.
                         Additional product information can be found following the available links below.<br />
@@ -353,7 +340,6 @@ function USBAdapter() {
                                 </tr>
                             </tbody>
                         </table>
-                        </div>
                     </Col>
                 </Row>
                 </div>

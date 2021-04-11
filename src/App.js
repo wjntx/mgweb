@@ -28,7 +28,14 @@ import trademarks from './trademarks';
 import { Footer } from './components/Footer.js';
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import $ from 'jquery';
+import { Container, Row, Col } from 'react-bootstrap';
+import styled from 'styled-components';
+
+const Styles = styled.div`
+.bc {
+  flex
+}
+`;
 
 function App() {
   return (
@@ -63,17 +70,18 @@ function App() {
           </Switch>
         </Layout>
         <Footer />
+        <Styles>
         <CookieConsent
           location="bottom"
           buttonText="Accept"
           cookieName="cookieConsent"
           style={{ background: "#72192d" }}
-          buttonStyle={{background: "white", color: "#4e503b", fontSize: "13px" }}
-          expires={150}
-        >
-          This website uses cookies.{" "}
-          <span style={{ fontSize: "10px" }}>Please see <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for more details.</span>
+          buttonStyle={{background: "white", color: "#4e503b", fontSize: "13px", flexDirection: "column-reverse"}}
+          expires={150}>
+               This website uses cookies.
+               Please see <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for more details.
         </CookieConsent>
+        </Styles>
       </Router>
     </React.Fragment>
   );

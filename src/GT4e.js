@@ -27,19 +27,22 @@ h1 {
 }
 
 h3 {
-    color: #72192d;
-    font-size: 1.5rem;
+    font-size: 1.30rem;
     text-align: center;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 h2 {
-    color: #72192d;
-    font-size: 1.35rem;
+    font-size: 1.65rem;
     text-align: center;
     font-weight: 600;
-    white-space: nowrap;
+}
+
+.htwoleft {
+    font-size: 1.45rem;
+    font-weight: 600;
+    display:inline;
+    text-align: left; 
 }
 
 h4 {
@@ -104,8 +107,8 @@ hr {
 }
 
 .displayImage3{
-    height:236px;
-    width:315px;
+    height:165px;
+    width:285px;
    }
 
    a {
@@ -127,30 +130,6 @@ hr {
     }
 }
 
-.displayImage5{
-    height:250px;
-    width:260px;
-   }
-
-   a {
-    color: #72192d;
-    &:hover{
-        text-decoration: none;
-    }
-}
-
-.displayImage6{
-    height:217px;
-    width:310px;
-   }
-
-   a {
-    color: #72192d;
-    &:hover{
-        text-decoration: none;
-    }
-}
-
 .subNote2 {
     font-weight: 600;
     font-size: 1rem;
@@ -159,6 +138,12 @@ hr {
 
 .breadcrumb {
     background-color: rgba(211,211,211, 0);
+}
+
+.partNumbers {
+    background-color: rgba(211,211,211, 0.2);
+    border-radius: 20px;
+    padding: 10px;
 }
 `;
 
@@ -177,344 +162,188 @@ function GT4e() {
             <Container>
                 <Row>
                     <Col>
-                    <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
-                    </Col>
-                    <Col>
+                    <Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage" /> <br />
                     <br /><h4>SyncLink® GT4e Adapter</h4> <br /> <h5>Multiport High-Speed PCIe Adapter.</h5><br />
                     The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports supports and asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
-                    </Col>
-                </Row>
-                <br />
-                <Row>
-                <Col>
+                    <br /><br />
                 The SyncLink GT4e synchronous adapter utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                 <br /><br />
                 </Col>
                 </Row>
-                <br />
                 <Row>
                     <Col>
-                        <Accordion defaultActiveKey="0">
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} className="toggleLink" variant="link" eventKey="0">
-                                    Overview <div class="fas fa-caret-down"></div>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="0">
-                                <Card.Body>
-                                <b>Other features include:</b><br />
-                                <ul className="ulFormat">
-                                    <li>Four Ports - individually configurable</li>
-                                    <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
-                                    <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
-                                    <li>DPLL clock recovery (8x/16x)</li>
-                                    <li>Separate, selectable transmit and receive data clock inputs</li>
-                                    <li>Baud Rate Generator for sourcing data clocks</li>
-                                    <li>Variety of transmit preamble and idle patterns</li>
-                                    <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
-                                    <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
-                                    <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
-                                    <li>Optional termination for differential inputs</li>
-                                    <li>Optional fail safe biasing for differential inputs</li>
-                                    <li>General Purpose I/O (GPIO) signal access</li>
-                                    <li>Loopback mode for diagnostics</li>
-                                </ul>
-
-                                    <div className="subhead">Full-Featured Software Development Kit.</div>
-                                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
-                                    <br /><br />
-                                    <div className="subhead">Additional Support.</div>
-                                    The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
-                                    <br /><br />
-                                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
-                                    <br /><br />
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="1">
-                                    Technical Details <i class="fas fa-caret-down"></i>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="1">
-                                <Card.Body>
-                                    <div className="subhead2">SyncLink GT4e Adapter Specifications</div>
-                                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
-                                    <br /><br />
-                                    <h3>SyncLink GT4e Adapter</h3>
-                                    Standard and Extended Temperature Range Adapters
-                                    <hr />
-                                    <ul>
-                                        <li>MicroGate FPGA serial controller (4 ports)</li>
-                                        <li>PCI Express (1x)</li>
-                                        <li>Bus Master DMA data transfer</li>
-                                        <li>Environmental: Temperature 0C to 60C standard, ‐40C to +85C optional; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
-                                        <li>Mechanical: Standard PCI Express short card; length 6.6", height 4.2", Weight 4.4 Oz</li>
-                                        <li>Power usage: 1A 3.3V</li>
-                                        <li>Regulatory: FCC Class B, CE, ANSI C63.4 Class B, VCCI Class B, EN55022 Class B, EN55024, RoHS</li>
-                                        <li>Connectors: DB‐25 (male)</li>
-                                        <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
-                                    </ul>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="2">
-                                    <div align="left" >Documentation and Software Downloads <i className="fas fa-caret-down"></i></div>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="2">
-                                <Card.Body>
-                                    <Container>
-                                            <Row>
-                                                <Col>
-                                                    <h3>Documentation</h3>
-                                                    <hr />
-                                                    Hardware Guides
-                                                    <ul>
-                                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink GT4e Hardware Guide</a></li>
-                                                    </ul>
-                                                    Serial Interface Information
-                                                    <ul>
-                                                        <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
-                                                        <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
-                                                        <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
-                                                    </ul>
-                                                </Col>
-                                                <Col>
-                                                    <h3>Software Downloads</h3>
-                                                    <hr />
-                                                    Hardware Drivers
-                                                    <ul>
-                                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
-                                                    </ul>
-                                                    Microgate Serial API
-                                                    <ul>
-                                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
-                                                    </ul>
-                                                    Additional Software Solutions
-                                                    <ul>
-                                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
-                                                        <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
-                                                    </ul>
-                                                </Col>
-                                            </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="3">
-                                    Part Numbers <i className="fas fa-caret-down"></i>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="3">
-                                <Card.Body>
-                                    <div className="subhead2">Product and Ordering Information</div>
-                                    Use the part numbers below for ordering SyncLink hardware and MicroGate software.<br />
-                                    Additional product information can be found following the available links below.<br />
-                                    <br /><br />
-                                    <Container>
-                                    <h2>SyncLink GT4e Adapter</h2>
-                                    <hr />
-                                        <Row>
-                                            <Col>
-                                                <b>Product Description</b>
-                                            </Col>
-                                            <Col>
-                                                <b>Part Number</b>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <hr />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            SyncLink GT4e Adapter/PCIe/4-ports RS-232, V.35, RS422(530/530A/485)<br />
-                                            </Col>
-                                            <Col>
-                                            403170
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <br /><br />
-                                        <h2>MicroGate Software Development Kits</h2>
-                                        <hr />
-                                        <Row>
-                                            <Col>
-                                                <b>Product Description</b>
-                                            </Col>
-                                            <Col>
-                                                <b>Part Number</b>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <hr />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div className="subNote2">Windows (32-bit/64-bit)</div>
-                                            MicroGate Serial API for Windows w/ SyncLink USB Adapter<br /><br />
-                                            </Col>
-                                            <Col>
-                                            <br />
-                                            <div className="subNote2"> 
-                                            <NavLink to="/apiwin/">DOWNLOAD</NavLink></div>
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div className="subNote2">Linux (32-bit/64-bit)</div>
-                                            MicroGate Serial API for Linux w/ SyncLink USB Adapter<br /><br />
-                                            </Col>
-                                            <Col>
-                                            <br />
-                                            <div className="subNote2"> 
-                                            <NavLink to="/apilin/">DOWNLOAD</NavLink></div>
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <br /><br />
-                                        <h2>Cables and Options</h2>
-                                        <hr />
-                                        <Row>
-                                            <Col>
-                                                <b>Product Description</b>
-                                            </Col>
-                                            <Col>
-                                                <b>Part Number</b>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <hr />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            Synchronous RS-232 Cable (DB25F-DB25M) 6-feet<br /><br />
-                                            </Col>
-                                            <Col>
-                                            CMF000
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            V.35 Cable (DB25F-34pin Block Connector) 6-feet<br /><br />
-                                            </Col>
-                                            <Col>
-                                            2534GT
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            RS-449 Cable (DB25F-DB37M) 6-feet<br /><br />
-                                            </Col>
-                                            <Col>
-                                            2537FM
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            X.21 Cable (DB25F-DB15M) 6-feet<br /><br />
-                                            </Col>
-                                            <Col>
-                                            2515FM
-                                            </Col>
-                                            <hr />
-                                        </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="4">
-                                    Product Photos <i className="fas fa-caret-down"></i>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="4">
-                                <Card.Body>
-                                    <Container>
-                                        <Row>
-                                            <Col>
-                                            <div align="center"><Image src={image2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
-                                            </Col>
-                                            <Col>
-                                            <div align="center"><Image src={image1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage5" /></div> <br />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div align="center"><Image src={image3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage6" /></div> <br />
-                                            </Col>
-                                            <Col>
-                                            <div align="center"><Image src={image4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage3" /></div> <br />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div align="center"><Image src={image5} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
-                                            </Col>
-                                            <Col>
-                                            <div align="center"><Image src={image6} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage3" /></div> <br />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                            <div align="center"><Image src={image7} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
-                                            </Col>
-                                        </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                            <Card>
-                                <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" className="toggleLink" eventKey="5">
-                                    <div align="left" >Related Products <i className="fas fa-caret-down"></i></div>
-                                </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="5">
-                                <Card.Body>
-                                    <Container>
-                                            <Row>
-                                                <Col>
-                                                    <div className="subhead2"><NavLink to="/USBAdapter/">SyncLink USB</NavLink></div>
-                                                    High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.
-                                                    <br /><hr />
-                                                    <div className="subhead2"><NavLink to="/PCIeAdapter/">SyncLink PCIe</NavLink></div>
-                                                    2-port PCI Express (PCIe) adapter supporting RS-232, V.35 and RS-422 (485/530) connections, as well as, a wide range of synchronous/asynchronous protocols.
-                                                    <br /><hr />
-                                                    <div className="subhead2"><NavLink to="/apiwin/">MicroGate Serial API for Windows (Download FREE)</NavLink></div>
-                                                    Serial Communications Software Development Kit for Windows (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
-                                                    <br /><hr />
-                                                    <div className="subhead2"><NavLink to="/apilin/">MicroGate Serial API for Linux (Download FREE)</NavLink></div>
-                                                    Serial Communications Software Development Kit for Linux (SDLC,HDLC,RAW,BISYNC,ISOSYNCHRONOUS,MONOSYNC,ASYNC) Download the complete SDK for FREE at any time.
-                                                    <br /><hr />
-                                                </Col>
-                                            </Row>
-                                    </Container>
-                                </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion>
+                    <Image src={image2} rounded className="float-right mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage3" />
+                    <b>Other features include:</b><br />
+                    <ul className="ulFormat">
+                        <li>Four Ports - individually configurable</li>
+                        <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
+                        <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
+                        <li>DPLL clock recovery (8x/16x)</li>
+                        <li>Separate, selectable transmit and receive data clock inputs</li>
+                        <li>Baud Rate Generator for sourcing data clocks</li>
+                        <li>Variety of transmit preamble and idle patterns</li>
+                        <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
+                        <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
+                        <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
+                        <li>Optional termination for differential inputs</li>
+                        <li>Optional fail safe biasing for differential inputs</li>
+                        <li>General Purpose I/O (GPIO) signal access</li>
+                        <li>Loopback mode for diagnostics</li>
+                    </ul>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                    <Image src={image3} rounded className="float-right mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage6" />
+                    <div className="subhead">Full-Featured Software Development Kit.</div>
+                    Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
+                    <br /><br />
+                    <div className="subhead">Additional Support.</div>
+                    The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
+                    <br /><br />
+                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                    <br /><br />
+                    <div className="subhead2">SyncLink GT4e Adapter Specifications</div>
+                    A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
+                    <br /><br />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <hr />
+                    <h3>SyncLink GT4e Adapter</h3>
+                    <hr />
+                    Standard and Extended Temperature Range Adapters
+                    <ul>
+                        <li>MicroGate FPGA serial controller (4 ports)</li>
+                        <li>PCI Express (1x)</li>
+                        <li>Bus Master DMA data transfer</li>
+                        <li>Environmental: Temperature 0C to 60C standard, ‐40C to +85C optional; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                        <li>Mechanical: Standard PCI Express short card; length 6.6", height 4.2", Weight 4.4 Oz</li>
+                        <li>Power usage: 1A 3.3V</li>
+                        <li>Regulatory: FCC Class B, CE, ANSI C63.4 Class B, VCCI Class B, EN55022 Class B, EN55024, RoHS</li>
+                        <li>Connectors: DB‐25 (male)</li>
+                        <li>Cable Options: DB‐25 (female) to DB‐25 (male); DB‐25 (female) to 34‐pin V.35 (male); DB‐25(female) to 37‐pin RS‐449 (male); DB‐25 (female) to 15‐pin X.21 (male)</li>
+                    </ul>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <hr />
+                        <div className="htwoleft">Documentation</div>
+                        <hr />
+                        Hardware Guides
+                        <ul>
+                            <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink GT4e Hardware Guide</a></li>
+                        </ul>
+                        Serial Interface Information
+                        <ul>
+                            <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
+                            <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
+                            <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
+                        </ul>
+                    </Col>
+                    <Col>
+                        <hr />
+                        <div className="htwoleft">Software Downloads</div>
+                        <hr />
+                        Hardware Drivers
+                        <ul>
+                            <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
+                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
+                        </ul>
+                        Microgate Serial API
+                        <ul>
+                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
+                        </ul>
+                        Additional Software Solutions
+                        <ul>
+                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
+                            <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
+                        </ul>
+                    </Col>
+                </Row>
+                <div className="partNumbers">
+                <Row>
+                    <Col>
+                        <hr />
+                        <h2>Part Numbers</h2><hr />
+                        <div className="subhead2">Product and Ordering Information</div>
+                        Use the part numbers below for ordering SyncLink hardware and MicroGate software.
+                        Additional product information can be found following the available links below.<br />
+                        <br /><br />
+                        <h3>SyncLink USB Adapter</h3>
+                            <br />
+                        <table class="table-hover table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Product Description</th>
+                                <th scope="col">Part Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>SyncLink GT4e Adapter/PCIe/4-ports RS-232, V.35, RS422(530/530A/485)</td>
+                                <td>403170</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <h3>MicroGate Software Development Kits</h3>
+                            <br />
+                        <table class="table-hover table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Product Description</th>
+                                <th scope="col">Part Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><div className="subNote2">Windows (32-bit/64-bit)</div>
+                                    MicroGate Serial API for Windows w/ SyncLink USB Adapter</td>
+                                <td><div className="subNote2"><NavLink to="/apiwin/">DOWNLOAD</NavLink></div></td>
+                                </tr>
+                                <tr>
+                                <td><div className="subNote2">Linux (32-bit/64-bit)</div>
+                                    MicroGate Serial API for Linux w/ SyncLink USB Adapter</td>
+                                <td><div className="subNote2"> <NavLink to="/apilin/">DOWNLOAD</NavLink></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                            <h3>Cables and Options</h3>
+                        <br />
+                        <table class="table-hover table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Product Description</th>
+                                <th scope="col">Part Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Synchronous RS-232 Cable (DB25F-DB25M) 6-feet</td>
+                                <td>CMF000</td>
+                                </tr>
+                                <tr>
+                                <td>V.35 Cable (DB25F-34pin Block Connector) 6-feet</td>
+                                <td>2534GT</td>
+                                </tr>
+                                <tr>
+                                <td>RS-449 Cable (DB25F-DB37M) 6-feet</td>
+                                <td>2537FM</td>
+                                </tr>
+                                <tr>
+                                <td>X.21 Cable (DB25F-DB15M) 6-feet</td>
+                                <td>2515FM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </Col>
+                </Row>
+                </div>
                 <br />
             </Container>
         </Styles>

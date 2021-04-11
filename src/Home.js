@@ -82,7 +82,7 @@ export const Home = () => (
                 <p>We are MicroGate®, designing and manufacturing specialized serial communications solutions since 1982.</p>
                 <h2>Direct support from experienced hardware and software engineers - <br /></h2>
                     <h3>"Customer Driven, by Design"</h3>
-                    <br /><br />
+                    <br />
             </div>
             <Container>
                 <Row>
