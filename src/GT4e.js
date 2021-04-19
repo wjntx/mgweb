@@ -172,7 +172,7 @@ function GT4e() {
                 </Row>
                 <Row>
                     <Col>
-                    <Image src={image2} rounded className="float-right mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage3" />
+                    <Image src={image2} rounded className="float-right mt-4 mr-3 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage3" />
                     <b>Other features include:</b><br />
                     <ul className="ulFormat">
                         <li>Four Ports - individually configurable</li>

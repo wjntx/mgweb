@@ -106,12 +106,6 @@ hr {
     height:236px;
     width:315px;
    }
-
-   a {
-    color: #72192d;
-    &:hover{
-        text-decoration: none;
-    }
 }
 
 .displayImage4{
@@ -168,7 +162,7 @@ function PCIeAdapter() {
                     <Col>
                         The SyncLink family of synchronous adapters utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                         <br /><br />
-                        <Image src={image2} rounded className="float-right mt-4 mr-4 mb-4 ml-5 shadow p-2 mb-4 bg-white rounded displayImage3" />
+                        <Image src={image2} rounded className="float-right mt-4 mb-4 ml-4 shadow p-2 bg-white rounded displayImage3" />
                         <b>Other features include:</b><br />
                         <ul className="ulFormat">
                             <li>Two Ports - individually configurable. Selectable by software or hardware switches.</li>

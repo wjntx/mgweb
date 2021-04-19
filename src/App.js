@@ -26,14 +26,18 @@ import privacy from './privacy';
 import faq from './faq';
 import trademarks from './trademarks';
 import { Footer } from './components/Footer.js';
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
-.bc {
-  flex
+.navlink {
+  color: #72192d;
+  font-weight: 500;
+  &:hover{
+      text-decoration: none;
+  }
 }
 `;
 
@@ -72,15 +76,14 @@ function App() {
         <Footer />
         <Styles>
         <CookieConsent
-          location="bottom"
-          buttonText="Accept"
-          cookieName="cookieConsent"
-          style={{ background: "#72192d" }}
-          buttonStyle={{background: "white", color: "#4e503b", fontSize: "13px", flexDirection: "column-reverse"}}
-          expires={150}>
-               This website uses cookies.
-               Please see <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for more details.
-        </CookieConsent>
+        location="bottom"
+        buttonText="Accept"
+        cookieName="myAwesomeCookieName2"
+        style={{ color: "#000000", background: "#c4c4c4", flexWrap: "" }}
+        buttonStyle={{ background: "#72192d", color: "white", fontSize: "13px" }}
+        expires={150}>
+          This website uses cookies. See <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for details.
+          </CookieConsent>
         </Styles>
       </Router>
     </React.Fragment>

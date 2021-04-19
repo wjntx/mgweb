@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/AustinDT.jpg';
 
@@ -91,6 +92,10 @@ a {
 .text-link {
     font-weight: 500;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 function About() {
@@ -98,6 +103,10 @@ function About() {
     return (
         <React.Fragment>
         <Styles>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>About Us</Breadcrumb.Item>
+            </Breadcrumb>
             <h1>About Us</h1>
             <hr />
             <Image src={image1} rounded className="float-right mb-3 mt-3 ml-3 shadow p-2 mb-4 bg-white rounded displayImage" /> <br />

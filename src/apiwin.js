@@ -178,7 +178,7 @@ function apiwin() {
                 </Row>
                 <Row>
                     <Col>
-                    <Image src={image9} rounded className="float-right mt-0 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded" />
+                    <Image src={image9} rounded className="float-right justify-content-sm-center mt-0 mr-4 mb-4 ml-4 shadow p-2 bg-white rounded" />
                     <div className="subhead">Supported Windows Versions</div>
                         <ul className="ulFormat">
                             <li>Windows XP (Server 2003/2003R2)</li>

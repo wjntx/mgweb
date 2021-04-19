@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/MGLocationMap.jpg';
 
@@ -87,6 +88,10 @@ a {
 .text-link {
     font-weight: 500;
 }
+
+.breadcrumb {
+    background-color: rgba(211,211,211, 0);
+}
 `;
 
 const Mailto = ({ email, subject, body, children }) => {
@@ -100,7 +105,11 @@ function Contact() {
     return (
         <React.Fragment>
         <Styles>
-            <h1>Contact Us</h1>
+        <Breadcrumb>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item active>Contacting Us</Breadcrumb.Item>
+            </Breadcrumb>
+            <h1>Contacting Us</h1>
             <hr />
             <h5>Find us on the map</h5>
             <Image src={image1} rounded className="mb-3 mt-3 ml-3 shadow p-2 mb-4 bg-white rounded displayImage" /> <br /><br />
