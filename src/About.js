@@ -121,7 +121,7 @@ function About() {
             <br /><br />
             Take a moment to look at the different solutions MicroGate offers. Download any of the compete development kits, which include documentation and sample source code, and discover why so many customers benefit from dealing directly with the premier designer and manufacturer of synchronous communications solutions and why these customers return to MicroGate again when planning new projects.
             <br /><br />
-            If at any time you have a question about a product MicroGate manufactures or require design consultation, please contact us at 800.444.1982 / +1.512.345.7791 or by email at sales@microgate.com. We are eager to talk with you about your current communications needs.
+            If at any time you have a question about a product MicroGate manufactures or require design consultation, please contact us at +1.512.345.7791 or by email at sales@microgate.com. We are eager to talk with you about your current communications needs.
             <br /><br />
             <h3>"Customer Driven, by Design"</h3>
             <br /><br />

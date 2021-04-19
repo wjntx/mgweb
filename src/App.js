@@ -79,7 +79,8 @@ function App() {
         location="bottom"
         buttonText="Accept"
         cookieName="myAwesomeCookieName2"
-        style={{ color: "#000000", background: "#c4c4c4", flexWrap: "" }}
+        style={{ color: "#000000", background: "#c4c4c4" }}
+        contentStyle={{flex: "1 0 200px"}}
         buttonStyle={{ background: "#72192d", color: "white", fontSize: "13px" }}
         expires={150}>
           This website uses cookies. See <NavLink to="/privacy/"className="navlink">Privacy</NavLink> for details.

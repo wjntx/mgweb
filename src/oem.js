@@ -120,7 +120,7 @@ function oem() {
                     
                     Each customer presents MicroGate with unique challenges and demands. MicroGate’s SyncLink line of adapters, software solutions, and development kits exceed the rigorous demands our customers expect from their communications solutions, providing the connectivity support required.
                     <br /><br />
-                    Take a moment to look at the various products and services MicroGate offers and contact us with any questions at 800.444.1982 / +1.512.345.7791 or info@microgate.com.
+                    Take a moment to look at the various products and services MicroGate offers and contact us with any questions at +1.512.345.7791 or info@microgate.com.
                     <br /><br />
                     MicroGate offers aggressive discounts for volume purchases. Contact MicroGate for details.
                     </Col>

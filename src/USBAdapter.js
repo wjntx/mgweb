@@ -17,10 +17,6 @@ import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
 import image3  from './assets/SLUSBPCB1.jpg';
 import image4  from './assets/USBRails.jpg';
-import image5  from './assets/rs232.jpg';
-import image6  from './assets/v35.jpg';
-import image7  from './assets/rs449.jpg';
-import image8  from './assets/x21.jpg';
 
 import usermanual from './PDF/slusb-users-manual.pdf';
 import drawing from './PDF/SLUSBPCB.pdf';
@@ -174,8 +170,8 @@ function USBAdapter() {
                 <br />
                 <Row>
                     <Col>
-                        <Image src={image3} rounded className="float-left mt-3 mr-5 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
-                        
+                        <Image src={image3} rounded className="float-left mt-3 mr-5 mb-4 ml-3 shadow p-2 bg-white rounded displayImage" />
+                        <br />
                         <div className="subhead">Always Up-To-Date.</div>
                         Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
                         <br /><br />
@@ -186,8 +182,8 @@ function USBAdapter() {
                 <br />
                 <Row>
                     <Col>
-                        <Image src={image4} rounded className="float-right mt-3 mr-3 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
-                        <br />
+                        <Image src={image4} rounded className="float-right mt-3 mr-3 mb-4 ml-5 shadow p-2 bg-white rounded displayImage" />
+                        <br /><br />
                         <div className="subhead">Linux Version Capability</div>
                         The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
                         <br />
@@ -301,12 +297,12 @@ function USBAdapter() {
                             <tbody>
                                 <tr>
                                 <td><div className="subNote2">Windows (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Windows w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Windows</td>
                                 <td><div className="subNote2"><NavLink to="/apiwin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                                 <tr>
                                 <td><div className="subNote2">Linux (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Linux w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Linux</td>
                                 <td><div className="subNote2"> <NavLink to="/apilin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                             </tbody>

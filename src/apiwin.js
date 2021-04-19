@@ -306,7 +306,7 @@ function apiwin() {
                             <tbody>
                                 <tr>
                                 <td><div className="subNote2">Windows (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Windows w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Windows</td>
                                 <td><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></td>
                                 </tr>
                             </tbody>

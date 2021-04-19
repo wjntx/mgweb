@@ -162,7 +162,7 @@ function GT4e() {
             <Container>
                 <Row>
                     <Col>
-                    <Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage" /> <br />
+                    <Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage" /> <br />
                     <br /><h4>SyncLink® GT4e Adapter</h4> <br /> <h5>Multiport High-Speed PCIe Adapter.</h5><br />
                     The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports supports and asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     <br /><br />
@@ -194,7 +194,7 @@ function GT4e() {
                 </Row>
                 <Row>
                     <Col>
-                    <Image src={image3} rounded className="float-right mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage6" />
+                    <Image src={image3} rounded className="float-right mt-4 mr-3 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage3" /> <br />
                     <div className="subhead">Full-Featured Software Development Kit.</div>
                     Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
                     <br /><br />
@@ -229,41 +229,48 @@ function GT4e() {
                 </Row>
                 <Row>
                     <Col>
-                        <hr />
-                        <div className="htwoleft">Documentation</div>
-                        <hr />
-                        Hardware Guides
-                        <ul>
-                            <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink GT4e Hardware Guide</a></li>
-                        </ul>
-                        Serial Interface Information
-                        <ul>
-                            <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
-                            <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
-                            <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <hr />
-                        <div className="htwoleft">Software Downloads</div>
-                        <hr />
-                        Hardware Drivers
-                        <ul>
-                            <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
-                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
-                        </ul>
-                        Microgate Serial API
-                        <ul>
-                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
-                        </ul>
-                        Additional Software Solutions
-                        <ul>
-                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
-                            <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
-                        </ul>
+                    <Container>
+                        <Row>
+                            <Col className="col-xs-12">
+                                <hr />
+                                <div className="htwoleft">Documentation</div>
+                                <hr />
+                                Hardware Guides
+                                <ul>
+                                    <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink GT4e Hardware Guide</a></li>
+                                </ul>
+                                Serial Interface Information
+                                <ul>
+                                    <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
+                                    <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
+                                    <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
+                                </ul>
+                            </Col>
+                            <Col className="col-xs-12">
+                                <hr />
+                                <div className="htwoleft">Software Downloads</div>
+                                <hr />
+                                Hardware Drivers
+                                <ul>
+                                    <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
+                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
+                                </ul>
+                                Microgate Serial API
+                                <ul>
+                                    <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
+                                </ul>
+                                Additional Software Solutions
+                                <ul>
+                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Linux</a></li>
+                                    <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
+                                </ul>
+                            </Col>
+                        </Row>
+                    </Container>
                     </Col>
                 </Row>
+                <br />
                 <div className="partNumbers">
                 <Row>
                     <Col>
@@ -302,12 +309,12 @@ function GT4e() {
                             <tbody>
                                 <tr>
                                 <td><div className="subNote2">Windows (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Windows w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Windows</td>
                                 <td><div className="subNote2"><NavLink to="/apiwin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                                 <tr>
                                 <td><div className="subNote2">Linux (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Linux w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Linux</td>
                                 <td><div className="subNote2"> <NavLink to="/apilin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                             </tbody>

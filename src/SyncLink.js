@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image1  from './assets/USB.jpg';
-import image2  from './assets/PCIeAdapter.jpg';
+import image2  from './assets/SLPCIecomp.jpg';
 import image3 from './assets/GT4e.jpg';
 
 const Styles = styled.div`

@@ -110,7 +110,7 @@ function design() {
             <br /><br />
             In today’s ever increasing competitive global environments, the push toward highly-flexible complex systems has created the need for comprehensive solutions. MicroGate is the customer-centric organization partners turn to for success. We turn ideas into solutions.
             <br /><br />
-            Contact us to discuss any of your design or manufacturing needs at 800.444.1982 / +1.512.345.7791 or by email at info@microgate.com.
+            Contact us to discuss any of your design or manufacturing needs at +1.512.345.7791 or by email at info@microgate.com.
             <br /><br />
             <h3>"Customer Driven, by Design"</h3>
             <br /><br />

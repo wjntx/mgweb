@@ -8,9 +8,9 @@ import Card from 'react-bootstrap/Card';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-import image1  from './assets/SLPCIe.jpg';
-import image2  from './assets/SLPCIeDB25Cables.jpg';
-import image3  from './assets/SLPCIePorts.jpg';
+import image1  from './assets/SLPCIecomp.jpg';
+import image2  from './assets/SLPCIeDB25Cablescomp.jpg';
+import image3  from './assets/SLPCIePortscomp.jpg';
 
 import usermanual from './PDF/pcie-users-manual.pdf';
 import USBDriverLinux from './Drivers/linuxwan.tar.xz';
@@ -139,6 +139,7 @@ hr {
 
 function PCIeAdapter() {
     window.scrollTo(0,0);
+    
     return (
         <React.Fragment>
         <Styles>
@@ -180,7 +181,7 @@ function PCIeAdapter() {
                             <li>General Purpose I/O (GPIO) signal access</li>
                             <li>Loopback mode for diagnostics</li>
                         </ul>
-                        <Image src={image3} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage4" />
+                        <Image src={image3} rounded className="float-left mt-4 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage4" />
                         <div className="subhead">Always Up-To-Date.</div>
                         Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
                         <br /><br />
@@ -216,38 +217,44 @@ function PCIeAdapter() {
                 <br />
                 <Row>
                     <Col>
-                        <hr />
-                        <div className="htwoleft">Documentation</div>
-                        <hr />
-                        Hardware Guides
-                        <ul>
-                            <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
-                        </ul>
-                        Serial Interface Information
-                        <ul>
-                            <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
-                            <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
-                            <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <hr />
-                        <div className="htwoleft">Software Downloads</div>
-                        <hr />
-                        Hardware Drivers
-                        <ul>
-                            <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Windows</a></li>
-                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Linux</a></li>
-                        </ul>
-                        Microgate Serial API
-                        <ul>
-                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                            <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
-                        </ul>
-                        Additional Software Solutions
-                        <ul>
-                            <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
-                        </ul>
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <hr />
+                                    <div className="htwoleft">Documentation</div>
+                                    <hr />
+                                    Hardware Guides
+                                    <ul>
+                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
+                                    </ul>
+                                    Serial Interface Information
+                                    <ul>
+                                        <li><NavLink to="/Serialpinouts/">Serial Interface/Cable Pinouts</NavLink></li>
+                                        <li><NavLink to="/NullModem/">Null Modem Details</NavLink></li>
+                                        <li><NavLink to="/Loopback/">Loopback Adapter Details</NavLink></li>
+                                    </ul>
+                                </Col>
+                                <Col>
+                                    <hr />
+                                    <div className="htwoleft">Software Downloads</div>
+                                    <hr />
+                                    Hardware Drivers
+                                    <ul>
+                                        <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Windows</a></li>
+                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Linux</a></li>
+                                    </ul>
+                                    Microgate Serial API
+                                    <ul>
+                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                                        <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
+                                    </ul>
+                                    Additional Software Solutions
+                                    <ul>
+                                        <li><NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink></li>
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </Container>
                     </Col>
                 </Row>
                 <br /><br />
@@ -289,12 +296,12 @@ function PCIeAdapter() {
                             <tbody>
                                 <tr>
                                 <td><div className="subNote2">Windows (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Windows w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Windows</td>
                                 <td><div className="subNote2"><NavLink to="/apiwin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                                 <tr>
                                 <td><div className="subNote2">Linux (32-bit/64-bit)</div>
-                                    MicroGate Serial API for Linux w/ SyncLink USB Adapter</td>
+                                    MicroGate Serial API for Linux</td>
                                 <td><div className="subNote2"> <NavLink to="/apilin/">DOWNLOAD</NavLink></div></td>
                                 </tr>
                             </tbody>
