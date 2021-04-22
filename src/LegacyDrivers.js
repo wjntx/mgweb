@@ -106,11 +106,11 @@ function LegacyDrivers() {
             These legacy drivers and software packages are for older operating systems and adapters that are no longer updated as they have been replaced by newer hardware and/or software.
             <br /><br /><br />
             <ul>
-                <li><a href={HDLCWindows} target='_blank' rel="noopener noreferrer" download>HDLC API for Windows SDK (Windows 2000 and prior versions)</a></li>
-                <li><a href={HDLCWindowsRTK} target='_blank' rel="noopener noreferrer" download>HDLC API for Windows RTK (Windows 2000 and prior versions)</a></li>
-                <li><a href={Mgsna} target='_blank' rel="noopener noreferrer" download>SNA/HIS Server (Windows 2000 and prior versions)</a></li>
-                <li><a href={LegacyLinux} target='_blank' rel="noopener noreferrer" download>Linux API (kernel versions prior to 2.4)</a></li>
-                <li><a href={Mgwnet} target='_blank' rel="noopener noreferrer" download>SyncLink WAN Adapter Software for Windows (32-bit only)</a></li>
+                <li><a href={HDLCWindows} target='_blank' download='hdlcsdk.exe'>HDLC API for Windows SDK (Windows 2000 and prior versions)</a></li>
+                <li><a href={HDLCWindowsRTK} target='_blank' download='hdlcrtk.exe'>HDLC API for Windows RTK (Windows 2000 and prior versions)</a></li>
+                <li><a href={Mgsna} target='_blank' download='mgsna.exe'>SNA/HIS Server (Windows 2000 and prior versions)</a></li>
+                <li><a href={LegacyLinux} target='_blank' download='legacy-linux.tar.gz'>Linux API (kernel versions prior to 2.4)</a></li>
+                <li><a href={Mgwnet} target='_blank' download='mgwnet-disk.exe'>SyncLink WAN Adapter Software for Windows (32-bit only)</a></li>
             </ul>
             <br />
             <h3>"Customer Driven, by Design"</h3>

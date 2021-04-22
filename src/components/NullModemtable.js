@@ -147,7 +147,7 @@ export const NullModemtable = () => (
                     <br /><br />
                 </Container>
                 <Container>
-                <h2>V.35 Null Modem (GT family/PCMCIA)</h2>
+                <h2>V.35 Null Modem</h2>
                 <hr />
                     <Row>
                         <Col>

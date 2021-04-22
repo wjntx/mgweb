@@ -8,14 +8,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
-import image3  from './assets/SLUSBPCB1.jpg';
-import image4  from './assets/USBRails.jpg';
-import image5  from './assets/rs232.jpg';
-import image6  from './assets/v35.jpg';
-import image7  from './assets/rs449.jpg';
-import image8  from './assets/x21.jpg';
 import image9 from './assets/gt4cables1.jpg'
 
 import usermanual from './PDF/slusb-users-manual.pdf';
@@ -304,7 +297,7 @@ function apilin() {
                                 <tr>
                                 <td><div className="subNote2">Linux (32-bit/64-bit)</div>
                                     MicroGate Serial API for Linux</td>
-                                <td><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></td>
+                                <td><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>DOWNLOAD</a></td>
                                 </tr>
                             </tbody>
                         </table>

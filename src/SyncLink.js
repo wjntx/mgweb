@@ -62,8 +62,8 @@ export const SyncLink = () => (
             <Row>
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
                 <br /><h4>SyncLink® PCIe Adapter</h4><br />
-                High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.<br /><br />
-                The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution.
+                The newest PCI Express (PCIe) 2-port adapter supporting software-selectable RS-232, V.35 and RS-422 (485/530/530A) connections and a wide range of synchronous/asynchronous serial protocols.<br /><br />
+                The SyncLink PCI Express(PCIe) adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink GT4e supports asynchronous connections up to 8Mbps.
                 <div align="center"><NavLink to="/PCIeAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
@@ -78,8 +78,8 @@ export const SyncLink = () => (
                 </Col>
                 <Col>
                 <br /><h4> SyncLink® GT4e Adapter </h4><br />
-                Modern PCI Express (PCIe) design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.<br /><br />
-                The SyncLink PCI Express(PCIe) adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink GT4e supports asynchronous connections up to 8Mbps.
+                Modern PCI Express design supporting RS-232, V.35, RS422(485/530) connections and the latest servers available on the market today.<br /><br />
+                The SyncLink GT4e adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink GT4e supports asynchronous connections up to 8Mbps.
                 <div align="center"><NavLink to="/GT4e" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
             </Row>

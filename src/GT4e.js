@@ -252,13 +252,13 @@ function GT4e() {
                                 <hr />
                                 Hardware Drivers
                                 <ul>
-                                    <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
-                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
+                                    <li><a href={USBDriverWindows} target='_blank' download='hdlcrtk.exe'>SyncLink GT4e Adapter Drivers for Windows</a></li>
+                                    <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>SyncLink GT4e Adapter Drivers for Linux</a></li>
                                 </ul>
                                 Microgate Serial API
                                 <ul>
-                                    <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
+                                    <li><a href={SerialAPIWindows} target='_blank' download='hdlcsdk.exe'>MicroGate Serial API for Windows</a></li>
+                                    <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>MicroGate Serial API for Linux</a></li>
                                 </ul>
                                 Additional Software Solutions
                                 <ul>
