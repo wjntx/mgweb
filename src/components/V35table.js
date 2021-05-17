@@ -137,13 +137,6 @@ export const V35table = () => (
                         <td>Input</td>
                     </tr>
                     <tr>
-                        <td>AuxClk, DTE Clock Output</td>
-                        <td>RS-422/V.11</td>
-                        <td>24</td>
-                        <td>24</td>
-                        <td>Output</td>
-                    </tr>
-                    <tr>
                         <td>AuxClk (+/B), DTE Clock Output</td>
                         <td>RS-422/V.11</td>
                         <td>11</td>
@@ -217,7 +210,7 @@ export const V35table = () => (
                         <td>AuxClk (-/A), DTE Clock Output</td>
                         <td>RS-422/V.11</td>
                         <td>24</td>
-                        <td>24</td>
+                        <td>U</td>
                         <td>Output</td>
                     </tr>
                 </tbody>

@@ -225,7 +225,7 @@ function PCIeAdapter() {
                                     <hr />
                                     Hardware Guides
                                     <ul>
-                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink USB Hardware Guide</a></li>
+                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink PCIe Hardware Guide</a></li>
                                     </ul>
                                     Serial Interface Information
                                     <ul>
