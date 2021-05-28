@@ -16,10 +16,10 @@ import image5  from './assets/v35.jpg';
 import image6  from './assets/rs449.jpg';
 import image7  from './assets/x21.jpg';
 
-import usermanual from './PDF/gt4e-users-manual.pdf';
-import USBDriverWindows from './Drivers/hdlcrtk.exe';
-import USBDriverLinux from './Drivers/linuxwan.tar.xz';
-import SerialAPIWindows from './Drivers/hdlcsdk.exe';
+const usermanual = process.env.PUBLIC_URL + './PDF/gt4e-users-manual.pdf';
+const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
+const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 h1 {

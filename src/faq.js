@@ -4,7 +4,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 
-import LoV from './PDF/LoV.pdf';
+const LoV = process.env.PUBLIC_URL + './PDF/LoV.pdf';
 
 const Styles = styled.div`
 h1 {

@@ -9,19 +9,19 @@ import Card from 'react-bootstrap/Card';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 import image2  from './assets/USB1back.jpg';
-import image9 from './assets/gt4cables1.jpg'
-
-import usermanual from './PDF/slusb-users-manual.pdf';
-import gt4eusermanual from './PDF/gt4e-users-manual.pdf';
-import pcieusermanual from './PDF/pcie-users-manual.pdf';
+import image9 from './assets/gt4cables1.jpg';
 import linuxoverview from './assets/LinuxOverview(2020).jpg';
-import drawing from './PDF/SLUSBPCB.pdf';
-import USBDriverWindows from './Drivers/hdlcrtk.exe';
-import USBDriverLinux from './Drivers/linuxwan.tar.xz';
-import SerialAPIWindows from './Drivers/hdlcsdk.exe';
-import serialapiwindowspdf from './PDF/serial-api-windows.pdf';
-import serialapilinuxpdf from './PDF/serial-api-linux.pdf';
-import rtkwindows from './PDF/rtk-windows.pdf';
+
+const usermanual = process.env.PUBLIC_URL + './PDF/slusb-users-manual.pdf';
+const gt4eusermanual = process.env.PUBLIC_URL + './PDF/gt4e-users-manual.pdf';
+const pcieusermanual = process.env.PUBLIC_URL + './PDF/pcie-users-manual.pdf';
+const drawing = process.env.PUBLIC_URL + './PDF/SLUSBPCB.pdf';
+const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
+const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
+const serialapiwindowspdf = process.env.PUBLIC_URL + './PDF/serial-api-windows.pdf';
+const serialapilinuxpdf = process.env.PUBLIC_URL + './PDF/serial-api-linux.pdf';
+const rtkwindows = process.env.PUBLIC_URL + './PDF/rtk-windows.pdf';
 
 const Styles = styled.div`
 h1 {

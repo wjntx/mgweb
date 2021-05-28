@@ -4,21 +4,13 @@ import Image from 'react-bootstrap/Image';
 import { Container, Row, Col } from 'react-bootstrap';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
-import MGE from './PDF/MGEnvironmentalInformation2020.pdf';
-
 import { Substancetable } from './components/Substancetable.js';
 
 import image1  from './assets/REACH.png';
 import image2  from './assets/RoHS.png';
 import image3  from './assets/CA65.png';
 
-import HDLCWindows from './Drivers/hdlcsdk.exe';
-import HDLCWindowsRTK from './Drivers/hdlcrtk.exe';
-import Mgsna from './Drivers/mgsna.exe';
-import LegacyLinux from './Drivers/legacy-linux.tar.gz';
-import Mgwnet from './Drivers/mgwnet-disk.exe';
-import { Link } from 'react-router-dom';
-import Linking from 'react';
+const MGE = process.env.PUBLIC_URL +'./PDF/MGEnvironmentalInformation2020.pdf';
 
 const Styles = styled.div`
 h1 {

@@ -12,10 +12,10 @@ import image1  from './assets/SLPCIecomp.jpg';
 import image2  from './assets/SLPCIeDB25Cablescomp.jpg';
 import image3  from './assets/SLPCIePortscomp.jpg';
 
-import usermanual from './PDF/pcie-users-manual.pdf';
-import USBDriverLinux from './Drivers/linuxwan.tar.xz';
-import USBDriverWindows from './Drivers/hdlcrtk.exe';
-import SerialAPIWindows from './Drivers/hdlcsdk.exe';
+const usermanual = process.env.PUBLIC_URL + './PDF/pcie-users-manual.pdf';
+const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 h1 {

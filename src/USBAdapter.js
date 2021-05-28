@@ -3,26 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
-import { Button } from 'react-bootstrap';
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import TabContainer from 'react-bootstrap/TabContainer';
-import TabContent from 'react-bootstrap/TabContent';
-import TabPane from 'react-bootstrap/TabPane';
 
 import image1  from './assets/USB.jpg';
 import image2  from './assets/USB1back.jpg';
 import image3  from './assets/SLUSBPCB1.jpg';
 import image4  from './assets/USBRails.jpg';
 
-import usermanual from './PDF/slusb-users-manual.pdf';
-import drawing from './PDF/SLUSBPCB.pdf';
-import USBDriverWindows from './Drivers/hdlcrtk.exe';
-import USBDriverLinux from './Drivers/linuxwan.tar.xz';
-import SerialAPIWindows from './Drivers/hdlcsdk.exe';
+const usermanual = process.env.PUBLIC_URL + './PDF/slusb-users-manual.pdf';
+const drawing = process.env.PUBLIC_URL + './PDF/SLUSBPCB.pdf';
+const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
+const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 

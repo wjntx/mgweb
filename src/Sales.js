@@ -4,14 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-import HDLCWindows from './Drivers/hdlcsdk.exe';
-import HDLCWindowsRTK from './Drivers/hdlcrtk.exe';
-import Mgsna from './Drivers/mgsna.exe';
-import LegacyLinux from './Drivers/legacy-linux.tar.gz';
-import Mgwnet from './Drivers/mgwnet-disk.exe';
-import { Link } from 'react-router-dom';
-import Linking from 'react';
-
 const Styles = styled.div`
 h1 {
     font-size: 2rem;
