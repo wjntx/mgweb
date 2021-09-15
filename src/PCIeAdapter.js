@@ -183,7 +183,7 @@ function PCIeAdapter() {
                         </ul>
                         <Image src={image3} rounded className="float-left mt-4 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage4" />
                         <div className="subhead">Always Up-To-Date.</div>
-                        Free downloadable system drivers gives the user access to the latest features and upgrades avaiable from MicroGate.
+                        Free downloadable system drivers give the user access to the latest features and upgrades avaliable from MicroGate.
                         <br /><br />
                         <div className="subhead">Full-Featured Software Development Kit.</div>
                         Supporting both 32-bit and 64-bit versions of Windows and Linux (x86), the MicroGate Serial API gives developers direct access to the SyncLink adapter and serial link for total control of HDLC/SDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC and RAW synchronous bit streams. These protocols are used to build applications for networking, X.25, IBM SDLC (SNA), satellite, radio and other serial communications.
