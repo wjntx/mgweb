@@ -186,7 +186,8 @@ function apiwin() {
                             <li>Windows 7 (Server 2008R2)</li>
                             <li>Windows 8 (Server 2012)</li>
                             <li>Windows 8.1 (Server 2012R2)</li>
-                            <li>Windows 10 (Server 2016/2019)</li>
+                            <li>Windows 10 (Server 2016-2022)</li>
+                            <li>Windows 11</li>
                         </ul>
                         
                         The API is accessed through a standard Windows DLL, and can be used by any programming language that allows calling functions in a standard Windows DLL. Sample programs with source are supplied for the C/C++, C# and Python 3 languages.
