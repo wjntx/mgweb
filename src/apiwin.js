@@ -22,9 +22,8 @@ const usermanual = process.env.PUBLIC_URL + '/PDF/slusb-users-manual.pdf';
 const gt4eusermanual = process.env.PUBLIC_URL + '/PDF/gt4e-users-manual.pdf';
 const pcieusermanual = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
 const drawing = process.env.PUBLIC_URL + '/PDF/SLUSBPCB.pdf';
-const USBDriverWindows = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
 const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
-const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 const serialapiwindowspdf = process.env.PUBLIC_URL + '/PDF/serial-api-windows.pdf';
 const rtkwindows = process.env.PUBLIC_URL + '/PDF/rtk-windows.pdf';
 
@@ -243,8 +242,7 @@ function apiwin() {
                         </ul>
                         <div className="subhead2">Serial API Downloads</div>
                         <ul className="ulFormat">
-                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>HDLCSDK.EXE</a>&emsp;Complete SDK, documentation, and sample program source.</li>
-                            <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>HDLCRTK.EXE</a>&emsp;Run-Time-Kit and documentation</li>
+                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>microgate-sdk-windows.zip</a>&emsp;Complete SDK, documentation, and sample program source.</li>
                         </ul>
                     </Col>
                 </Row>
@@ -277,7 +275,7 @@ function apiwin() {
                         <hr />
                         Hardware Drivers
                         <ul>
-                            <li><a href={USBDriverWindows} target='_blank' rel="noopener noreferrer" download>SyncLink Drivers for Windows</a></li>
+                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink Drivers for Windows</a></li>
                         </ul>
                         Microgate Serial API
                         <ul>
@@ -308,7 +306,7 @@ function apiwin() {
                                 <tr>
                                 <td><div className="subNote2">Windows (32-bit/64-bit)</div>
                                     MicroGate Serial API for Windows</td>
-                                <td><a href={SerialAPIWindows} target='_blank' download='hdlcrtk.exe'>DOWNLOAD</a></td>
+                                <td><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>DOWNLOAD</a></td>
                                 </tr>
                             </tbody>
                         </table>

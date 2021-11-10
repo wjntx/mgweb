@@ -12,9 +12,8 @@ import image4  from './assets/USBRails.jpg';
 
 const usermanual = process.env.PUBLIC_URL + '/PDF/slusb-users-manual.pdf';
 const drawing = process.env.PUBLIC_URL + '/PDF/SLUSBPCB.pdf';
-const USBDriverWindows = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
 const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
-const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
 const Styles = styled.div`
 
@@ -177,7 +176,7 @@ function USBAdapter() {
                         <Image src={image4} rounded className="float-right mt-3 mr-3 mb-4 ml-5 shadow p-2 bg-white rounded displayImage" />
                         <br /><br />
                         <div className="subhead">Linux Version Capability</div>
-                        The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
+                        The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS/Rocky Linux 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
                         <br />
                         Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
                     </Col>
@@ -233,12 +232,12 @@ function USBAdapter() {
                                     <hr />
                                     Hardware Drivers
                                     <ul>
-                                        <li><a href={USBDriverWindows} target='_blank' download='hdlcrtk.exe'>SyncLink USB Drivers for Windows</a></li>
+                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink USB Drivers for Windows</a></li>
                                         <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>SyncLink USB Drivers for Linux</a></li>
                                     </ul>
                                     Microgate Serial API
                                     <ul>
-                                        <li><a href={SerialAPIWindows} target='_blank' download='hdlcsdk.exe'>MicroGate Serial API for Windows</a></li>
+                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
                                         <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>MicroGate Serial API for Linux</a></li>
                                     </ul>
                                     Additional Software Solutions

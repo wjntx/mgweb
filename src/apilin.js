@@ -16,9 +16,8 @@ const usermanual = process.env.PUBLIC_URL + '/PDF/slusb-users-manual.pdf';
 const gt4eusermanual = process.env.PUBLIC_URL + '/PDF/gt4e-users-manual.pdf';
 const pcieusermanual = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
 const drawing = process.env.PUBLIC_URL + '/PDF/SLUSBPCB.pdf';
-const USBDriverWindows = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
 const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
-const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 const serialapiwindowspdf = process.env.PUBLIC_URL + '/PDF/serial-api-windows.pdf';
 const serialapilinuxpdf = process.env.PUBLIC_URL + '/PDF/serial-api-linux.pdf';
 const rtkwindows = process.env.PUBLIC_URL + '/PDF/rtk-windows.pdf';
@@ -178,20 +177,17 @@ function apilin() {
                     <Image src={image9} rounded className="float-right justify-content-sm-center mt-4 mr-4 mb-4 ml-4 shadow p-2 bg-white rounded" /><br />
                         <div className="subhead">Supported Linux Versions</div>
                         <ul className="ulFormat">
-                            <li>Red Hat Enterprise Linux/CentOS 6.X, 7.X, 8.X</li>
+                            <li>Red Hat Enterprise Linux/CentOS/Rocky Linux 6.X, 7.X, 8.X</li>
                             <li>openSUSE Leap 15.x</li>
                             <li>Debian 8.X, 9.X, 10.X, 11.X</li>
                             <li>Ubuntu 14.04LTS, 16.04LTS, 18.04LTS, 20.04LTS</li>
-                            <li>Raspbian 8, 9 on Raspberry Pi 3 Model B/Pi 4 Model B</li>
-                            <li>Generic (non-vendor specific) kernel versions up to 5.14</li>
+                            <li>Raspbian 8, 9, 10 on Raspberry Pi 3 Model B/Pi 4 Model B</li>
+                            <li>Generic (non-vendor specific) kernel versions from 2.6.28 to 5.15</li>
                         </ul>
                         
                         Many different Linux distributions and kernel versions are available to users. As a first step, MicroGate urges developers build and install the freely downloadable drivers in the target environment to verify compatibility. If your target kernel or distrubution is different than the supported version identified above, MicroGate offers consulting and development services for those projects where Linux kernel driver development expertise is required. Contact MicroGate for details.
                         <br /><br />
 
-                        <div className="subhead">Known Version Limits</div>
-                        Kernel versions before 2.6.5 are not supported.
-                        <br /><br />
                         <div className="subhead">Required Knowledge</div>
                         Developing with SyncLink devices on Linux requires the following knowledge:
                         <ul className="ulFormat">
