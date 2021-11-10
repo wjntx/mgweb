@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-const HDLCWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
-const HDLCWindowsRTK = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
-const Mgsna = process.env.PUBLIC_URL + './Drivers/mgsna.exe';
-const LegacyLinux = process.env.PUBLIC_URL + './Drivers/legacy-linux.tar.gz';
-const Mgwnet = process.env.PUBLIC_URL + './Drivers/mgwnet-disk.exe';
+const HDLCWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
+const HDLCWindowsRTK = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
+const Mgsna = process.env.PUBLIC_URL + '/Drivers/mgsna.exe';
+const LegacyLinux = process.env.PUBLIC_URL + '/Drivers/legacy-linux.tar.gz';
+const Mgwnet = process.env.PUBLIC_URL + '/Drivers/mgwnet-disk.exe';
 
 const Styles = styled.div`
 h1 {

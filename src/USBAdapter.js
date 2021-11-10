@@ -10,11 +10,11 @@ import image2  from './assets/USB1back.jpg';
 import image3  from './assets/SLUSBPCB1.jpg';
 import image4  from './assets/USBRails.jpg';
 
-const usermanual = process.env.PUBLIC_URL + './PDF/slusb-users-manual.pdf';
-const drawing = process.env.PUBLIC_URL + './PDF/SLUSBPCB.pdf';
-const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
-const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
-const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
+const usermanual = process.env.PUBLIC_URL + '/PDF/slusb-users-manual.pdf';
+const drawing = process.env.PUBLIC_URL + '/PDF/SLUSBPCB.pdf';
+const USBDriverWindows = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
+const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
 
 const Styles = styled.div`
 
