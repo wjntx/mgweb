@@ -17,9 +17,8 @@ import image6  from './assets/rs449.jpg';
 import image7  from './assets/x21.jpg';
 
 const usermanual = process.env.PUBLIC_URL + './PDF/gt4e-users-manual.pdf';
-const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
 const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
-const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
 const Styles = styled.div`
 h1 {
@@ -252,12 +251,12 @@ function GT4e() {
                                 <hr />
                                 Hardware Drivers
                                 <ul>
-                                    <li><a href={USBDriverWindows} target='_blank' download='hdlcrtk.exe'>SyncLink GT4e Adapter Drivers for Windows</a></li>
+                                    <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
                                     <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>SyncLink GT4e Adapter Drivers for Linux</a></li>
                                 </ul>
                                 Microgate Serial API
                                 <ul>
-                                    <li><a href={SerialAPIWindows} target='_blank' download='hdlcsdk.exe'>MicroGate Serial API for Windows</a></li>
+                                    <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
                                     <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>MicroGate Serial API for Linux</a></li>
                                 </ul>
                                 Additional Software Solutions

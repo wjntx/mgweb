@@ -14,8 +14,7 @@ import image3  from './assets/SLPCIePortscomp.jpg';
 
 const usermanual = process.env.PUBLIC_URL + './PDF/pcie-users-manual.pdf';
 const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
-const USBDriverWindows = process.env.PUBLIC_URL + './Drivers/hdlcrtk.exe';
-const SerialAPIWindows = process.env.PUBLIC_URL + './Drivers/hdlcsdk.exe';
+const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
 const Styles = styled.div`
 h1 {
@@ -240,12 +239,12 @@ function PCIeAdapter() {
                                     <hr />
                                     Hardware Drivers
                                     <ul>
-                                        <li><a href={USBDriverWindows} target='_blank' download='hdlcrtk.exe'>SyncLink PCIe Adapter Drivers for Windows</a></li>
+                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink PCIe Adapter Drivers for Windows</a></li>
                                         <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>SyncLink PCIe Adapter Drivers for Linux</a></li>
                                     </ul>
                                     Microgate Serial API
                                     <ul>
-                                        <li><a href={SerialAPIWindows} target='_blank' download='hdlcsdk.exe'>MicroGate Serial API for Windows</a></li>
+                                        <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
                                         <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>MicroGate Serial API for Linux</a></li>
                                     </ul>
                                     Additional Software Solutions
