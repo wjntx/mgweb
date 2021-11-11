@@ -25,7 +25,7 @@ const drawing = process.env.PUBLIC_URL + '/PDF/SLUSBPCB.pdf';
 const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 const serialapiwindowspdf = process.env.PUBLIC_URL + '/PDF/serial-api-windows.pdf';
-const rtkwindows = process.env.PUBLIC_URL + '/PDF/rtk-windows.pdf';
+
 
 const Styles = styled.div`
 h1 {
@@ -217,14 +217,10 @@ function apiwin() {
                             <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
                             <li>Loopback mode for diagnostics</li>
                         </ul>
-                        The MicroGate Serial API is packaged as a Software Development Kit (SDK) and a Run Time Kit (RTK).<br/><br/>
+                        The MicroGate Serial API is packaged as a Software Development Kit (SDK).<br/><br/>
 
                         <div className="subhead2">Software Development Kit</div>
                         The MicroGate Serial SDK contains documentation, development support files, sample C/C++, C# and Python 3 applications, and the Run Time Kit.
-                        <br /><br />
-
-                        <div className="subhead2">Run Time Kit</div>
-                        The MicroGate Serial RTK contains the redistributable software components necessary to support deployment of a serial application.
                         <br /><br />
 
                         <div className="subhead2">Optional General Purpose I/O Signals</div>
@@ -238,7 +234,6 @@ function apiwin() {
                         <div className="subhead2">Documentation</div>
                         <ul className="ulFormat">
                             <li><a href={serialapiwindowspdf} target="_blank" rel="noopener noreferrer">Guide to MicroGate Serial Communications for Windows</a></li>
-                            <li><a href={rtkwindows} target="_blank" rel="noopener noreferrer">Guide to MicroGate Serial Communications Run-Time-Kit for Windows</a></li>
                         </ul>
                         <div className="subhead2">Serial API Downloads</div>
                         <ul className="ulFormat">
