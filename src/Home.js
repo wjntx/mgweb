@@ -89,7 +89,7 @@ export const Home = () => (
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col1} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     <NavLink to="/USBAdapter/" style={{ textDecoration: 'none' }}><h4>SyncLink® USB</h4></NavLink>
-                    Based upon MicroGate's proven FPGA serial controller, the SyncLink USB supports synchronous line speeds to 10Mbps and interfaces with systems using USB 2.0 hi-speed (480Mbps) ports and is compatible with USB 3.0 ports.
+                    Based upon MicroGate's proven FPGA serial controller, the SyncLink USB supports synchronous line speeds to 10Mbps and is compatible with all USB versions and operates at USB 2 speeds.
                     <div align="center"><NavLink to="/USBAdapter/" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br />
                     </Col>

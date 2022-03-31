@@ -16,7 +16,7 @@ import image5  from './assets/v35.jpg';
 import image6  from './assets/rs449.jpg';
 import image7  from './assets/x21.jpg';
 
-const usermanual = process.env.PUBLIC_URL + './PDF/gt4e-users-manual.pdf';
+const usermanual = process.env.PUBLIC_URL + '/PDF/gt4e-users-manual.pdf';
 const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 

@@ -20,7 +20,6 @@ const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 const serialapiwindowspdf = process.env.PUBLIC_URL + '/PDF/serial-api-windows.pdf';
 const serialapilinuxpdf = process.env.PUBLIC_URL + '/PDF/serial-api-linux.pdf';
-const rtkwindows = process.env.PUBLIC_URL + '/PDF/rtk-windows.pdf';
 
 const Styles = styled.div`
 h1 {

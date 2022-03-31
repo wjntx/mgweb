@@ -10,7 +10,7 @@ import image1  from './assets/REACH.png';
 import image2  from './assets/RoHS.png';
 import image3  from './assets/CA65.png';
 
-const MGE = process.env.PUBLIC_URL +'./PDF/MGEnvironmentalInformation2020.pdf';
+const MGE = process.env.PUBLIC_URL +'/PDF/MGEnvironmentalInformation2020.pdf';
 
 const Styles = styled.div`
 h1 {

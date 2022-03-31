@@ -220,7 +220,7 @@ function apiwin() {
                         The MicroGate Serial API is packaged as a Software Development Kit (SDK).<br/><br/>
 
                         <div className="subhead2">Software Development Kit</div>
-                        The MicroGate Serial SDK contains documentation, development support files, sample C/C++, C# and Python 3 applications, and the Run Time Kit.
+                        The MicroGate Serial SDK contains documentation, development support files, sample C/C++, C# and Python 3 applications.
                         <br /><br />
 
                         <div className="subhead2">Optional General Purpose I/O Signals</div>

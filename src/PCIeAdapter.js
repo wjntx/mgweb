@@ -12,7 +12,7 @@ import image1  from './assets/SLPCIecomp.jpg';
 import image2  from './assets/SLPCIeDB25Cablescomp.jpg';
 import image3  from './assets/SLPCIePortscomp.jpg';
 
-const usermanual = process.env.PUBLIC_URL + './PDF/pcie-users-manual.pdf';
+const usermanual = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
 const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
