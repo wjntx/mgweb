@@ -180,8 +180,6 @@ function apiwin() {
                     <Image src={image9} rounded className="float-right justify-content-sm-center mt-0 mr-4 mb-4 ml-4 shadow p-2 bg-white rounded" />
                     <div className="subhead">Supported Windows Versions</div>
                         <ul className="ulFormat">
-                            <li>Windows XP (Server 2003/2003R2)</li>
-                            <li>Windows Vista (Server 2008)</li>
                             <li>Windows 7 (Server 2008R2)</li>
                             <li>Windows 8 (Server 2012)</li>
                             <li>Windows 8.1 (Server 2012R2)</li>

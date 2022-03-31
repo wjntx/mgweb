@@ -96,21 +96,21 @@ export const Home = () => (
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <NavLink to="/PCIeAdapter/" style={{ textDecoration: 'none' }}><h4>SyncLink® PCIe</h4></NavLink>
-                    The newest PCI Express (PCIe) offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS422, V.35, RS232/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported by the SyncLink PCIe.
+                    The newest PCI Express (PCIe) offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS232, V.35, RS422/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported by the SyncLink PCIe.
                     <div align="center"><NavLink to="/PCIeAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br />
                     </Col>
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <NavLink to="/GT4e/" style={{ textDecoration: 'none' }}><h4>SyncLink® GT4e</h4></NavLink>
-                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
+                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols.
                     <div align="center"><NavLink to="/GT4e" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br />
                     </Col>
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col4} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <h4>Windows and Linux API</h4>
-                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols. The API allows direct control of the SyncLink hardware or high-level control of the link layer protocol.
+                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols.
                     <div align="center"><NavLink to="/apiwin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-0">Windows</Button></NavLink><NavLink to="/apilin" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Linux</Button></NavLink></div>
                     <br /><br />
                     </Col>
