@@ -175,8 +175,8 @@ function USBAdapter() {
                     <Col>
                         <Image src={image4} rounded className="float-right mt-3 mr-3 mb-4 ml-5 shadow p-2 bg-white rounded displayImage" />
                         <br /><br />
-                        <div className="subhead">Linux Version Capability</div>
-                        The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS/Rocky Linux 6.x, 7.x, and 8.x. SyncLink USB is not supported on kernel versions before 2.6.28
+                        <div className="subhead">Linux Version Compatibility</div>
+                        The release of the Linux drivers for use with SyncLink USB Adapters targets Red Hat Enterprise Linux/CentOS/Rocky Linux 6.x, 7.x, and 8.x, and many others.  Visit the MicroGate Serial API for Linux product page for a complete list. SyncLink USB is not supported on kernel versions before 2.6.28
                         <br />
                         Many different Linux distributions and kernel versions are available to users. MicroGate urges developers build and install the freely downloadable MicroGate drivers in the target environment to verify compatibility. Should you encounter an incompatibility, contact MicroGate and we may be able to offer help porting to the target environment.
                     </Col>

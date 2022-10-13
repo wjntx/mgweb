@@ -163,7 +163,7 @@ function GT4e() {
                     <Col>
                     <Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage" /> <br />
                     <br /><h4>SyncLink® GT4e Adapter</h4> <br /> <h5>Multiport High-Speed PCIe Adapter.</h5><br />
-                    The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports supports and asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
+                    The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports and asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     <br /><br />
                 The SyncLink GT4e synchronous adapter utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                 <br /><br />
@@ -183,6 +183,7 @@ function GT4e() {
                         <li>Variety of transmit preamble and idle patterns</li>
                         <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
                         <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
+                        <li>Selectable interface for RS‐232, V.35, RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
                         <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
                         <li>Optional termination for differential inputs</li>
                         <li>Optional fail safe biasing for differential inputs</li>
@@ -200,7 +201,7 @@ function GT4e() {
                     <div className="subhead">Additional Support.</div>
                     The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
                     <br /><br />
-                    Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                    Download the Hardware Guide and MicroGate Serial API for Windows/Linux for details on using the card for a specific application.
                     <br /><br />
                     <div className="subhead2">SyncLink GT4e Adapter Specifications</div>
                     A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.

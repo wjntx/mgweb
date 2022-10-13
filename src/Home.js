@@ -103,7 +103,7 @@ export const Home = () => (
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col3} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <NavLink to="/GT4e/" style={{ textDecoration: 'none' }}><h4>SyncLink® GT4e</h4></NavLink>
-                    The MicroGate Serial API supports SDLC, HDLC, BISYNC, MONOSYNC, ASYNC, ISOCHRONOUS and Raw Bit-Synchronous serial protocols.
+                    The SyncLink GT4e Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports and asynchronous connections up to 8Mbps.  Available APIs provide developers direct access to a wide array of communications protocols and serial connections.
                     <div align="center"><NavLink to="/GT4e" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br />
                     </Col>

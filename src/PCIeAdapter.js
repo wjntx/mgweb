@@ -190,7 +190,7 @@ function PCIeAdapter() {
                         <div className="subhead">Additional Support.</div>
                         The SyncLink drivers are part of the base Linux kernel, providing direct support with Linux networking options.
                         <br /><br />
-                        Visit the "Related Products" and "Part Numbers" tabs for more details on the complete line of SyncLink hardware and MicroGate software solutions.
+                        Download the Hardware Guide and MicroGate Serial API for Windows/Linux for details on using the card for a specific application.
                         <br /><br />
                         <div className="subhead2">SyncLink PCIe Adapter Specifications</div>
                         A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
