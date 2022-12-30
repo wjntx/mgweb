@@ -62,8 +62,8 @@ export const SyncLink = () => (
             <Row>
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
                 <br /><h4>SyncLink® PCIe Adapter</h4><br />
-                The newest PCI Express (PCIe) 2-port adapter supporting software-selectable RS-232, V.35 and RS-422 (485/530/530A) connections and a wide range of synchronous/asynchronous serial protocols.<br /><br />
-                The SyncLink PCI Express(PCIe) adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink GT4e supports asynchronous connections up to 8Mbps.
+                The newest PCI Express (PCIe) 2-port and 4-port adapters supporting software-selectable RS-232, V.35 (2-port) and RS-422 (485/530/530A) connections and a wide range of synchronous/asynchronous serial protocols.<br /><br />
+                The SyncLink PCI Express(PCIe) adapters feature bus master control for sustained 10Mbps synchronous communications simultaneously on all four ports. The SyncLink PCIe supports asynchronous connections up to 8Mbps.
                 <div align="center"><NavLink to="/PCIeAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>

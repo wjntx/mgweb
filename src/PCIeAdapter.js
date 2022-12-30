@@ -11,8 +11,10 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import image1  from './assets/SLPCIecomp.jpg';
 import image2  from './assets/SLPCIeDB25Cablescomp.jpg';
 import image3  from './assets/SLPCIePortscomp.jpg';
+import image4 from './assets/slpciecables.png';
 
-const usermanual = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
+const usermanual2port = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
+const usermanual4port = process.env.PUBLIC_URL + '/PDF/pcie4-users-manual.pdf';
 const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
@@ -107,6 +109,10 @@ hr {
    }
 }
 
+.displayImage5{
+    height:236px;
+}
+
 .displayImage4{
     height:375px;
     width:300px;
@@ -134,6 +140,11 @@ hr {
     border-radius: 20px;
     padding: 10px;
 }
+
+.imagesSameLine {
+    width: 75%;
+    margin: auto;
+}
 `;
 
 function PCIeAdapter() {
@@ -154,7 +165,7 @@ function PCIeAdapter() {
                     <Col>
                     <div align="center"><Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     <br /><h4>SyncLink® PCIe Adapter</h4> <br /> <h5>The Newest PCIe Adapter.</h5><br />
-                    The SyncLink PCIe Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on both ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
+                    The SyncLink PCIe Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     </Col>
                 </Row>
                 <br />
@@ -162,10 +173,10 @@ function PCIeAdapter() {
                     <Col>
                         The SyncLink family of synchronous adapters utilizes the MicroGate FPGA Serial Controller. Beyond providing seamless integration between the hardware and software drivers, MicroGate is able to offer customized serial controller interfaces for users needing additional control over the serial links. There is no need for custom hardware but rather quick modifications to the FPGA programming.
                         <br /><br />
-                        <Image src={image2} rounded className="float-right mt-4 mb-4 ml-4 shadow p-2 bg-white rounded displayImage3" />
+                        <Image src={image3} rounded className="float-right mt-1 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage4" />
                         <b>Other features include:</b><br />
                         <ul className="ulFormat">
-                            <li>Two Ports - individually configurable. Selectable by software or hardware switches.</li>
+                            <li>Each port is individually configurable. Selectable by software or hardware switches.</li>
                             <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
                             <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
                             <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
@@ -175,12 +186,11 @@ function PCIeAdapter() {
                             <li>Variety of transmit preamble and idle patterns</li>
                             <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
                             <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
-                            <li>Selectable interface for RS‐232, V.35, RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
+                            <li>Selectable interface for RS‐232, V.35 (2-port model), RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
                             <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
                             <li>General Purpose I/O (GPIO) signal access</li>
                             <li>Loopback mode for diagnostics</li>
                         </ul>
-                        <Image src={image3} rounded className="float-left mt-4 mr-5 mb-4 ml-3 shadow p-2 mb-4 bg-white rounded displayImage4" />
                         <div className="subhead">Always Up-To-Date.</div>
                         Free downloadable system drivers give the user access to the latest features and upgrades avaliable from MicroGate.
                         <br /><br />
@@ -195,6 +205,10 @@ function PCIeAdapter() {
                         <div className="subhead2">SyncLink PCIe Adapter Specifications</div>
                         A variety of serial protocols and interface standards are supported. Refer to the software documentation included with the card for details on using the card for a specific application.
                         <br /><br />
+                        <div align="center">
+                        <Image src={image2} rounded className="m-4 shadow p-2 bg-white rounded displayImage3" />
+                        <Image src={image4} rounded className="m-4 shadow p-2 bg-white rounded displayImage5" />
+                        </div>
                     </Col>
                 </Row>
                 <Row>
@@ -203,7 +217,7 @@ function PCIeAdapter() {
                         <h2>SyncLink PCIe Adapter</h2>
                         <hr />
                         <ul>
-                            <li>MicroGate FPGA serial controller (2 ports)</li>
+                            <li>MicroGate FPGA serial controller</li>
                             <li>Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
                             <li>Mechanical: Standard PCI Express short card; length 3.8", height 4.0, Weight 3Oz</li>
                             <li>Power usage:2.5W</li>
@@ -224,7 +238,8 @@ function PCIeAdapter() {
                                     <hr />
                                     Hardware Guides
                                     <ul>
-                                        <li><a href={usermanual} target="_blank" rel="noopener noreferrer">SyncLink PCIe Hardware Guide</a></li>
+                                        <li><a href={usermanual2port} target="_blank" rel="noopener noreferrer">SyncLink PCIe 2-Port Hardware Guide</a></li>
+                                        <li><a href={usermanual4port} target="_blank" rel="noopener noreferrer">SyncLink PCIe 4-Port Hardware Guide</a></li>
                                     </ul>
                                     Serial Interface Information
                                     <ul>
@@ -279,6 +294,10 @@ function PCIeAdapter() {
                                 <tr>
                                 <td>SyncLink PCIe Adapter/PCIe/2-port RS-232, V.35, RS422(485/530/530A)</td>
                                 <td>2E0170</td>
+                                </tr>
+                                <tr>
+                                <td>SyncLink PCIe Adapter/PCIe/4-port RS-232, RS422(485/530/530A)</td>
+                                <td>4E0170</td>
                                 </tr>
                             </tbody>
                         </table>
