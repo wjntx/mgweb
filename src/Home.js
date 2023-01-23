@@ -96,7 +96,7 @@ export const Home = () => (
                     <Col className="col-lg-3">
                     <div align="center"><Image src={col2} rounded className="mb-3 mt-3 shadow p-2 mb-4 bg-white rounded displayImage"/></div> <br />
                     <NavLink to="/PCIeAdapter/" style={{ textDecoration: 'none' }}><h4>SyncLink® PCIe</h4></NavLink>
-                    The newest PCI Express (PCIe) offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS232, V.35, RS422/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported by the SyncLink PCIe.
+                    The newest PCI Express (PCIe) 2-port and 4-port offering from MicroGate. Leveraging MicroGate's proven FPGA serial controller, the SyncLink PCIe operates synchronous line speeds to 10Mbps and serial RS232, V.35, RS422/530/530A interfaces. A wide range of synchronous and asynchronous protocols are directly supported.
                     <div align="center"><NavLink to="/PCIeAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                     <br /><br />
                     </Col>

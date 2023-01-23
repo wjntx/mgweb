@@ -165,7 +165,7 @@ function PCIeAdapter() {
                     <Col>
                     <div align="center"><Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     <br /><h4>SyncLink® PCIe Adapter</h4> <br /> <h5>The Newest PCIe Adapter.</h5><br />
-                    The SyncLink PCIe Adapter features bus master control for sustained 10Mbps synchronous communications simultaneously on all ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
+                    The SyncLink PCIe 2-port and 4-port adapters features bus master control for sustained 10Mbps synchronous communications simultaneously on all ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     </Col>
                 </Row>
                 <br />
@@ -185,7 +185,7 @@ function PCIeAdapter() {
                             <li>Baud Rate Generator for sourcing data clocks</li>
                             <li>Variety of transmit preamble and idle patterns</li>
                             <li>Encoding: NRZ,NRZB,NRZ-L,NRZI,NRZ-M,NRZ-S,BIPHASE,FM0,FM1,Manchester,differential biphase level</li>
-                            <li>Full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
+                            <li>2-port model supports full control and monitoring of DTR,RTS,DSR,DCD,CTS,RI</li>
                             <li>Selectable interface for RS‐232, V.35 (2-port model), RS‐422/485, RS‐530, RS‐530A, RS‐449, X.21</li>
                             <li>Time Division Multiplexing (TDM) compatible with TDM mode of McASP</li>
                             <li>General Purpose I/O (GPIO) signal access</li>
