@@ -180,11 +180,9 @@ function apiwin() {
                     <Image src={image9} rounded className="float-right justify-content-sm-center mt-0 mr-4 mb-4 ml-4 shadow p-2 bg-white rounded" />
                     <div className="subhead">Supported Windows Versions</div>
                         <ul className="ulFormat">
-                            <li>Windows 7 (Server 2008R2)</li>
-                            <li>Windows 8 (Server 2012)</li>
-                            <li>Windows 8.1 (Server 2012R2)</li>
                             <li>Windows 10 (Server 2016-2022)</li>
                             <li>Windows 11</li>
+                            <li>Windows XP through Windows 8.1 supported by Legacy Drivers</li>
                         </ul>
                         
                         The API is accessed through a standard Windows DLL, and can be used by any programming language that allows calling functions in a standard Windows DLL. Sample programs with source are supplied for the C/C++, C# and Python 3 languages.
@@ -268,11 +266,11 @@ function apiwin() {
                         <hr />
                         Hardware Drivers
                         <ul>
-                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink Drivers for Windows</a></li>
+                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink Drivers for Windows (Requires Windows 10 or later)</a></li>
                         </ul>
                         Microgate Serial API
                         <ul>
-                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
+                            <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows (Requires Windows 10 or later)</a></li>
                         </ul>
                         <NavLink to="/LegacyDrivers/">Legacy Drivers</NavLink>
                     </Col>

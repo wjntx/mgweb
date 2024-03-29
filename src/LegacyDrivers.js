@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
+const LegacySynclinkDriver = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows-legacy.zip'
 const HDLCWindows = process.env.PUBLIC_URL + '/Drivers/hdlcsdk.exe';
 const HDLCWindowsRTK = process.env.PUBLIC_URL + '/Drivers/hdlcrtk.exe';
 const Mgsna = process.env.PUBLIC_URL + '/Drivers/mgsna.exe';
@@ -106,6 +107,7 @@ function LegacyDrivers() {
             These legacy drivers and software packages are for older operating systems and adapters that are no longer updated as they have been replaced by newer hardware and/or software.
             <br /><br /><br />
             <ul>
+                <li><a href={LegacySynclinkDriver} target='_blank' download='microgate-sdk-windows-legacy.zip'>SyncLink hardware drivers (Windows 8.1 and prior versions)</a></li>
                 <li><a href={HDLCWindows} target='_blank' download='hdlcsdk.exe'>HDLC API for Windows SDK (Windows 2000 and prior versions)</a></li>
                 <li><a href={HDLCWindowsRTK} target='_blank' download='hdlcrtk.exe'>HDLC API for Windows RTK (Windows 2000 and prior versions)</a></li>
                 <li><a href={Mgsna} target='_blank' download='mgsna.exe'>SNA/HIS Server (Windows 2000 and prior versions)</a></li>

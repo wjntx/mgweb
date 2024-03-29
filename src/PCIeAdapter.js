@@ -218,7 +218,7 @@ function PCIeAdapter() {
                         <hr />
                         <ul>
                             <li>MicroGate FPGA serial controller</li>
-                            <li>Environmental: Temperature ‐40C to +85C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                            <li>Environmental: Temperature 0C to 60C; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
                             <li>Mechanical: Standard PCI Express short card; length 3.8", height 4.0, Weight 3Oz</li>
                             <li>Power usage:2.5W</li>
                             <li>Regulatory: FCC Class B, CE, ANSI C63.4, EN55022 Class B, EN55024, RoHS</li>

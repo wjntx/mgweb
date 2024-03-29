@@ -17,7 +17,7 @@ import image6  from './assets/rs449.jpg';
 import image7  from './assets/x21.jpg';
 
 const usermanual = process.env.PUBLIC_URL + '/PDF/gt4e-users-manual.pdf';
-const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
 const Styles = styled.div`
@@ -218,7 +218,7 @@ function GT4e() {
                         <li>MicroGate FPGA serial controller (4 ports)</li>
                         <li>PCI Express (1x)</li>
                         <li>Bus Master DMA data transfer</li>
-                        <li>Environmental: Temperature 0C to 60C standard, ‐40C to +85C optional; humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
+                        <li>Environmental: Temperature 0C to 60C humidity 0 to 95% non‐condensing; alt. ‐ 200 to +10,000 ft</li>
                         <li>Mechanical: Standard PCI Express short card; length 6.6", height 4.2", Weight 4.4 Oz</li>
                         <li>Power usage: 1A 3.3V</li>
                         <li>Regulatory: FCC Class B, CE, ANSI C63.4 Class B, VCCI Class B, EN55022 Class B, EN55024, RoHS</li>
@@ -253,12 +253,12 @@ function GT4e() {
                                 Hardware Drivers
                                 <ul>
                                     <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Windows</a></li>
-                                    <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>SyncLink GT4e Adapter Drivers for Linux</a></li>
+                                    <li><a href={USBDriverLinux}  target='_blank' rel="noopener noreferrer" download>SyncLink GT4e Adapter Drivers for Linux</a></li>
                                 </ul>
                                 Microgate Serial API
                                 <ul>
                                     <li><a href={SerialAPIWindows} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Windows</a></li>
-                                    <li><a href={USBDriverLinux} target='_blank' download='linuxwan.tar.xz'>MicroGate Serial API for Linux</a></li>
+                                    <li><a href={USBDriverLinux} target='_blank' rel="noopener noreferrer" download>MicroGate Serial API for Linux</a></li>
                                 </ul>
                                 Additional Software Solutions
                                 <ul>

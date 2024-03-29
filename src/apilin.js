@@ -178,10 +178,10 @@ function apilin() {
                         <ul className="ulFormat">
                             <li>Red Hat Enterprise Linux/CentOS/Rocky Linux 6.X, 7.X, 8.X, 9.X</li>
                             <li>openSUSE Leap 15.x</li>
-                            <li>Debian 8.X, 9.X, 10.X, 11.X</li>
-                            <li>Ubuntu 14.04LTS, 16.04LTS, 18.04LTS, 20.04LTS, 21.04LTS, 22.04LTS</li>
+                            <li>Debian 8.X, 9.X, 10.X, 11.X, 12.X</li>
+                            <li>Ubuntu 14.04LTS, 16.04LTS, 18.04LTS, 20.04LTS, 21.X, 22.X</li>
                             <li>Raspbian 8, 9, 10 on Raspberry Pi 3 Model B/Pi 4 Model B</li>
-                            <li>Generic (non-vendor specific) kernel versions from 2.6.28 to 5.19</li>
+                            <li>Generic (non-vendor specific) kernel versions from 2.6.28 to 6.4</li>
                         </ul>
                         
                         Many different Linux distributions and kernel versions are available to users. As a first step, MicroGate urges developers build and install the freely downloadable drivers in the target environment to verify compatibility. If your target kernel or distrubution is different than the supported version identified above, MicroGate offers consulting and development services for those projects where Linux kernel driver development expertise is required. Contact MicroGate for details.
