@@ -53,7 +53,7 @@ export const SyncLink = () => (
                 <Col>
                 <br /><h4>SyncLink® USB Adapter</h4><br />
                 High-speed USB adapter using the proven MicroGate FPGA serial controller found on every SyncLink serial card. Supports RS-232, V.35 and RS-422 (485/530/530A) connections from a single device.<br /><br />
-                The SyncLink USB adapter is the ultimate go-anywhere synchronous serial communications solution.
+                The SyncLink adapter is the ultimate go-anywhere synchronous serial communications solution.
                 <div align="center"><NavLink to="/USBAdapter" className="navlink px-2"><Button variant="secondary" size="sm" className="m-3">Learn More</Button></NavLink></div>
                 </Col>
             </Row>

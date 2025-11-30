@@ -176,12 +176,12 @@ function apilin() {
                     <Image src={image9} rounded className="float-right justify-content-sm-center mt-4 mr-4 mb-4 ml-4 shadow p-2 bg-white rounded" /><br />
                         <div className="subhead">Supported Linux Versions</div>
                         <ul className="ulFormat">
-                            <li>Red Hat Enterprise Linux/CentOS/Rocky Linux 6.X, 7.X, 8.X, 9.X</li>
-                            <li>openSUSE Leap 15.x</li>
-                            <li>Debian 8.X, 9.X, 10.X, 11.X, 12.X</li>
-                            <li>Ubuntu 14.04LTS, 16.04LTS, 18.04LTS, 20.04LTS, 21.X, 22.X</li>
-                            <li>Raspbian 8, 9, 10 on Raspberry Pi 3 Model B/Pi 4 Model B</li>
-                            <li>Generic (non-vendor specific) kernel versions from 2.6.28 to 6.4</li>
+                            <li>Red Hat Enterprise Linux/CentOS/Rocky Linux</li>
+                            <li>openSUSE Leap</li>
+                            <li>Debian</li>
+                            <li>Ubuntu</li>
+                            <li>Raspbian</li>
+                            <li>Consult API manual for currently supported distribution and kernel versions.</li>
                         </ul>
                         
                         Many different Linux distributions and kernel versions are available to users. As a first step, MicroGate urges developers build and install the freely downloadable drivers in the target environment to verify compatibility. If your target kernel or distrubution is different than the supported version identified above, MicroGate offers consulting and development services for those projects where Linux kernel driver development expertise is required. Contact MicroGate for details.
@@ -190,7 +190,7 @@ function apilin() {
                         <div className="subhead">Required Knowledge</div>
                         Developing with SyncLink devices on Linux requires the following knowledge:
                         <ul className="ulFormat">
-                            <li>C programming skills</li>
+                            <li>C or Python programming skills</li>
                             <li>Basic Linux administration</li>
                             <li>Building and installing Linux device drivers</li>
                             <li>Serial communication details for target application</li>

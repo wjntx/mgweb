@@ -181,7 +181,7 @@ function apiwin() {
                     <div className="subhead">Supported Windows Versions</div>
                         <ul className="ulFormat">
                             <li>Windows 10 (Server 2016-2022)</li>
-                            <li>Windows 11</li>
+                            <li>Windows 11 (Server 2025)</li>
                             <li>Windows XP through Windows 8.1 supported by Legacy Drivers</li>
                         </ul>
                         

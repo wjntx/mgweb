@@ -140,7 +140,7 @@ function USBAdapter() {
                         <Image src={image2} rounded className="float-right mt-5 mr-3 mb-4 ml-4 shadow p-2 bg-white rounded displayImage" />
                         <div className="subhead">Other features include:</div>
                         <ul className="ulFormat">
-                            <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
+                            <li>Supports 10Mbps synchronous/asynchronous connections</li>
                             <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
                             <li>USB 2.0 hi‐speed (480Mbps), compatible with USB 2.0 and USB 3.0 ports</li>
                             <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>

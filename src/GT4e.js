@@ -280,7 +280,7 @@ function GT4e() {
                         Use the part numbers below for ordering SyncLink hardware and MicroGate software.
                         Additional product information can be found following the available links below.<br />
                         <br /><br />
-                        <h3>SyncLink USB Adapter</h3>
+                        <h3>SyncLink Adapter</h3>
                             <br />
                         <table class="table-hover table">
                             <thead>

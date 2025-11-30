@@ -15,7 +15,7 @@ import image4 from './assets/slpciecables.png';
 
 const usermanual2port = process.env.PUBLIC_URL + '/PDF/pcie-users-manual.pdf';
 const usermanual4port = process.env.PUBLIC_URL + '/PDF/pcie4-users-manual.pdf';
-const USBDriverLinux = process.env.PUBLIC_URL + './Drivers/linuxwan.tar.xz';
+const USBDriverLinux = process.env.PUBLIC_URL + '/Drivers/linuxwan.tar.xz';
 const SerialAPIWindows = process.env.PUBLIC_URL + '/Drivers/microgate-sdk-windows.zip';
 
 const Styles = styled.div`
@@ -165,7 +165,7 @@ function PCIeAdapter() {
                     <Col>
                     <div align="center"><Image src={image1} rounded className="float-left mt-4 mr-5 mb-4 ml-4 shadow p-2 mb-4 bg-white rounded displayImage" /></div> <br />
                     <br /><h4>SyncLink® PCIe Adapter</h4> <br /> <h5>The Newest PCIe Adapter.</h5><br />
-                    The SyncLink PCIe 2-port and 4-port adapters features bus master control for sustained 10Mbps synchronous communications simultaneously on all ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
+                    The SyncLink PCIe 2-port and 4-port adapters features bus master control for sustained 10Mbps synchronous/asynchronous communications simultaneously on all ports. The SyncLink PCIe Adapter also supports asynchronous connections up to 8Mbps. The 1x bus connector supports the latest workstation, stand-a-lone server, rack mount server or ruggedize system requiring synchronous or asynchronous connections. The number of adapters one can place in a single system is only limited by the number of slots available in the computer.
                     </Col>
                 </Row>
                 <br />
@@ -177,7 +177,7 @@ function PCIeAdapter() {
                         <b>Other features include:</b><br />
                         <ul className="ulFormat">
                             <li>Each port is individually configurable. Selectable by software or hardware switches.</li>
-                            <li>Supports 10Mbps synchronous, 8Mbps asynchronous connections</li>
+                            <li>Supports 10Mbps synchronous/asynchronous connections</li>
                             <li>SDLC, HDLC, BISYNC, MONOSYNC, ISOCHRONOUS, ASYNC, RAW bit-synchronous protocols</li>
                             <li>Selectable hardware CRC: CRC-16, CRC-32, None</li>
                             <li>DPLL clock recovery (x8 and x16 sampling)</li>
@@ -281,7 +281,7 @@ function PCIeAdapter() {
                         Use the part numbers below for ordering SyncLink hardware and MicroGate software.
                         Additional product information can be found following the available links below.<br />
                         <br /><br />
-                        <h3>SyncLink USB Adapter</h3>
+                        <h3>SyncLink Adapter</h3>
                             <br />
                         <table class="table-hover table">
                             <thead>

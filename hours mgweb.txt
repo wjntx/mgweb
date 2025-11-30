@@ -1,4 +1,4 @@
-set PUBLIC_URL=https://microgate.com&&npm run build
+set PUBLIC_URL=https://microgate.com&& set NODE_OPTIONS=--openssl-legacy-provider && npm run build
 i0xqamn694r1
 
 Pay Period 1:
